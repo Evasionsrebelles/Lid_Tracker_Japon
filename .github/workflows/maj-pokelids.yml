@@ -2,27 +2,31 @@ name: Mise à jour Poké Lids (hebdomadaire)
 
 on:
   schedule:
-    # Tous les lundis à 10:00 heure de Paris (UTC+1 en hiver, UTC+2 en été).
+    # Tous les lundis à 10:00 heure de Paris.
     # 09:00 UTC = 10:00 Paris en hiver (11:00 en été).
     - cron: '0 9 * * 1'
-  workflow_dispatch:   # permet aussi un lancement manuel depuis l'onglet Actions
+  workflow_dispatch:   # lancement manuel depuis l'onglet Actions
 
 jobs:
   maj:
     runs-on: ubuntu-latest
+    timeout-minutes: 300   # 5h, marge sous la limite GitHub de 6h
     permissions:
-      contents: write   # nécessaire pour commit + push via GITHUB_TOKEN
+      contents: write      # nécessaire pour commit + push via GITHUB_TOKEN
 
     steps:
       - name: Checkout du dépôt
         uses: actions/checkout@v4
         with:
           fetch-depth: 0   # historique complet pour éviter les problèmes de push
+          # Si la branche 'main' est protégée, décommentez et utilisez un PAT :
+          # token: ${{ secrets.PAT_PUSH }}
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
       - name: Installer les dépendances
         run: |
@@ -30,9 +34,21 @@ jobs:
           pip install requests beautifulsoup4 pillow tqdm
 
       - name: Lancer 01-crawl_url.py
+        working-directory: 01-Maj-pokelids
         run: |
-          cd 01-Maj-pokelids
-          python 01-crawl_url.py
+          python 01-crawl_url.py --workers 8
+
+      # Diagnostic : liste les artefacts produits (utile en cas d'échec)
+      - name: Résumé des artefacts
+        if: always()
+        working-directory: 01-Maj-pokelids
+        run: |
+          echo "=== Fichiers produits ==="
+          ls -la pokelid.kml pokelid.json 2>/dev/null || echo "KML/JSON absents"
+          echo "=== Nombre de WebP ==="
+          ls images_webp/icon-ci-*.webp 2>/dev/null | wc -l || true
+          echo "=== Cache ==="
+          ls -la .cache/ 2>/dev/null || echo "Pas de cache"
 
       - name: Commit et push des modifications
         run: |
@@ -43,6 +59,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Aucune modification détectée, pas de commit."
           else
-            git commit -m "Maj automatique Poké Lids ($(date +'%Y-%m-%d %H:%M'))"
+            git commit -m "Maj automatique Poké Lids ($(date -u +'%Y-%m-%d %H:%M UTC'))"
             git push
           fi
