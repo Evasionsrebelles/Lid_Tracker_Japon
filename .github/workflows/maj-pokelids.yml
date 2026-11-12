@@ -33,20 +33,24 @@ jobs:
 
       - name: Lancer 01-crawl_url.py
         run: |
-          cd 01-Maj-pokelids
-          python 01-crawl_url.py --workers 8
+          # Affiche où on est et ce qu'il y a dans le dossier
+          pwd
+          ls -la
+          
+          # Lance le script avec le chemin complet
+          # Le script va s'exécuter en se basant sur son propre dossier (BASE_DIR)
+          python 01-Maj-pokelids/01-crawl_url.py --workers 8
 
       # Diagnostic : liste les artefacts produits (utile en cas d'échec)
       - name: Résumé des artefacts
         if: always()
         run: |
-          cd 01-Maj-pokelids
           echo "=== Fichiers produits ==="
-          ls -la pokelid.kml pokelid.json 2>/dev/null || echo "KML/JSON absents"
+          ls -la 01-Maj-pokelids/pokelid.kml 01-Maj-pokelids/pokelid.json 2>/dev/null || echo "KML/JSON absents"
           echo "=== Nombre de WebP ==="
-          ls images_webp/icon-ci-*.webp 2>/dev/null | wc -l || true
+          ls 01-Maj-pokelids/images_webp/icon-ci-*.webp 2>/dev/null | wc -l || true
           echo "=== Cache ==="
-          ls -la .cache/ 2>/dev/null || echo "Pas de cache"
+          ls -la 01-Maj-pokelids/.cache/ 2>/dev/null || echo "Pas de cache"
 
       - name: Commit et push des modifications
         run: |
