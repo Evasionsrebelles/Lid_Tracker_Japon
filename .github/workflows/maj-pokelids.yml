@@ -25,23 +25,14 @@ jobs:
           cache: 'pip'
 
       - name: Installer les dépendances
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pillow tqdm
+        run: python -m pip install --upgrade pip requests beautifulsoup4 pillow tqdm
 
       - name: Lancer 01-crawl_url.py
-        run: |
-          cd 01-Maj-pokelids && python 01-crawl_url.py --workers 8
+        run: python /home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids/01-crawl_url.py --workers 8
 
       - name: Résumé des artefacts
         if: always()
-        run: |
-          echo "=== Fichiers produits ==="
-          ls -la 01-Maj-pokelids/pokelid.kml 01-Maj-pokelids/pokelid.json 2>/dev/null || echo "KML/JSON absents"
-          echo "=== Nombre de WebP ==="
-          ls 01-Maj-pokelids/images_webp/icon-ci-*.webp 2>/dev/null | wc -l || true
-          echo "=== Cache ==="
-          ls -la 01-Maj-pokelids/.cache/ 2>/dev/null || echo "Pas de cache"
+        run: ls -la /home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids/pokelid.kml /home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids/pokelid.json
 
       - name: Commit et push des modifications
         run: |
@@ -49,8 +40,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --staged --quiet; then
-            echo "Aucune modification détectée, pas de commit."
+            echo "Aucune modification."
           else
-            git commit -m "Maj automatique Poké Lids ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git commit -m "Maj automatique Poké Lids"
             git push
           fi
