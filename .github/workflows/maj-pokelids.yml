@@ -2,23 +2,21 @@ name: Mise à jour Poké Lids (hebdomadaire)
 
 on:
   schedule:
-    # Tous les lundis à 10:00 heure de Paris.
-    # 09:00 UTC = 10:00 Paris en hiver (11:00 en été).
     - cron: '0 9 * * 1'
-  workflow_dispatch:   # lancement manuel depuis l'onglet Actions
+  workflow_dispatch:
 
 jobs:
   maj:
     runs-on: ubuntu-latest
-    timeout-minutes: 300   # 5h, marge sous la limite GitHub de 6h
+    timeout-minutes: 300
     permissions:
-      contents: write      # nécessaire pour commit + push via GITHUB_TOKEN
+      contents: write
 
     steps:
       - name: Checkout du dépôt
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # historique complet pour éviter les problèmes de push
+          fetch-depth: 0
 
       - name: Installer Python
         uses: actions/setup-python@v5
@@ -33,15 +31,8 @@ jobs:
 
       - name: Lancer 01-crawl_url.py
         run: |
-          # Affiche où on est et ce qu'il y a dans le dossier
-          pwd
-          ls -la
-          
-          # Lance le script avec le chemin complet
-          # Le script va s'exécuter en se basant sur son propre dossier (BASE_DIR)
-          python 01-Maj-pokelids/01-crawl_url.py --workers 8
+          cd 01-Maj-pokelids && python 01-crawl_url.py --workers 8
 
-      # Diagnostic : liste les artefacts produits (utile en cas d'échec)
       - name: Résumé des artefacts
         if: always()
         run: |
@@ -57,7 +48,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          # Vérifie s'il y a des changements avant de committer (évite un commit vide)
           if git diff --staged --quiet; then
             echo "Aucune modification détectée, pas de commit."
           else
