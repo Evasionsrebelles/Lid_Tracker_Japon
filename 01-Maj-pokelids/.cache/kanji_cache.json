@@ -1,0 +1,1626 @@
+{
+  "Aizubange": {
+    "kanji": "会津坂下町",
+    "source": "manual"
+  },
+  "Iitate": {
+    "kanji": "飯舘村",
+    "source": "manual"
+  },
+  "Iwanashiro": {
+    "kanji": "岩成村",
+    "source": "manual"
+  },
+  "Kasenuma Park": {
+    "kanji": "加瀬沼公園",
+    "source": "manual"
+  },
+  "Kembuchi": {
+    "kanji": "剣淵町",
+    "source": "manual"
+  },
+  "Kitashiobara": {
+    "kanji": "北塩原村",
+    "source": "manual"
+  },
+  "Kunohe": {
+    "kanji": "九戸村",
+    "source": "manual"
+  },
+  "Minami Echizen": {
+    "kanji": "南越前町",
+    "source": "manual"
+  },
+  "Morotsuka": {
+    "kanji": "諸塚村",
+    "source": "manual"
+  },
+  "Nahari": {
+    "kanji": "奈半利町",
+    "source": "manual"
+  },
+  "PokéPark KANTO": {
+    "kanji": "ポケパーク関東",
+    "source": "manual"
+  },
+  "Ibusuki": {
+    "kanji": "指宿",
+    "source": "exact"
+  },
+  "Hirono": {
+    "kanji": "広野",
+    "source": "exact"
+  },
+  "Kuji": {
+    "kanji": "久慈",
+    "source": "exact"
+  },
+  "Noda": {
+    "kanji": "野田",
+    "source": "exact"
+  },
+  "Fudai": {
+    "kanji": "普代",
+    "source": "exact"
+  },
+  "Iwaizumi": {
+    "kanji": "岩泉町",
+    "source": "exact"
+  },
+  "Tanohata": {
+    "kanji": "田之畑",
+    "source": "exact"
+  },
+  "Miyako": {
+    "kanji": "宮古",
+    "source": "exact"
+  },
+  "Yamada": {
+    "kanji": "山田",
+    "source": "exact"
+  },
+  "Otsuchi": {
+    "kanji": "大津町",
+    "source": "fuzzy"
+  },
+  "Kamaishi": {
+    "kanji": "釜石",
+    "source": "exact"
+  },
+  "Ofunato": {
+    "kanji": "大船渡",
+    "source": "exact"
+  },
+  "Rikuzentakata": {
+    "kanji": "陸前高田",
+    "source": "exact"
+  },
+  "Sumita": {
+    "kanji": "吹田",
+    "source": "fuzzy"
+  },
+  "Yokohama": {
+    "kanji": "横浜",
+    "source": "exact"
+  },
+  "Takamatsu": {
+    "kanji": "高松",
+    "source": "exact"
+  },
+  "Marugame": {
+    "kanji": "丸亀",
+    "source": "exact"
+  },
+  "Sakaide": {
+    "kanji": "中井出",
+    "source": "fuzzy"
+  },
+  "Zentsuji": {
+    "kanji": "円通寺",
+    "source": "fuzzy"
+  },
+  "KAN-ONJI": {
+    "kanji": "観音寺",
+    "source": "fuzzy"
+  },
+  "Sanuki": {
+    "kanji": "佐貫",
+    "source": "exact"
+  },
+  "Higashikagawa": {
+    "kanji": "東かがわ",
+    "source": "exact"
+  },
+  "Mitoyo": {
+    "kanji": "三豊",
+    "source": "exact"
+  },
+  "Tonosho": {
+    "kanji": "土庄",
+    "source": "exact"
+  },
+  "Shodoshima": {
+    "kanji": "小豆島",
+    "source": "fuzzy"
+  },
+  "Miki": {
+    "kanji": "三木",
+    "source": "exact"
+  },
+  "Naoshima": {
+    "kanji": "直島",
+    "source": "fuzzy"
+  },
+  "Ayagawa": {
+    "kanji": "綾川",
+    "source": "fuzzy"
+  },
+  "Kotohira": {
+    "kanji": "琴平",
+    "source": "exact"
+  },
+  "Tadotsu": {
+    "kanji": "多度津町",
+    "source": "exact"
+  },
+  "Manno": {
+    "kanji": "万野",
+    "source": "exact"
+  },
+  "Kesennuma": {
+    "kanji": "気仙沼",
+    "source": "exact"
+  },
+  "Minamisanriku": {
+    "kanji": "南三陸町",
+    "source": "exact"
+  },
+  "Onagawa": {
+    "kanji": "女川",
+    "source": "fuzzy"
+  },
+  "Ishinomaki": {
+    "kanji": "石卷市",
+    "source": "exact"
+  },
+  "Higashimatsushima": {
+    "kanji": "東松島",
+    "source": "exact"
+  },
+  "Matsushima": {
+    "kanji": "松島",
+    "source": "exact"
+  },
+  "Shiogama": {
+    "kanji": "塩竃",
+    "source": "exact"
+  },
+  "Rifu": {
+    "kanji": "利府",
+    "source": "exact"
+  },
+  "Shichigahama": {
+    "kanji": "七里ガ浜",
+    "source": "fuzzy"
+  },
+  "Tagajo": {
+    "kanji": "多賀城市",
+    "source": "wikipedia"
+  },
+  "Sendai": {
+    "kanji": "川内",
+    "source": "exact"
+  },
+  "Natori": {
+    "kanji": "名取",
+    "source": "exact"
+  },
+  "Iwanuma": {
+    "kanji": "岩沼",
+    "source": "exact"
+  },
+  "Watari": {
+    "kanji": "渡",
+    "source": "exact"
+  },
+  "Yamamoto": {
+    "kanji": "山本",
+    "source": "exact"
+  },
+  "Ishikari": {
+    "kanji": "石狩",
+    "source": "exact"
+  },
+  "Eniwa": {
+    "kanji": "恵庭",
+    "source": "exact"
+  },
+  "Toyako": {
+    "kanji": "洞爺湖町",
+    "source": "wikipedia"
+  },
+  "Mori": {
+    "kanji": "森",
+    "source": "exact"
+  },
+  "Kaminokuni": {
+    "kanji": "上ノ国",
+    "source": "exact"
+  },
+  "Shibetsu": {
+    "kanji": "标津",
+    "source": "exact"
+  },
+  "Pippu": {
+    "kanji": "比布町",
+    "source": "exact"
+  },
+  "Teshio": {
+    "kanji": "天塩",
+    "source": "exact"
+  },
+  "Wakkanai": {
+    "kanji": "稚內市",
+    "source": "exact"
+  },
+  "Toyotomi": {
+    "kanji": "豊富",
+    "source": "exact"
+  },
+  "Mombetsu": {
+    "kanji": "紋別",
+    "source": "exact"
+  },
+  "Engaru": {
+    "kanji": "向遠軽",
+    "source": "exact"
+  },
+  "Ohzora": {
+    "kanji": "大空町",
+    "source": "fuzzy"
+  },
+  "Shintoku": {
+    "kanji": "新得町",
+    "source": "exact"
+  },
+  "Ashoro": {
+    "kanji": "足寄町",
+    "source": "exact"
+  },
+  "Tottori": {
+    "kanji": "鳥取",
+    "source": "exact"
+  },
+  "Yonago": {
+    "kanji": "米子",
+    "source": "exact"
+  },
+  "Kurayoshi": {
+    "kanji": "倉吉",
+    "source": "exact"
+  },
+  "Sakaiminato": {
+    "kanji": "境港",
+    "source": "exact"
+  },
+  "Iwami": {
+    "kanji": "石見",
+    "source": "exact"
+  },
+  "Wakasa": {
+    "kanji": "若桜",
+    "source": "exact"
+  },
+  "Misasa": {
+    "kanji": "三朝",
+    "source": "exact"
+  },
+  "Yurihama": {
+    "kanji": "久里浜駅",
+    "source": "fuzzy"
+  },
+  "Kotoura": {
+    "kanji": "琴浦",
+    "source": "exact"
+  },
+  "Daisen": {
+    "kanji": "大山",
+    "source": "exact"
+  },
+  "Nanbu": {
+    "kanji": "南部",
+    "source": "exact"
+  },
+  "Houki": {
+    "kanji": "法木",
+    "source": "fuzzy"
+  },
+  "Nichinan": {
+    "kanji": "日南",
+    "source": "exact"
+  },
+  "Hino": {
+    "kanji": "日野",
+    "source": "exact"
+  },
+  "Shinchi": {
+    "kanji": "新地",
+    "source": "exact"
+  },
+  "Soma": {
+    "kanji": "相馬",
+    "source": "exact"
+  },
+  "Minamisoma": {
+    "kanji": "南相馬",
+    "source": "fuzzy"
+  },
+  "Namie": {
+    "kanji": "浪江町",
+    "source": "wikipedia"
+  },
+  "Naraha": {
+    "kanji": "楢原",
+    "source": "fuzzy"
+  },
+  "Iwaki": {
+    "kanji": "いわき市",
+    "source": "exact"
+  },
+  "Kawamata": {
+    "kanji": "川俣",
+    "source": "exact"
+  },
+  "Tamura": {
+    "kanji": "田村",
+    "source": "exact"
+  },
+  "Kawauchi": {
+    "kanji": "川内町",
+    "source": "exact"
+  },
+  "Utazu": {
+    "kanji": "宇多津町",
+    "source": "exact"
+  },
+  "Machida": {
+    "kanji": "町田",
+    "source": "exact"
+  },
+  "Otsu": {
+    "kanji": "大津",
+    "source": "exact"
+  },
+  "Chizu": {
+    "kanji": "智頭町",
+    "source": "exact"
+  },
+  "Yazu": {
+    "kanji": "谷頭",
+    "source": "exact"
+  },
+  "Hokuei": {
+    "kanji": "北栄",
+    "source": "exact"
+  },
+  "Hiezu": {
+    "kanji": "日吉津村",
+    "source": "exact"
+  },
+  "Kofu": {
+    "kanji": "甲府",
+    "source": "exact"
+  },
+  "Miyazaki": {
+    "kanji": "宫崎县",
+    "source": "exact"
+  },
+  "Miyakonojo": {
+    "kanji": "都城",
+    "source": "exact"
+  },
+  "Nobeoka": {
+    "kanji": "延岡",
+    "source": "exact"
+  },
+  "Kobayashi": {
+    "kanji": "小林",
+    "source": "exact"
+  },
+  "Hyuga": {
+    "kanji": "日向",
+    "source": "exact"
+  },
+  "Kushima": {
+    "kanji": "九島",
+    "source": "exact"
+  },
+  "Saito": {
+    "kanji": "財当",
+    "source": "exact"
+  },
+  "ebino": {
+    "kanji": "蛇野",
+    "source": "fuzzy"
+  },
+  "Shiroishi": {
+    "kanji": "白石",
+    "source": "exact"
+  },
+  "Kakuda": {
+    "kanji": "角田",
+    "source": "exact"
+  },
+  "Tome": {
+    "kanji": "登米",
+    "source": "exact"
+  },
+  "Kurihara": {
+    "kanji": "栗原",
+    "source": "exact"
+  },
+  "Osaki": {
+    "kanji": "大崎",
+    "source": "exact"
+  },
+  "Tomiya": {
+    "kanji": "富谷市",
+    "source": "exact"
+  },
+  "Zao": {
+    "kanji": "蔵王",
+    "source": "exact"
+  },
+  "Shichikashuku": {
+    "kanji": "七ヶ宿湖",
+    "source": "fuzzy"
+  },
+  "Ogawara": {
+    "kanji": "小川原",
+    "source": "exact"
+  },
+  "Murata": {
+    "kanji": "村田",
+    "source": "exact"
+  },
+  "Shibata": {
+    "kanji": "新発田",
+    "source": "exact"
+  },
+  "Kawasaki": {
+    "kanji": "川崎",
+    "source": "exact"
+  },
+  "Marumori": {
+    "kanji": "丸森",
+    "source": "exact"
+  },
+  "Taiwa": {
+    "kanji": "多和",
+    "source": "fuzzy"
+  },
+  "Osato": {
+    "kanji": "大里",
+    "source": "exact"
+  },
+  "Ohira": {
+    "kanji": "大平",
+    "source": "exact"
+  },
+  "shikam": {
+    "kanji": "四竃",
+    "source": "fuzzy"
+  },
+  "Kami": {
+    "kanji": "上",
+    "source": "exact"
+  },
+  "Wakuya": {
+    "kanji": "涌谷",
+    "source": "exact"
+  },
+  "Misato": {
+    "kanji": "美里",
+    "source": "exact"
+  },
+  "Tomakomai": {
+    "kanji": "苫小牧",
+    "source": "exact"
+  },
+  "Mikasa": {
+    "kanji": "三笠",
+    "source": "exact"
+  },
+  "Kamifurano": {
+    "kanji": "上深野",
+    "source": "fuzzy"
+  },
+  "Ojiya": {
+    "kanji": "小千谷",
+    "source": "exact"
+  },
+  "Ikaruga": {
+    "kanji": "鵤",
+    "source": "exact"
+  },
+  "Ogasawara": {
+    "kanji": "小笠原",
+    "source": "exact"
+  },
+  "Hachinohe": {
+    "kanji": "八戸",
+    "source": "exact"
+  },
+  "Hashikami": {
+    "kanji": "橋上",
+    "source": "exact"
+  },
+  "Kyoto": {
+    "kanji": "京都駅",
+    "source": "exact"
+  },
+  "Mimata": {
+    "kanji": "三又",
+    "source": "exact"
+  },
+  "Takanabe": {
+    "kanji": "高鍋町",
+    "source": "exact"
+  },
+  "Shintomi": {
+    "kanji": "新富",
+    "source": "exact"
+  },
+  "Kijo": {
+    "kanji": "桂城",
+    "source": "fuzzy"
+  },
+  "Kawaminami": {
+    "kanji": "川南",
+    "source": "exact"
+  },
+  "Tsuno": {
+    "kanji": "都農町",
+    "source": "exact"
+  },
+  "Kadogawa": {
+    "kanji": "門川町",
+    "source": "exact"
+  },
+  "Ueno": {
+    "kanji": "上野駅",
+    "source": "exact"
+  },
+  "Naha": {
+    "kanji": "那覇",
+    "source": "exact"
+  },
+  "Ginowan": {
+    "kanji": "宜野湾",
+    "source": "exact"
+  },
+  "Okinawa": {
+    "kanji": "冲绳县",
+    "source": "exact"
+  },
+  "Uruma": {
+    "kanji": "うるま市",
+    "source": "exact"
+  },
+  "Takaharu": {
+    "kanji": "高原",
+    "source": "fuzzy"
+  },
+  "Kunitomi": {
+    "kanji": "国富",
+    "source": "exact"
+  },
+  "Aya": {
+    "kanji": "加悦",
+    "source": "fuzzy"
+  },
+  "Nishimera": {
+    "kanji": "西邑",
+    "source": "fuzzy"
+  },
+  "Shiiba": {
+    "kanji": "椎原",
+    "source": "exact"
+  },
+  "Takachiho": {
+    "kanji": "高志保",
+    "source": "fuzzy"
+  },
+  "Hinokage": {
+    "kanji": "日之影町",
+    "source": "exact"
+  },
+  "Gokase": {
+    "kanji": "五ヶ瀬",
+    "source": "exact"
+  },
+  "Hakodate": {
+    "kanji": "函館",
+    "source": "exact"
+  },
+  "Otaru": {
+    "kanji": "小樽",
+    "source": "exact"
+  },
+  "Nemuro": {
+    "kanji": "根室",
+    "source": "exact"
+  },
+  "Noboribetsu": {
+    "kanji": "登別",
+    "source": "exact"
+  },
+  "Honbetsu": {
+    "kanji": "本別",
+    "source": "exact"
+  },
+  "Rikubetsu": {
+    "kanji": "陸別",
+    "source": "exact"
+  },
+  "Nakashibetsu": {
+    "kanji": "中標津",
+    "source": "exact"
+  },
+  "Kurashiki": {
+    "kanji": "倉敷",
+    "source": "exact"
+  },
+  "Kitakyushu": {
+    "kanji": "北九州",
+    "source": "exact"
+  },
+  "Awaji": {
+    "kanji": "淡路",
+    "source": "exact"
+  },
+  "Higashiosaka": {
+    "kanji": "東大阪",
+    "source": "exact"
+  },
+  "Tokorozawa": {
+    "kanji": "所沢",
+    "source": "exact"
+  },
+  "Asahikawa": {
+    "kanji": "旭川",
+    "source": "exact"
+  },
+  "Kushiro": {
+    "kanji": "久代",
+    "source": "exact"
+  },
+  "Obihiro": {
+    "kanji": "帯広",
+    "source": "exact"
+  },
+  "Abashiri": {
+    "kanji": "網走",
+    "source": "exact"
+  },
+  "Akaigawa": {
+    "kanji": "赤井川",
+    "source": "exact"
+  },
+  "Higashikawa": {
+    "kanji": "東川",
+    "source": "exact"
+  },
+  "Erimo": {
+    "kanji": "えりも町",
+    "source": "exact"
+  },
+  "Shari": {
+    "kanji": "針",
+    "source": "fuzzy"
+  },
+  "Katori": {
+    "kanji": "香取",
+    "source": "exact"
+  },
+  "Utsunomiya": {
+    "kanji": "宇都宮",
+    "source": "exact"
+  },
+  "Urasoe": {
+    "kanji": "浦添",
+    "source": "exact"
+  },
+  "Nago": {
+    "kanji": "那古",
+    "source": "exact"
+  },
+  "Itoman": {
+    "kanji": "糸満",
+    "source": "exact"
+  },
+  "Motobu": {
+    "kanji": "本部",
+    "source": "exact"
+  },
+  "Tomigusuku": {
+    "kanji": "豊見城",
+    "source": "exact"
+  },
+  "Nanjo": {
+    "kanji": "南城",
+    "source": "exact"
+  },
+  "Ishigaki": {
+    "kanji": "石垣",
+    "source": "exact"
+  },
+  "Miyakojima": {
+    "kanji": "都島",
+    "source": "exact"
+  },
+  "Koka": {
+    "kanji": "甲賀",
+    "source": "exact"
+  },
+  "Tsu": {
+    "kanji": "津",
+    "source": "exact"
+  },
+  "Yokkaichi": {
+    "kanji": "四日",
+    "source": "exact"
+  },
+  "Ise": {
+    "kanji": "伊勢",
+    "source": "exact"
+  },
+  "Toba": {
+    "kanji": "鳥羽",
+    "source": "exact"
+  },
+  "Kumano": {
+    "kanji": "熊野",
+    "source": "exact"
+  },
+  "Shima": {
+    "kanji": "四万",
+    "source": "exact"
+  },
+  "Iga": {
+    "kanji": "伊賀",
+    "source": "exact"
+  },
+  "Fukushima": {
+    "kanji": "福島",
+    "source": "exact"
+  },
+  "Aizuwakamatsu": {
+    "kanji": "会津若松",
+    "source": "fuzzy"
+  },
+  "Koriyama": {
+    "kanji": "郡山",
+    "source": "exact"
+  },
+  "Minamiaizu": {
+    "kanji": "南安威",
+    "source": "fuzzy"
+  },
+  "Yanaizu": {
+    "kanji": "柳津",
+    "source": "exact"
+  },
+  "Futaba": {
+    "kanji": "双葉",
+    "source": "exact"
+  },
+  "Showa": {
+    "kanji": "昭和",
+    "source": "exact"
+  },
+  "Saga": {
+    "kanji": "佐賀",
+    "source": "exact"
+  },
+  "Hanamaki": {
+    "kanji": "花卷市",
+    "source": "exact"
+  },
+  "Tono": {
+    "kanji": "遠野",
+    "source": "exact"
+  },
+  "Ichinoseki": {
+    "kanji": "一关市",
+    "source": "exact"
+  },
+  "Ninohe": {
+    "kanji": "二戸",
+    "source": "exact"
+  },
+  "Hachimantai": {
+    "kanji": "八幡平",
+    "source": "exact"
+  },
+  "Takizawa": {
+    "kanji": "滝沢",
+    "source": "exact"
+  },
+  "Iwate": {
+    "kanji": "岩手",
+    "source": "exact"
+  },
+  "Shiwa": {
+    "kanji": "志和",
+    "source": "exact"
+  },
+  "Nishiwaga": {
+    "kanji": "西和田",
+    "source": "fuzzy"
+  },
+  "Hiraizumi": {
+    "kanji": "平泉",
+    "source": "exact"
+  },
+  "Karumai": {
+    "kanji": "軽米",
+    "source": "exact"
+  },
+  "Ichinohe": {
+    "kanji": "一戸",
+    "source": "exact"
+  },
+  "Toyohashi": {
+    "kanji": "豊橋",
+    "source": "exact"
+  },
+  "Toyama": {
+    "kanji": "富山",
+    "source": "exact"
+  },
+  "Tobetsu": {
+    "kanji": "当別町",
+    "source": "exact"
+  },
+  "Date": {
+    "kanji": "伊達",
+    "source": "exact"
+  },
+  "Nihonmatsu": {
+    "kanji": "二本松",
+    "source": "exact"
+  },
+  "Aizumisato": {
+    "kanji": "泉郷",
+    "source": "fuzzy"
+  },
+  "Nishigo": {
+    "kanji": "西郷",
+    "source": "exact"
+  },
+  "Yabuki": {
+    "kanji": "矢吹",
+    "source": "exact"
+  },
+  "Furudono": {
+    "kanji": "古殿",
+    "source": "exact"
+  },
+  "Miharu": {
+    "kanji": "宮原",
+    "source": "fuzzy"
+  },
+  "Shimonoseki": {
+    "kanji": "下关市",
+    "source": "exact"
+  },
+  "Kameyama": {
+    "kanji": "亀山",
+    "source": "exact"
+  },
+  "Asahi": {
+    "kanji": "旭",
+    "source": "exact"
+  },
+  "Meiwa": {
+    "kanji": "明和",
+    "source": "exact"
+  },
+  "Odai": {
+    "kanji": "佐原",
+    "source": "exact"
+  },
+  "Watarai": {
+    "kanji": "渡",
+    "source": "fuzzy"
+  },
+  "Kiho": {
+    "kanji": "海保",
+    "source": "fuzzy"
+  },
+  "Kanazawa": {
+    "kanji": "金沢",
+    "source": "exact"
+  },
+  "Muroran": {
+    "kanji": "室蘭",
+    "source": "exact"
+  },
+  "Kitami": {
+    "kanji": "北見",
+    "source": "exact"
+  },
+  "Utashinai": {
+    "kanji": "歌志內市",
+    "source": "exact"
+  },
+  "Kikonai": {
+    "kanji": "木古内",
+    "source": "exact"
+  },
+  "Sarufutsu": {
+    "kanji": "猿払",
+    "source": "exact"
+  },
+  "Nabari": {
+    "kanji": "名張",
+    "source": "exact"
+  },
+  "Bihoro": {
+    "kanji": "美幌",
+    "source": "exact"
+  },
+  "Kisosaki": {
+    "kanji": "城崎町",
+    "source": "fuzzy"
+  },
+  "Toin": {
+    "kanji": "唐院",
+    "source": "exact"
+  },
+  "Akita": {
+    "kanji": "秋田",
+    "source": "exact"
+  },
+  "Yokote": {
+    "kanji": "横手",
+    "source": "exact"
+  },
+  "Oga": {
+    "kanji": "男鹿",
+    "source": "exact"
+  },
+  "Kazuno": {
+    "kanji": "鹿角",
+    "source": "exact"
+  },
+  "Dazaifu": {
+    "kanji": "太宰府",
+    "source": "exact"
+  },
+  "Senboku": {
+    "kanji": "仙北",
+    "source": "exact"
+  },
+  "Kitakami": {
+    "kanji": "北上",
+    "source": "exact"
+  },
+  "Biei": {
+    "kanji": "美瑛町",
+    "source": "exact"
+  },
+  "Matsuyama": {
+    "kanji": "松山",
+    "source": "exact"
+  },
+  "Naruto": {
+    "kanji": "成東町",
+    "source": "exact"
+  },
+  "Suzuka": {
+    "kanji": "鈴鹿",
+    "source": "exact"
+  },
+  "Kawagoe": {
+    "kanji": "川越",
+    "source": "exact"
+  },
+  "Matsusaka": {
+    "kanji": "松栄",
+    "source": "exact"
+  },
+  "Taki": {
+    "kanji": "滝",
+    "source": "exact"
+  },
+  "Minamiise": {
+    "kanji": "南伊勢町",
+    "source": "exact"
+  },
+  "Tamashiro": {
+    "kanji": "玉城",
+    "source": "exact"
+  },
+  "Katsuyama": {
+    "kanji": "勝山",
+    "source": "exact"
+  },
+  "Eiheiji-cho": {
+    "kanji": "永平寺町",
+    "source": "fuzzy"
+  },
+  "Koya": {
+    "kanji": "昆陽",
+    "source": "exact"
+  },
+  "Wakayama": {
+    "kanji": "和歌山",
+    "source": "exact"
+  },
+  "Shirahama": {
+    "kanji": "白浜町",
+    "source": "exact"
+  },
+  "Echizen-shi": {
+    "kanji": "越前",
+    "source": "fuzzy"
+  },
+  "Awara": {
+    "kanji": "あわら市",
+    "source": "exact"
+  },
+  "Kushimoto": {
+    "kanji": "串本町",
+    "source": "exact"
+  },
+  "Mihama": {
+    "kanji": "美浜",
+    "source": "exact"
+  },
+  "Takahama": {
+    "kanji": "高浜町",
+    "source": "exact"
+  },
+  "Hamamatsu": {
+    "kanji": "浜松",
+    "source": "exact"
+  },
+  "Nachikatsuura": {
+    "kanji": "中津浦",
+    "source": "fuzzy"
+  },
+  "Shizuoka": {
+    "kanji": "静冈县",
+    "source": "exact"
+  },
+  "Numazu": {
+    "kanji": "沼津",
+    "source": "exact"
+  },
+  "Fuji": {
+    "kanji": "富士",
+    "source": "exact"
+  },
+  "Izu": {
+    "kanji": "伊豆",
+    "source": "exact"
+  },
+  "Uji": {
+    "kanji": "宇治",
+    "source": "exact"
+  },
+  "Nagasaki": {
+    "kanji": "長崎",
+    "source": "exact"
+  },
+  "Sasebo": {
+    "kanji": "佐世保",
+    "source": "exact"
+  },
+  "Omura": {
+    "kanji": "大村",
+    "source": "exact"
+  },
+  "Unzen": {
+    "kanji": "雲仙",
+    "source": "exact"
+  },
+  "Shinkamigoto": {
+    "kanji": "新上五島町",
+    "source": "fuzzy"
+  },
+  "Kakamigahara": {
+    "kanji": "各务原市",
+    "source": "exact"
+  },
+  "Gero": {
+    "kanji": "下呂",
+    "source": "exact"
+  },
+  "Seki": {
+    "kanji": "関",
+    "source": "exact"
+  },
+  "Sekigahara": {
+    "kanji": "関ケ原",
+    "source": "exact"
+  },
+  "Tsuruga": {
+    "kanji": "敦賀",
+    "source": "exact"
+  },
+  "Takayama": {
+    "kanji": "飛騨の高山",
+    "source": "exact"
+  },
+  "Ono": {
+    "kanji": "小野",
+    "source": "exact"
+  },
+  "Obama": {
+    "kanji": "小浜",
+    "source": "exact"
+  },
+  "Ikeda": {
+    "kanji": "池田",
+    "source": "exact"
+  },
+  "Kagamiishi": {
+    "kanji": "神石",
+    "source": "fuzzy"
+  },
+  "Kunimi": {
+    "kanji": "国見",
+    "source": "exact"
+  },
+  "Tanagura": {
+    "kanji": "棚倉",
+    "source": "exact"
+  },
+  "Yugawa": {
+    "kanji": "湯川",
+    "source": "exact"
+  },
+  "Hirata": {
+    "kanji": "平田",
+    "source": "exact"
+  },
+  "Shirakawa": {
+    "kanji": "白川",
+    "source": "exact"
+  },
+  "Hamada": {
+    "kanji": "浜田",
+    "source": "exact"
+  },
+  "Izumo": {
+    "kanji": "出雲",
+    "source": "exact"
+  },
+  "Oda": {
+    "kanji": "小田",
+    "source": "exact"
+  },
+  "Yasugi": {
+    "kanji": "安来",
+    "source": "exact"
+  },
+  "Kuwana": {
+    "kanji": "桑名",
+    "source": "exact"
+  },
+  "Okinoshima": {
+    "kanji": "沖ノ島",
+    "source": "exact"
+  },
+  "Owase": {
+    "kanji": "尾鷲",
+    "source": "exact"
+  },
+  "Inabe": {
+    "kanji": "いなべ市",
+    "source": "exact"
+  },
+  "Komono": {
+    "kanji": "菰野",
+    "source": "exact"
+  },
+  "Taiki": {
+    "kanji": "大樹",
+    "source": "exact"
+  },
+  "Kihoku": {
+    "kanji": "紀北町",
+    "source": "exact"
+  },
+  "Otoyo": {
+    "kanji": "大豊",
+    "source": "exact"
+  },
+  "Hidaka": {
+    "kanji": "日高",
+    "source": "exact"
+  },
+  "Otsuki": {
+    "kanji": "大月",
+    "source": "exact"
+  },
+  "Yamagata": {
+    "kanji": "山形",
+    "source": "exact"
+  },
+  "Sagae": {
+    "kanji": "寒河江",
+    "source": "exact"
+  },
+  "Okura": {
+    "kanji": "大蔵",
+    "source": "exact"
+  },
+  "Mihara": {
+    "kanji": "三原",
+    "source": "exact"
+  },
+  "Morioka": {
+    "kanji": "盛岡",
+    "source": "exact"
+  },
+  "Oguni": {
+    "kanji": "小国",
+    "source": "exact"
+  },
+  "Tsuruoka": {
+    "kanji": "鶴岡",
+    "source": "exact"
+  },
+  "Nagoya": {
+    "kanji": "名古屋",
+    "source": "exact"
+  },
+  "Seto": {
+    "kanji": "瀬戸",
+    "source": "exact"
+  },
+  "Tokoname": {
+    "kanji": "常滑",
+    "source": "exact"
+  },
+  "Kariya": {
+    "kanji": "刈谷",
+    "source": "exact"
+  },
+  "Nishio": {
+    "kanji": "西尾",
+    "source": "exact"
+  },
+  "Kamisu": {
+    "kanji": "神栖",
+    "source": "exact"
+  },
+  "Chikusei": {
+    "kanji": "筑西",
+    "source": "exact"
+  },
+  "Tsukuba": {
+    "kanji": "つくば市",
+    "source": "exact"
+  },
+  "Hitachiota": {
+    "kanji": "常陸太田",
+    "source": "fuzzy"
+  },
+  "Mito": {
+    "kanji": "水戸",
+    "source": "exact"
+  },
+  "Sakai": {
+    "kanji": "境",
+    "source": "exact"
+  },
+  "Fukui": {
+    "kanji": "福井",
+    "source": "exact"
+  },
+  "Ohi": {
+    "kanji": "大肥",
+    "source": "exact"
+  },
+  "Sabae": {
+    "kanji": "鯖江",
+    "source": "exact"
+  },
+  "Echizen-cho": {
+    "kanji": "越前町",
+    "source": "exact"
+  },
+  "Chatan": {
+    "kanji": "北谷",
+    "source": "exact"
+  },
+  "Tokashiki": {
+    "kanji": "渡嘉敷",
+    "source": "exact"
+  },
+  "Zamami": {
+    "kanji": "座間味",
+    "source": "exact"
+  },
+  "Kumejima": {
+    "kanji": "久米島",
+    "source": "exact"
+  },
+  "Kuzumaki": {
+    "kanji": "葛巻町",
+    "source": "exact"
+  },
+  "Shimabara": {
+    "kanji": "島原",
+    "source": "exact"
+  },
+  "Iki": {
+    "kanji": "壱岐",
+    "source": "exact"
+  },
+  "Togitsu": {
+    "kanji": "時津町",
+    "source": "exact"
+  },
+  "Saza": {
+    "kanji": "伊左座",
+    "source": "fuzzy"
+  },
+  "Higashisonogi": {
+    "kanji": "東大野",
+    "source": "fuzzy"
+  },
+  "Muroto": {
+    "kanji": "室戸",
+    "source": "exact"
+  },
+  "Aki": {
+    "kanji": "安芸",
+    "source": "exact"
+  },
+  "Susaki": {
+    "kanji": "須崎",
+    "source": "exact"
+  },
+  "Sukumo": {
+    "kanji": "宿毛",
+    "source": "exact"
+  },
+  "Konan": {
+    "kanji": "港南",
+    "source": "exact"
+  },
+  "Toyo": {
+    "kanji": "東陽",
+    "source": "exact"
+  },
+  "Sapporo": {
+    "kanji": "札幌",
+    "source": "exact"
+  },
+  "Sunagawa": {
+    "kanji": "砂川",
+    "source": "exact"
+  },
+  "Yuni": {
+    "kanji": "由仁町",
+    "source": "exact"
+  },
+  "Assabu": {
+    "kanji": "厚沢部町",
+    "source": "wikipedia"
+  },
+  "Horonobe": {
+    "kanji": "幌延",
+    "source": "exact"
+  },
+  "Tsubetsu": {
+    "kanji": "津別町",
+    "source": "wikipedia"
+  },
+  "Yubetsu": {
+    "kanji": "止別",
+    "source": "fuzzy"
+  },
+  "Betsukai": {
+    "kanji": "別海",
+    "source": "exact"
+  },
+  "Kochi": {
+    "kanji": "幸知",
+    "source": "exact"
+  },
+  "Tosashimizu": {
+    "kanji": "土佐清水",
+    "source": "exact"
+  },
+  "Yasuda": {
+    "kanji": "保田",
+    "source": "exact"
+  },
+  "Motoyama": {
+    "kanji": "本山",
+    "source": "exact"
+  },
+  "Niyodogawa": {
+    "kanji": "淀川",
+    "source": "fuzzy"
+  },
+  "Sukagawa": {
+    "kanji": "須賀川",
+    "source": "exact"
+  },
+  "Shimogo": {
+    "kanji": "下郷",
+    "source": "exact"
+  },
+  "Tenei": {
+    "kanji": "天永",
+    "source": "wikipedia"
+  },
+  "Nishiaizu": {
+    "kanji": "西焼津",
+    "source": "fuzzy"
+  },
+  "Izumizaki": {
+    "kanji": "泉崎",
+    "source": "exact"
+  },
+  "Samegawa": {
+    "kanji": "佐女川",
+    "source": "exact"
+  },
+  "Asakawa": {
+    "kanji": "浅川",
+    "source": "exact"
+  },
+  "Okuma": {
+    "kanji": "大隈",
+    "source": "exact"
+  },
+  "Oshu": {
+    "kanji": "奥州",
+    "source": "exact"
+  },
+  "Shizukuishi": {
+    "kanji": "雫石",
+    "source": "exact"
+  },
+  "Yahaba": {
+    "kanji": "矢巾町",
+    "source": "exact"
+  },
+  "Kanegasaki": {
+    "kanji": "金ケ崎町",
+    "source": "exact"
+  },
+  "Nanao": {
+    "kanji": "七尾",
+    "source": "exact"
+  },
+  "Wajima": {
+    "kanji": "輪島",
+    "source": "exact"
+  },
+  "Suzu": {
+    "kanji": "珠洲",
+    "source": "exact"
+  },
+  "Anamizu": {
+    "kanji": "穴水町",
+    "source": "exact"
+  },
+  "Shika": {
+    "kanji": "四箇",
+    "source": "exact"
+  },
+  "Noto": {
+    "kanji": "大戸",
+    "source": "fuzzy"
+  },
+  "Tsushima": {
+    "kanji": "津島",
+    "source": "exact"
+  },
+  "Goto": {
+    "kanji": "五斗",
+    "source": "exact"
+  },
+  "Isahaya": {
+    "kanji": "諌早",
+    "source": "exact"
+  },
+  "Hasami": {
+    "kanji": "浅海",
+    "source": "fuzzy"
+  },
+  "Saikai": {
+    "kanji": "西海",
+    "source": "exact"
+  },
+  "Okaya": {
+    "kanji": "岡谷",
+    "source": "exact"
+  },
+  "Ina": {
+    "kanji": "伊那",
+    "source": "exact"
+  },
+  "Minamimaki": {
+    "kanji": "南目垣",
+    "source": "fuzzy"
+  },
+  "Omachi": {
+    "kanji": "大町",
+    "source": "exact"
+  },
+  "Kiso": {
+    "kanji": "小磯",
+    "source": "fuzzy"
+  },
+  "Yamanouchi": {
+    "kanji": "山ノ内",
+    "source": "exact"
+  },
+  "Kunigami": {
+    "kanji": "国上",
+    "source": "exact"
+  },
+  "Higashi": {
+    "kanji": "東",
+    "source": "exact"
+  },
+  "Ogimi": {
+    "kanji": "大宜味",
+    "source": "exact"
+  },
+  "Kitadaito": {
+    "kanji": "北大東港",
+    "source": "fuzzy"
+  },
+  "Tosa": {
+    "kanji": "土佐",
+    "source": "exact"
+  },
+  "Shimanto": {
+    "kanji": "四万十",
+    "source": "exact"
+  },
+  "Ino": {
+    "kanji": "いの町",
+    "source": "exact"
+  },
+  "Geisei": {
+    "kanji": "芸西村",
+    "source": "wikipedia"
+  },
+  "Sakawa": {
+    "kanji": "酒匂",
+    "source": "exact"
+  },
+  "Numata": {
+    "kanji": "沼田",
+    "source": "exact"
+  },
+  "Tatebayashi": {
+    "kanji": "館林",
+    "source": "exact"
+  },
+  "Shibukawa": {
+    "kanji": "渋川",
+    "source": "exact"
+  },
+  "Shimonita": {
+    "kanji": "下仁田",
+    "source": "exact"
+  },
+  "Naganohara": {
+    "kanji": "長野原",
+    "source": "exact"
+  }
+}

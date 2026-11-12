@@ -1,0 +1,3030 @@
+{
+  "done_prefectures": [
+    "aichi",
+    "akita",
+    "aomori",
+    "chiba",
+    "ehime",
+    "fukui",
+    "fukuoka",
+    "fukushima",
+    "gifu",
+    "gunma",
+    "hiroshima",
+    "hokkaido",
+    "hyogo",
+    "ibaraki",
+    "ishikawa",
+    "iwate",
+    "kagawa",
+    "kagoshima",
+    "kanagawa",
+    "kochi",
+    "kumamoto",
+    "kyoto",
+    "mie",
+    "miyagi",
+    "miyazaki",
+    "nagano",
+    "nagasaki",
+    "nara",
+    "niigata",
+    "oita",
+    "okayama",
+    "okinawa",
+    "osaka",
+    "saga",
+    "saitama",
+    "shiga",
+    "shimane",
+    "shizuoka",
+    "tochigi",
+    "tokushima",
+    "tokyo",
+    "tottori",
+    "toyama",
+    "wakayama",
+    "yamagata",
+    "yamaguchi",
+    "yamanashi"
+  ],
+  "manholes": {
+    "408": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/408/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Nishio",
+      "region": "Chubu"
+    },
+    "407": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/407/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Kariya",
+      "region": "Chubu"
+    },
+    "406": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/406/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Tokoname",
+      "region": "Chubu"
+    },
+    "405": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/405/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Seto",
+      "region": "Chubu"
+    },
+    "404": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/404/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Nagoya",
+      "region": "Chubu"
+    },
+    "274": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/274/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Toyohashi",
+      "region": "Chubu"
+    },
+    "273": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/273/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Toyohashi",
+      "region": "Chubu"
+    },
+    "272": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/272/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Toyohashi",
+      "region": "Chubu"
+    },
+    "271": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/271/",
+      "prefecture_slug": "aichi",
+      "municipality_label": "Toyohashi",
+      "region": "Chubu"
+    },
+    "322": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/322/",
+      "prefecture_slug": "akita",
+      "municipality_label": "Senboku",
+      "region": "Tohoku"
+    },
+    "321": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/321/",
+      "prefecture_slug": "akita",
+      "municipality_label": "Kazuno",
+      "region": "Tohoku"
+    },
+    "320": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/320/",
+      "prefecture_slug": "akita",
+      "municipality_label": "Oga",
+      "region": "Tohoku"
+    },
+    "319": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/319/",
+      "prefecture_slug": "akita",
+      "municipality_label": "Yokote",
+      "region": "Tohoku"
+    },
+    "318": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/318/",
+      "prefecture_slug": "akita",
+      "municipality_label": "Akita",
+      "region": "Tohoku"
+    },
+    "158": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/158/",
+      "prefecture_slug": "aomori",
+      "municipality_label": "Hashikami",
+      "region": "Tohoku"
+    },
+    "157": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/157/",
+      "prefecture_slug": "aomori",
+      "municipality_label": "Hachinohe",
+      "region": "Tohoku"
+    },
+    "225": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/225/",
+      "prefecture_slug": "chiba",
+      "municipality_label": "Katori",
+      "region": "Kanto"
+    },
+    "224": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/224/",
+      "prefecture_slug": "chiba",
+      "municipality_label": "Katori",
+      "region": "Kanto"
+    },
+    "223": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/223/",
+      "prefecture_slug": "chiba",
+      "municipality_label": "Katori",
+      "region": "Kanto"
+    },
+    "222": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/222/",
+      "prefecture_slug": "chiba",
+      "municipality_label": "Katori",
+      "region": "Kanto"
+    },
+    "326": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/326/",
+      "prefecture_slug": "ehime",
+      "municipality_label": "Matsuyama",
+      "region": "Shikoku"
+    },
+    "325": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/325/",
+      "prefecture_slug": "ehime",
+      "municipality_label": "Matsuyama",
+      "region": "Shikoku"
+    },
+    "421": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/421/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Echizen-cho",
+      "region": "Chubu"
+    },
+    "420": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/420/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Wakasa",
+      "region": "Chubu"
+    },
+    "419": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/419/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Sabae",
+      "region": "Chubu"
+    },
+    "418": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/418/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Ohi",
+      "region": "Chubu"
+    },
+    "417": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/417/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Fukui",
+      "region": "Chubu"
+    },
+    "416": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/416/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Sakai",
+      "region": "Chubu"
+    },
+    "368": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/368/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Ikeda",
+      "region": "Chubu"
+    },
+    "367": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/367/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Obama",
+      "region": "Chubu"
+    },
+    "366": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/366/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Minami Echizen",
+      "region": "Chubu"
+    },
+    "365": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/365/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Tsuruga",
+      "region": "Chubu"
+    },
+    "364": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/364/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Ono",
+      "region": "Chubu"
+    },
+    "341": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/341/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Mihama",
+      "region": "Chubu"
+    },
+    "340": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/340/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Takahama",
+      "region": "Chubu"
+    },
+    "339": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/339/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Eiheiji-cho",
+      "region": "Chubu"
+    },
+    "338": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/338/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Echizen-shi",
+      "region": "Chubu"
+    },
+    "337": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/337/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Awara",
+      "region": "Chubu"
+    },
+    "336": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/336/",
+      "prefecture_slug": "fukui",
+      "municipality_label": "Katsuyama",
+      "region": "Chubu"
+    },
+    "317": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/317/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Dazaifu",
+      "region": "Kyushu"
+    },
+    "316": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/316/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Dazaifu",
+      "region": "Kyushu"
+    },
+    "315": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/315/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Dazaifu",
+      "region": "Kyushu"
+    },
+    "202": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/202/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Kitakyushu",
+      "region": "Kyushu"
+    },
+    "201": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/201/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Kitakyushu",
+      "region": "Kyushu"
+    },
+    "200": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/200/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Kitakyushu",
+      "region": "Kyushu"
+    },
+    "199": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/199/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Kitakyushu",
+      "region": "Kyushu"
+    },
+    "198": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/198/",
+      "prefecture_slug": "fukuoka",
+      "municipality_label": "Kitakyushu",
+      "region": "Kyushu"
+    },
+    "462": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/462/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Okuma",
+      "region": "Tohoku"
+    },
+    "461": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/461/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Ono",
+      "region": "Tohoku"
+    },
+    "460": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/460/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Asakawa",
+      "region": "Tohoku"
+    },
+    "459": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/459/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Samegawa",
+      "region": "Tohoku"
+    },
+    "458": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/458/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Izumizaki",
+      "region": "Tohoku"
+    },
+    "457": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/457/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Nishiaizu",
+      "region": "Tohoku"
+    },
+    "456": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/456/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Shimogo",
+      "region": "Tohoku"
+    },
+    "455": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/455/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Tenei",
+      "region": "Tohoku"
+    },
+    "454": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/454/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Sukagawa",
+      "region": "Tohoku"
+    },
+    "376": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/376/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Shirakawa",
+      "region": "Tohoku"
+    },
+    "375": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/375/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Hirata",
+      "region": "Tohoku"
+    },
+    "374": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/374/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Hirono",
+      "region": "Tohoku"
+    },
+    "373": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/373/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Kunimi",
+      "region": "Tohoku"
+    },
+    "372": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/372/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Yugawa",
+      "region": "Tohoku"
+    },
+    "371": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/371/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Tanagura",
+      "region": "Tohoku"
+    },
+    "370": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/370/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Kagamiishi",
+      "region": "Tohoku"
+    },
+    "369": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/369/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Aizubange",
+      "region": "Tohoku"
+    },
+    "287": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/287/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Miharu",
+      "region": "Tohoku"
+    },
+    "286": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/286/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Furudono",
+      "region": "Tohoku"
+    },
+    "285": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/285/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Yabuki",
+      "region": "Tohoku"
+    },
+    "284": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/284/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Nishigo",
+      "region": "Tohoku"
+    },
+    "283": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/283/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Aizumisato",
+      "region": "Tohoku"
+    },
+    "282": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/282/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Iwanashiro",
+      "region": "Tohoku"
+    },
+    "281": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/281/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Kitashiobara",
+      "region": "Tohoku"
+    },
+    "280": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/280/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Date",
+      "region": "Tohoku"
+    },
+    "279": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/279/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Nihonmatsu",
+      "region": "Tohoku"
+    },
+    "254": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/254/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Iitate",
+      "region": "Tohoku"
+    },
+    "253": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/253/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Futaba",
+      "region": "Tohoku"
+    },
+    "252": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/252/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Showa",
+      "region": "Tohoku"
+    },
+    "251": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/251/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Yanaizu",
+      "region": "Tohoku"
+    },
+    "250": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/250/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Minamiaizu",
+      "region": "Tohoku"
+    },
+    "249": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/249/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Koriyama",
+      "region": "Tohoku"
+    },
+    "248": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/248/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Aizuwakamatsu",
+      "region": "Tohoku"
+    },
+    "247": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/247/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Fukushima",
+      "region": "Tohoku"
+    },
+    "96": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/96/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Kawauchi",
+      "region": "Tohoku"
+    },
+    "95": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/95/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Tamura",
+      "region": "Tohoku"
+    },
+    "94": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/94/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Kawamata",
+      "region": "Tohoku"
+    },
+    "93": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/93/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Iwaki",
+      "region": "Tohoku"
+    },
+    "92": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/92/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Naraha",
+      "region": "Tohoku"
+    },
+    "91": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/91/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Namie",
+      "region": "Tohoku"
+    },
+    "90": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/90/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Minamisoma",
+      "region": "Tohoku"
+    },
+    "89": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/89/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Soma",
+      "region": "Tohoku"
+    },
+    "88": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/88/",
+      "prefecture_slug": "fukushima",
+      "municipality_label": "Shinchi",
+      "region": "Tohoku"
+    },
+    "363": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/363/",
+      "prefecture_slug": "gifu",
+      "municipality_label": "Takayama",
+      "region": "Chubu"
+    },
+    "362": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/362/",
+      "prefecture_slug": "gifu",
+      "municipality_label": "Sekigahara",
+      "region": "Chubu"
+    },
+    "361": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/361/",
+      "prefecture_slug": "gifu",
+      "municipality_label": "Seki",
+      "region": "Chubu"
+    },
+    "360": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/360/",
+      "prefecture_slug": "gifu",
+      "municipality_label": "Gero",
+      "region": "Chubu"
+    },
+    "359": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/359/",
+      "prefecture_slug": "gifu",
+      "municipality_label": "Kakamigahara",
+      "region": "Chubu"
+    },
+    "500": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/500/",
+      "prefecture_slug": "gunma",
+      "municipality_label": "Naganohara",
+      "region": "Kanto"
+    },
+    "499": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/499/",
+      "prefecture_slug": "gunma",
+      "municipality_label": "Shimonita",
+      "region": "Kanto"
+    },
+    "498": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/498/",
+      "prefecture_slug": "gunma",
+      "municipality_label": "Shibukawa",
+      "region": "Kanto"
+    },
+    "497": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/497/",
+      "prefecture_slug": "gunma",
+      "municipality_label": "Tatebayashi",
+      "region": "Kanto"
+    },
+    "496": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/496/",
+      "prefecture_slug": "gunma",
+      "municipality_label": "Numata",
+      "region": "Kanto"
+    },
+    "445": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/445/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Betsukai",
+      "region": "Hokkaido"
+    },
+    "444": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/444/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Yubetsu",
+      "region": "Hokkaido"
+    },
+    "443": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/443/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Tsubetsu",
+      "region": "Hokkaido"
+    },
+    "442": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/442/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Horonobe",
+      "region": "Hokkaido"
+    },
+    "441": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/441/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Assabu",
+      "region": "Hokkaido"
+    },
+    "440": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/440/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Yuni",
+      "region": "Hokkaido"
+    },
+    "439": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/439/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Sunagawa",
+      "region": "Hokkaido"
+    },
+    "438": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/438/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Sapporo",
+      "region": "Hokkaido"
+    },
+    "324": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/324/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Biei",
+      "region": "Hokkaido"
+    },
+    "307": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/307/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Bihoro",
+      "region": "Hokkaido"
+    },
+    "306": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/306/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Sarufutsu",
+      "region": "Hokkaido"
+    },
+    "305": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/305/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Kikonai",
+      "region": "Hokkaido"
+    },
+    "304": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/304/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Utashinai",
+      "region": "Hokkaido"
+    },
+    "303": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/303/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Kitami",
+      "region": "Hokkaido"
+    },
+    "302": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/302/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Muroran",
+      "region": "Hokkaido"
+    },
+    "278": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/278/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Tobetsu",
+      "region": "Hokkaido"
+    },
+    "221": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/221/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Erimo",
+      "region": "Hokkaido"
+    },
+    "220": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/220/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Shari",
+      "region": "Hokkaido"
+    },
+    "219": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/219/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Higashikawa",
+      "region": "Hokkaido"
+    },
+    "218": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/218/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Akaigawa",
+      "region": "Hokkaido"
+    },
+    "217": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/217/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Abashiri",
+      "region": "Hokkaido"
+    },
+    "216": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/216/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Obihiro",
+      "region": "Hokkaido"
+    },
+    "215": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/215/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Kushiro",
+      "region": "Hokkaido"
+    },
+    "214": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/214/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Asahikawa",
+      "region": "Hokkaido"
+    },
+    "193": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/193/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Nakashibetsu",
+      "region": "Hokkaido"
+    },
+    "192": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/192/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Rikubetsu",
+      "region": "Hokkaido"
+    },
+    "191": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/191/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Honbetsu",
+      "region": "Hokkaido"
+    },
+    "190": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/190/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Noboribetsu",
+      "region": "Hokkaido"
+    },
+    "189": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/189/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Nemuro",
+      "region": "Hokkaido"
+    },
+    "188": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/188/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Otaru",
+      "region": "Hokkaido"
+    },
+    "187": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/187/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Hakodate",
+      "region": "Hokkaido"
+    },
+    "143": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/143/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Kembuchi",
+      "region": "Hokkaido"
+    },
+    "142": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/142/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Kamifurano",
+      "region": "Hokkaido"
+    },
+    "141": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/141/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Mikasa",
+      "region": "Hokkaido"
+    },
+    "140": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/140/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Tomakomai",
+      "region": "Hokkaido"
+    },
+    "73": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/73/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Ashoro",
+      "region": "Hokkaido"
+    },
+    "72": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/72/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Shintoku",
+      "region": "Hokkaido"
+    },
+    "71": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/71/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Ohzora",
+      "region": "Hokkaido"
+    },
+    "70": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/70/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Engaru",
+      "region": "Hokkaido"
+    },
+    "69": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/69/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Mombetsu",
+      "region": "Hokkaido"
+    },
+    "68": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/68/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Toyotomi",
+      "region": "Hokkaido"
+    },
+    "67": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/67/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Wakkanai",
+      "region": "Hokkaido"
+    },
+    "66": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/66/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Teshio",
+      "region": "Hokkaido"
+    },
+    "65": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/65/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Pippu",
+      "region": "Hokkaido"
+    },
+    "64": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/64/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Shibetsu",
+      "region": "Hokkaido"
+    },
+    "63": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/63/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Kaminokuni",
+      "region": "Hokkaido"
+    },
+    "62": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/62/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Mori",
+      "region": "Hokkaido"
+    },
+    "61": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/61/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Toyako",
+      "region": "Hokkaido"
+    },
+    "60": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/60/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Eniwa",
+      "region": "Hokkaido"
+    },
+    "59": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/59/",
+      "prefecture_slug": "hokkaido",
+      "municipality_label": "Ishikari",
+      "region": "Hokkaido"
+    },
+    "205": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/205/",
+      "prefecture_slug": "hyogo",
+      "municipality_label": "Awaji",
+      "region": "Kansaï"
+    },
+    "204": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/204/",
+      "prefecture_slug": "hyogo",
+      "municipality_label": "Awaji",
+      "region": "Kansaï"
+    },
+    "203": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/203/",
+      "prefecture_slug": "hyogo",
+      "municipality_label": "Awaji",
+      "region": "Kansaï"
+    },
+    "413": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/413/",
+      "prefecture_slug": "ibaraki",
+      "municipality_label": "Mito",
+      "region": "Kanto"
+    },
+    "412": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/412/",
+      "prefecture_slug": "ibaraki",
+      "municipality_label": "Hitachiota",
+      "region": "Kanto"
+    },
+    "411": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/411/",
+      "prefecture_slug": "ibaraki",
+      "municipality_label": "Tsukuba",
+      "region": "Kanto"
+    },
+    "410": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/410/",
+      "prefecture_slug": "ibaraki",
+      "municipality_label": "Chikusei",
+      "region": "Kanto"
+    },
+    "409": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/409/",
+      "prefecture_slug": "ibaraki",
+      "municipality_label": "Kamisu",
+      "region": "Kanto"
+    },
+    "475": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/475/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Wajima",
+      "region": "Chubu"
+    },
+    "473": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/473/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Noto",
+      "region": "Chubu"
+    },
+    "472": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/472/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Anamizu",
+      "region": "Chubu"
+    },
+    "471": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/471/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Shika",
+      "region": "Chubu"
+    },
+    "470": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/470/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Suzu",
+      "region": "Chubu"
+    },
+    "469": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/469/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Wajima",
+      "region": "Chubu"
+    },
+    "468": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/468/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Nanao",
+      "region": "Chubu"
+    },
+    "301": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/301/",
+      "prefecture_slug": "ishikawa",
+      "municipality_label": "Kanazawa",
+      "region": "Chubu"
+    },
+    "467": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/467/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Morioka",
+      "region": "Tohoku"
+    },
+    "466": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/466/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kanegasaki",
+      "region": "Tohoku"
+    },
+    "465": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/465/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Yahaba",
+      "region": "Tohoku"
+    },
+    "464": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/464/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Shizukuishi",
+      "region": "Tohoku"
+    },
+    "463": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/463/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Oshu",
+      "region": "Tohoku"
+    },
+    "426": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/426/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kuzumaki",
+      "region": "Tohoku"
+    },
+    "398": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/398/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Morioka",
+      "region": "Tohoku"
+    },
+    "397": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/397/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kitakami",
+      "region": "Tohoku"
+    },
+    "323": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/323/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kitakami",
+      "region": "Tohoku"
+    },
+    "299": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/299/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kuji",
+      "region": "Tohoku"
+    },
+    "270": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/270/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Ichinohe",
+      "region": "Tohoku"
+    },
+    "269": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/269/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kunohe",
+      "region": "Tohoku"
+    },
+    "268": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/268/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Karumai",
+      "region": "Tohoku"
+    },
+    "267": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/267/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Hiraizumi",
+      "region": "Tohoku"
+    },
+    "266": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/266/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Nishiwaga",
+      "region": "Tohoku"
+    },
+    "265": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/265/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Shiwa",
+      "region": "Tohoku"
+    },
+    "264": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/264/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Iwate",
+      "region": "Tohoku"
+    },
+    "263": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/263/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Takizawa",
+      "region": "Tohoku"
+    },
+    "262": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/262/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Hachimantai",
+      "region": "Tohoku"
+    },
+    "261": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/261/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Ninohe",
+      "region": "Tohoku"
+    },
+    "260": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/260/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Ichinoseki",
+      "region": "Tohoku"
+    },
+    "259": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/259/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Tono",
+      "region": "Tohoku"
+    },
+    "258": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/258/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Hanamaki",
+      "region": "Tohoku"
+    },
+    "22": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/22/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Sumita",
+      "region": "Tohoku"
+    },
+    "21": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/21/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Rikuzentakata",
+      "region": "Tohoku"
+    },
+    "20": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/20/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Ofunato",
+      "region": "Tohoku"
+    },
+    "19": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/19/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kamaishi",
+      "region": "Tohoku"
+    },
+    "18": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/18/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Otsuchi",
+      "region": "Tohoku"
+    },
+    "17": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/17/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Yamada",
+      "region": "Tohoku"
+    },
+    "16": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/16/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Miyako",
+      "region": "Tohoku"
+    },
+    "15": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/15/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Tanohata",
+      "region": "Tohoku"
+    },
+    "14": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/14/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Iwaizumi",
+      "region": "Tohoku"
+    },
+    "13": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/13/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Fudai",
+      "region": "Tohoku"
+    },
+    "12": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/12/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Noda",
+      "region": "Tohoku"
+    },
+    "11": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/11/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Kuji",
+      "region": "Tohoku"
+    },
+    "10": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/10/",
+      "prefecture_slug": "iwate",
+      "municipality_label": "Hirono",
+      "region": "Tohoku"
+    },
+    "298": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/298/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Ayagawa",
+      "region": "Shikoku"
+    },
+    "97": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/97/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Utazu",
+      "region": "Shikoku"
+    },
+    "43": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/43/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Manno",
+      "region": "Shikoku"
+    },
+    "42": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/42/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Tadotsu",
+      "region": "Shikoku"
+    },
+    "41": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/41/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Kotohira",
+      "region": "Shikoku"
+    },
+    "40": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/40/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Ayagawa",
+      "region": "Shikoku"
+    },
+    "39": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/39/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Naoshima",
+      "region": "Shikoku"
+    },
+    "38": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/38/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Miki",
+      "region": "Shikoku"
+    },
+    "37": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/37/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Shodoshima",
+      "region": "Shikoku"
+    },
+    "36": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/36/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Tonosho",
+      "region": "Shikoku"
+    },
+    "35": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/35/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Mitoyo",
+      "region": "Shikoku"
+    },
+    "34": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/34/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Higashikagawa",
+      "region": "Shikoku"
+    },
+    "33": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/33/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Sanuki",
+      "region": "Shikoku"
+    },
+    "32": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/32/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "KAN-ONJI",
+      "region": "Shikoku"
+    },
+    "31": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/31/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Zentsuji",
+      "region": "Shikoku"
+    },
+    "30": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/30/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Sakaide",
+      "region": "Shikoku"
+    },
+    "29": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/29/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Marugame",
+      "region": "Shikoku"
+    },
+    "28": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/28/",
+      "prefecture_slug": "kagawa",
+      "municipality_label": "Takamatsu",
+      "region": "Shikoku"
+    },
+    "9": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/9/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "8": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/8/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "7": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/7/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "6": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/6/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "5": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/5/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "4": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/4/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "3": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/3/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "2": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/2/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "1": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/1/",
+      "prefecture_slug": "kagoshima",
+      "municipality_label": "Ibusuki",
+      "region": "Kyushu"
+    },
+    "314": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/314/",
+      "prefecture_slug": "kanagawa",
+      "municipality_label": "Yokohama",
+      "region": "Kanto"
+    },
+    "313": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/313/",
+      "prefecture_slug": "kanagawa",
+      "municipality_label": "Yokohama",
+      "region": "Kanto"
+    },
+    "312": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/312/",
+      "prefecture_slug": "kanagawa",
+      "municipality_label": "Yokohama",
+      "region": "Kanto"
+    },
+    "311": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/311/",
+      "prefecture_slug": "kanagawa",
+      "municipality_label": "Yokohama",
+      "region": "Kanto"
+    },
+    "23": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/23/",
+      "prefecture_slug": "kanagawa",
+      "municipality_label": "Yokohama",
+      "region": "Kanto"
+    },
+    "495": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/495/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Sakawa",
+      "region": "Shikoku"
+    },
+    "494": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/494/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Ino",
+      "region": "Shikoku"
+    },
+    "493": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/493/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Geisei",
+      "region": "Shikoku"
+    },
+    "492": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/492/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Shimanto",
+      "region": "Shikoku"
+    },
+    "491": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/491/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Tosa",
+      "region": "Shikoku"
+    },
+    "453": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/453/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Niyodogawa",
+      "region": "Shikoku"
+    },
+    "452": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/452/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Motoyama",
+      "region": "Shikoku"
+    },
+    "451": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/451/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Yasuda",
+      "region": "Shikoku"
+    },
+    "450": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/450/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Tosashimizu",
+      "region": "Shikoku"
+    },
+    "449": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/449/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Kochi",
+      "region": "Shikoku"
+    },
+    "437": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/437/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Toyo",
+      "region": "Shikoku"
+    },
+    "436": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/436/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Konan",
+      "region": "Shikoku"
+    },
+    "435": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/435/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Sukumo",
+      "region": "Shikoku"
+    },
+    "434": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/434/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Susaki",
+      "region": "Shikoku"
+    },
+    "433": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/433/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Aki",
+      "region": "Shikoku"
+    },
+    "432": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/432/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Muroto",
+      "region": "Shikoku"
+    },
+    "396": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/396/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Mihara",
+      "region": "Shikoku"
+    },
+    "395": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/395/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Otsuki",
+      "region": "Shikoku"
+    },
+    "394": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/394/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Tsuno",
+      "region": "Shikoku"
+    },
+    "393": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/393/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Hidaka",
+      "region": "Shikoku"
+    },
+    "392": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/392/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Otoyo",
+      "region": "Shikoku"
+    },
+    "391": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/391/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Nahari",
+      "region": "Shikoku"
+    },
+    "390": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/390/",
+      "prefecture_slug": "kochi",
+      "municipality_label": "Kami",
+      "region": "Shikoku"
+    },
+    "382": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/382/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Uji",
+      "region": "Kansaï"
+    },
+    "353": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/353/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Uji",
+      "region": "Kansaï"
+    },
+    "352": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/352/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Uji",
+      "region": "Kansaï"
+    },
+    "163": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/163/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Kyoto",
+      "region": "Kansaï"
+    },
+    "162": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/162/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Kyoto",
+      "region": "Kansaï"
+    },
+    "161": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/161/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Kyoto",
+      "region": "Kansaï"
+    },
+    "160": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/160/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Kyoto",
+      "region": "Kansaï"
+    },
+    "159": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/159/",
+      "prefecture_slug": "kyoto",
+      "municipality_label": "Kyoto",
+      "region": "Kansaï"
+    },
+    "415": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/415/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Suzuka",
+      "region": "Kansaï"
+    },
+    "414": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/414/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Toba",
+      "region": "Kansaï"
+    },
+    "389": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/389/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Mihama",
+      "region": "Kansaï"
+    },
+    "388": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/388/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kihoku",
+      "region": "Kansaï"
+    },
+    "387": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/387/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Taiki",
+      "region": "Kansaï"
+    },
+    "386": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/386/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Komono",
+      "region": "Kansaï"
+    },
+    "385": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/385/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Inabe",
+      "region": "Kansaï"
+    },
+    "384": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/384/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Owase",
+      "region": "Kansaï"
+    },
+    "383": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/383/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kuwana",
+      "region": "Kansaï"
+    },
+    "335": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/335/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Minamiise",
+      "region": "Kansaï"
+    },
+    "334": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/334/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Tamashiro",
+      "region": "Kansaï"
+    },
+    "333": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/333/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Matsusaka",
+      "region": "Kansaï"
+    },
+    "332": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/332/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Taki",
+      "region": "Kansaï"
+    },
+    "331": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/331/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kawagoe",
+      "region": "Kansaï"
+    },
+    "330": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/330/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Suzuka",
+      "region": "Kansaï"
+    },
+    "310": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/310/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Toin",
+      "region": "Kansaï"
+    },
+    "309": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/309/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kisosaki",
+      "region": "Kansaï"
+    },
+    "308": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/308/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Nabari",
+      "region": "Kansaï"
+    },
+    "297": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/297/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kiho",
+      "region": "Kansaï"
+    },
+    "296": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/296/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Watarai",
+      "region": "Kansaï"
+    },
+    "295": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/295/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Odai",
+      "region": "Kansaï"
+    },
+    "294": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/294/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Meiwa",
+      "region": "Kansaï"
+    },
+    "293": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/293/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Asahi",
+      "region": "Kansaï"
+    },
+    "292": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/292/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kameyama",
+      "region": "Kansaï"
+    },
+    "246": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/246/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Iga",
+      "region": "Kansaï"
+    },
+    "245": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/245/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Shima",
+      "region": "Kansaï"
+    },
+    "244": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/244/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Kumano",
+      "region": "Kansaï"
+    },
+    "243": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/243/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Toba",
+      "region": "Kansaï"
+    },
+    "242": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/242/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Ise",
+      "region": "Kansaï"
+    },
+    "241": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/241/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Yokkaichi",
+      "region": "Kansaï"
+    },
+    "240": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/240/",
+      "prefecture_slug": "mie",
+      "municipality_label": "Tsu",
+      "region": "Kansaï"
+    },
+    "474": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/474/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Sendai",
+      "region": "Tohoku"
+    },
+    "447": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/447/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Kasenuma Park",
+      "region": "Tohoku"
+    },
+    "139": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/139/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Misato",
+      "region": "Tohoku"
+    },
+    "138": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/138/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Wakuya",
+      "region": "Tohoku"
+    },
+    "137": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/137/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Kami",
+      "region": "Tohoku"
+    },
+    "136": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/136/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "shikam",
+      "region": "Tohoku"
+    },
+    "135": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/135/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Ohira",
+      "region": "Tohoku"
+    },
+    "134": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/134/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Osato",
+      "region": "Tohoku"
+    },
+    "133": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/133/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Taiwa",
+      "region": "Tohoku"
+    },
+    "132": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/132/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Marumori",
+      "region": "Tohoku"
+    },
+    "131": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/131/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Kawasaki",
+      "region": "Tohoku"
+    },
+    "130": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/130/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Shibata",
+      "region": "Tohoku"
+    },
+    "129": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/129/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Murata",
+      "region": "Tohoku"
+    },
+    "128": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/128/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Ogawara",
+      "region": "Tohoku"
+    },
+    "127": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/127/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Shichikashuku",
+      "region": "Tohoku"
+    },
+    "126": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/126/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Zao",
+      "region": "Tohoku"
+    },
+    "125": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/125/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Tomiya",
+      "region": "Tohoku"
+    },
+    "124": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/124/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Osaki",
+      "region": "Tohoku"
+    },
+    "123": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/123/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Kurihara",
+      "region": "Tohoku"
+    },
+    "122": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/122/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Tome",
+      "region": "Tohoku"
+    },
+    "121": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/121/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Kakuda",
+      "region": "Tohoku"
+    },
+    "120": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/120/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Shiroishi",
+      "region": "Tohoku"
+    },
+    "58": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/58/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Yamamoto",
+      "region": "Tohoku"
+    },
+    "57": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/57/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Watari",
+      "region": "Tohoku"
+    },
+    "56": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/56/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Iwanuma",
+      "region": "Tohoku"
+    },
+    "55": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/55/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Natori",
+      "region": "Tohoku"
+    },
+    "54": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/54/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Sendai",
+      "region": "Tohoku"
+    },
+    "53": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/53/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Tagajo",
+      "region": "Tohoku"
+    },
+    "52": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/52/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Shichigahama",
+      "region": "Tohoku"
+    },
+    "51": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/51/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Rifu",
+      "region": "Tohoku"
+    },
+    "50": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/50/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Shiogama",
+      "region": "Tohoku"
+    },
+    "49": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/49/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Matsushima",
+      "region": "Tohoku"
+    },
+    "48": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/48/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Higashimatsushima",
+      "region": "Tohoku"
+    },
+    "47": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/47/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Ishinomaki",
+      "region": "Tohoku"
+    },
+    "46": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/46/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Onagawa",
+      "region": "Tohoku"
+    },
+    "45": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/45/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Minamisanriku",
+      "region": "Tohoku"
+    },
+    "44": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/44/",
+      "prefecture_slug": "miyagi",
+      "municipality_label": "Kesennuma",
+      "region": "Tohoku"
+    },
+    "186": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/186/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Gokase",
+      "region": "Kyushu"
+    },
+    "185": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/185/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Hinokage",
+      "region": "Kyushu"
+    },
+    "184": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/184/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Takachiho",
+      "region": "Kyushu"
+    },
+    "183": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/183/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Shiiba",
+      "region": "Kyushu"
+    },
+    "182": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/182/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Morotsuka",
+      "region": "Kyushu"
+    },
+    "181": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/181/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Nishimera",
+      "region": "Kyushu"
+    },
+    "180": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/180/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Aya",
+      "region": "Kyushu"
+    },
+    "179": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/179/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Kunitomi",
+      "region": "Kyushu"
+    },
+    "178": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/178/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Takaharu",
+      "region": "Kyushu"
+    },
+    "171": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/171/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Misato",
+      "region": "Kyushu"
+    },
+    "170": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/170/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Kadogawa",
+      "region": "Kyushu"
+    },
+    "169": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/169/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Tsuno",
+      "region": "Kyushu"
+    },
+    "168": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/168/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Kawaminami",
+      "region": "Kyushu"
+    },
+    "167": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/167/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Kijo",
+      "region": "Kyushu"
+    },
+    "166": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/166/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Shintomi",
+      "region": "Kyushu"
+    },
+    "165": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/165/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Takanabe",
+      "region": "Kyushu"
+    },
+    "164": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/164/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Mimata",
+      "region": "Kyushu"
+    },
+    "119": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/119/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "ebino",
+      "region": "Kyushu"
+    },
+    "118": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/118/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Saito",
+      "region": "Kyushu"
+    },
+    "117": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/117/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Kushima",
+      "region": "Kyushu"
+    },
+    "116": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/116/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Hyuga",
+      "region": "Kyushu"
+    },
+    "115": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/115/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Kobayashi",
+      "region": "Kyushu"
+    },
+    "114": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/114/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Nichinan",
+      "region": "Kyushu"
+    },
+    "113": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/113/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Nobeoka",
+      "region": "Kyushu"
+    },
+    "112": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/112/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Miyakonojo",
+      "region": "Kyushu"
+    },
+    "111": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/111/",
+      "prefecture_slug": "miyazaki",
+      "municipality_label": "Miyazaki",
+      "region": "Kyushu"
+    },
+    "486": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/486/",
+      "prefecture_slug": "nagano",
+      "municipality_label": "Yamanouchi",
+      "region": "Chubu"
+    },
+    "485": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/485/",
+      "prefecture_slug": "nagano",
+      "municipality_label": "Kiso",
+      "region": "Chubu"
+    },
+    "484": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/484/",
+      "prefecture_slug": "nagano",
+      "municipality_label": "Minamimaki",
+      "region": "Chubu"
+    },
+    "483": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/483/",
+      "prefecture_slug": "nagano",
+      "municipality_label": "Omachi",
+      "region": "Chubu"
+    },
+    "482": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/482/",
+      "prefecture_slug": "nagano",
+      "municipality_label": "Ina",
+      "region": "Chubu"
+    },
+    "481": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/481/",
+      "prefecture_slug": "nagano",
+      "municipality_label": "Okaya",
+      "region": "Chubu"
+    },
+    "480": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/480/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Hasami",
+      "region": "Kyushu"
+    },
+    "479": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/479/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Saikai",
+      "region": "Kyushu"
+    },
+    "478": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/478/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Goto",
+      "region": "Kyushu"
+    },
+    "477": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/477/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Tsushima",
+      "region": "Kyushu"
+    },
+    "476": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/476/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Isahaya",
+      "region": "Kyushu"
+    },
+    "431": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/431/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Saza",
+      "region": "Kyushu"
+    },
+    "430": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/430/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Higashisonogi",
+      "region": "Kyushu"
+    },
+    "429": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/429/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Togitsu",
+      "region": "Kyushu"
+    },
+    "428": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/428/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Iki",
+      "region": "Kyushu"
+    },
+    "427": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/427/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Shimabara",
+      "region": "Kyushu"
+    },
+    "358": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/358/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Shinkamigoto",
+      "region": "Kyushu"
+    },
+    "357": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/357/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Unzen",
+      "region": "Kyushu"
+    },
+    "356": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/356/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Omura",
+      "region": "Kyushu"
+    },
+    "355": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/355/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Sasebo",
+      "region": "Kyushu"
+    },
+    "354": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/354/",
+      "prefecture_slug": "nagasaki",
+      "municipality_label": "Nagasaki",
+      "region": "Kyushu"
+    },
+    "152": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/152/",
+      "prefecture_slug": "nara",
+      "municipality_label": "Ikaruga",
+      "region": "Kansaï"
+    },
+    "151": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/151/",
+      "prefecture_slug": "nara",
+      "municipality_label": "Ikaruga",
+      "region": "Kansaï"
+    },
+    "150": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/150/",
+      "prefecture_slug": "nara",
+      "municipality_label": "Ikaruga",
+      "region": "Kansaï"
+    },
+    "149": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/149/",
+      "prefecture_slug": "nara",
+      "municipality_label": "Ikaruga",
+      "region": "Kansaï"
+    },
+    "148": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/148/",
+      "prefecture_slug": "nara",
+      "municipality_label": "Ikaruga",
+      "region": "Kansaï"
+    },
+    "147": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/147/",
+      "prefecture_slug": "niigata",
+      "municipality_label": "Ojiya",
+      "region": "Chubu"
+    },
+    "146": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/146/",
+      "prefecture_slug": "niigata",
+      "municipality_label": "Ojiya",
+      "region": "Chubu"
+    },
+    "145": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/145/",
+      "prefecture_slug": "niigata",
+      "municipality_label": "Ojiya",
+      "region": "Chubu"
+    },
+    "144": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/144/",
+      "prefecture_slug": "niigata",
+      "municipality_label": "Ojiya",
+      "region": "Chubu"
+    },
+    "197": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/197/",
+      "prefecture_slug": "okayama",
+      "municipality_label": "Kurashiki",
+      "region": "Chugoku"
+    },
+    "196": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/196/",
+      "prefecture_slug": "okayama",
+      "municipality_label": "Kurashiki",
+      "region": "Chugoku"
+    },
+    "195": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/195/",
+      "prefecture_slug": "okayama",
+      "municipality_label": "Kurashiki",
+      "region": "Chugoku"
+    },
+    "194": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/194/",
+      "prefecture_slug": "okayama",
+      "municipality_label": "Kurashiki",
+      "region": "Chugoku"
+    },
+    "490": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/490/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Kitadaito",
+      "region": "Okinawa"
+    },
+    "489": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/489/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Higashi",
+      "region": "Okinawa"
+    },
+    "488": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/488/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Ogimi",
+      "region": "Okinawa"
+    },
+    "487": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/487/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Kunigami",
+      "region": "Okinawa"
+    },
+    "446": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/446/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Naha",
+      "region": "Okinawa"
+    },
+    "425": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/425/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Kumejima",
+      "region": "Okinawa"
+    },
+    "424": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/424/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Zamami",
+      "region": "Okinawa"
+    },
+    "423": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/423/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Tokashiki",
+      "region": "Okinawa"
+    },
+    "422": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/422/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Chatan",
+      "region": "Okinawa"
+    },
+    "236": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/236/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Miyakojima",
+      "region": "Okinawa"
+    },
+    "235": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/235/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Ishigaki",
+      "region": "Okinawa"
+    },
+    "234": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/234/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Nanjo",
+      "region": "Okinawa"
+    },
+    "233": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/233/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Tomigusuku",
+      "region": "Okinawa"
+    },
+    "232": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/232/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Motobu",
+      "region": "Okinawa"
+    },
+    "231": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/231/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Itoman",
+      "region": "Okinawa"
+    },
+    "230": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/230/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Nago",
+      "region": "Okinawa"
+    },
+    "229": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/229/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Urasoe",
+      "region": "Okinawa"
+    },
+    "177": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/177/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Uruma",
+      "region": "Okinawa"
+    },
+    "176": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/176/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Okinawa",
+      "region": "Okinawa"
+    },
+    "175": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/175/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Ginowan",
+      "region": "Okinawa"
+    },
+    "174": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/174/",
+      "prefecture_slug": "okinawa",
+      "municipality_label": "Naha",
+      "region": "Okinawa"
+    },
+    "210": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/210/",
+      "prefecture_slug": "osaka",
+      "municipality_label": "Higashiosaka",
+      "region": "Kansaï"
+    },
+    "209": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/209/",
+      "prefecture_slug": "osaka",
+      "municipality_label": "Higashiosaka",
+      "region": "Kansaï"
+    },
+    "208": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/208/",
+      "prefecture_slug": "osaka",
+      "municipality_label": "Higashiosaka",
+      "region": "Kansaï"
+    },
+    "207": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/207/",
+      "prefecture_slug": "osaka",
+      "municipality_label": "Higashiosaka",
+      "region": "Kansaï"
+    },
+    "206": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/206/",
+      "prefecture_slug": "osaka",
+      "municipality_label": "Higashiosaka",
+      "region": "Kansaï"
+    },
+    "257": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/257/",
+      "prefecture_slug": "saga",
+      "municipality_label": "Saga",
+      "region": "Kyushu"
+    },
+    "256": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/256/",
+      "prefecture_slug": "saga",
+      "municipality_label": "Saga",
+      "region": "Kyushu"
+    },
+    "255": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/255/",
+      "prefecture_slug": "saga",
+      "municipality_label": "Saga",
+      "region": "Kyushu"
+    },
+    "213": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/213/",
+      "prefecture_slug": "saitama",
+      "municipality_label": "Tokorozawa",
+      "region": "Kanto"
+    },
+    "212": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/212/",
+      "prefecture_slug": "saitama",
+      "municipality_label": "Tokorozawa",
+      "region": "Kanto"
+    },
+    "211": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/211/",
+      "prefecture_slug": "saitama",
+      "municipality_label": "Tokorozawa",
+      "region": "Kanto"
+    },
+    "105": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/105/",
+      "prefecture_slug": "shiga",
+      "municipality_label": "Otsu",
+      "region": "Kansaï"
+    },
+    "104": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/104/",
+      "prefecture_slug": "shiga",
+      "municipality_label": "Otsu",
+      "region": "Kansaï"
+    },
+    "239": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/239/",
+      "prefecture_slug": "shiga",
+      "municipality_label": "Koka",
+      "region": "Kansaï"
+    },
+    "238": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/238/",
+      "prefecture_slug": "shiga",
+      "municipality_label": "Koka",
+      "region": "Kansaï"
+    },
+    "237": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/237/",
+      "prefecture_slug": "shiga",
+      "municipality_label": "Koka",
+      "region": "Kansaï"
+    },
+    "381": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/381/",
+      "prefecture_slug": "shimane",
+      "municipality_label": "Okinoshima",
+      "region": "Chugoku"
+    },
+    "380": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/380/",
+      "prefecture_slug": "shimane",
+      "municipality_label": "Yasugi",
+      "region": "Chugoku"
+    },
+    "379": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/379/",
+      "prefecture_slug": "shimane",
+      "municipality_label": "Oda",
+      "region": "Chugoku"
+    },
+    "378": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/378/",
+      "prefecture_slug": "shimane",
+      "municipality_label": "Izumo",
+      "region": "Chugoku"
+    },
+    "377": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/377/",
+      "prefecture_slug": "shimane",
+      "municipality_label": "Hamada",
+      "region": "Chugoku"
+    },
+    "351": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/351/",
+      "prefecture_slug": "shizuoka",
+      "municipality_label": "Izu",
+      "region": "Chubu"
+    },
+    "350": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/350/",
+      "prefecture_slug": "shizuoka",
+      "municipality_label": "Fuji",
+      "region": "Chubu"
+    },
+    "349": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/349/",
+      "prefecture_slug": "shizuoka",
+      "municipality_label": "Numazu",
+      "region": "Chubu"
+    },
+    "348": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/348/",
+      "prefecture_slug": "shizuoka",
+      "municipality_label": "Hamamatsu",
+      "region": "Chubu"
+    },
+    "347": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/347/",
+      "prefecture_slug": "shizuoka",
+      "municipality_label": "Shizuoka",
+      "region": "Chubu"
+    },
+    "228": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/228/",
+      "prefecture_slug": "tochigi",
+      "municipality_label": "Utsunomiya",
+      "region": "Kanto"
+    },
+    "227": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/227/",
+      "prefecture_slug": "tochigi",
+      "municipality_label": "Utsunomiya",
+      "region": "Kanto"
+    },
+    "226": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/226/",
+      "prefecture_slug": "tochigi",
+      "municipality_label": "Utsunomiya",
+      "region": "Kanto"
+    },
+    "329": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/329/",
+      "prefecture_slug": "tokushima",
+      "municipality_label": "Naruto",
+      "region": "Shikoku"
+    },
+    "328": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/328/",
+      "prefecture_slug": "tokushima",
+      "municipality_label": "Naruto",
+      "region": "Shikoku"
+    },
+    "327": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/327/",
+      "prefecture_slug": "tokushima",
+      "municipality_label": "Naruto",
+      "region": "Shikoku"
+    },
+    "448": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/448/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "PokéPark KANTO",
+      "region": "Kanto"
+    },
+    "173": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/173/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Ueno",
+      "region": "Kanto"
+    },
+    "172": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/172/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Ueno",
+      "region": "Kanto"
+    },
+    "156": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/156/",
+      "prefecture_slug": "ogasawara",
+      "municipality_label": "Ogasawara",
+      "region": "Île d'Ogasawara"
+    },
+    "155": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/155/",
+      "prefecture_slug": "ogasawara",
+      "municipality_label": "Ogasawara",
+      "region": "Île d'Ogasawara"
+    },
+    "154": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/154/",
+      "prefecture_slug": "ogasawara",
+      "municipality_label": "Ogasawara",
+      "region": "Île d'Ogasawara"
+    },
+    "153": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/153/",
+      "prefecture_slug": "ogasawara",
+      "municipality_label": "Ogasawara",
+      "region": "Île d'Ogasawara"
+    },
+    "103": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/103/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Machida",
+      "region": "Kanto"
+    },
+    "102": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/102/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Machida",
+      "region": "Kanto"
+    },
+    "101": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/101/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Machida",
+      "region": "Kanto"
+    },
+    "100": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/100/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Machida",
+      "region": "Kanto"
+    },
+    "99": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/99/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Machida",
+      "region": "Kanto"
+    },
+    "98": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/98/",
+      "prefecture_slug": "tokyo",
+      "municipality_label": "Machida",
+      "region": "Kanto"
+    },
+    "300": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/300/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Tottori",
+      "region": "Chugoku"
+    },
+    "110": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/110/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Kofu",
+      "region": "Chugoku"
+    },
+    "109": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/109/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Hiezu",
+      "region": "Chugoku"
+    },
+    "108": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/108/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Hokuei",
+      "region": "Chugoku"
+    },
+    "107": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/107/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Yazu",
+      "region": "Chugoku"
+    },
+    "106": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/106/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Chizu",
+      "region": "Chugoku"
+    },
+    "87": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/87/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Hino",
+      "region": "Chugoku"
+    },
+    "86": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/86/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Nichinan",
+      "region": "Chugoku"
+    },
+    "85": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/85/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Houki",
+      "region": "Chugoku"
+    },
+    "84": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/84/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Nanbu",
+      "region": "Chugoku"
+    },
+    "83": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/83/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Daisen",
+      "region": "Chugoku"
+    },
+    "82": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/82/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Kotoura",
+      "region": "Chugoku"
+    },
+    "81": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/81/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Yurihama",
+      "region": "Chugoku"
+    },
+    "80": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/80/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Misasa",
+      "region": "Chugoku"
+    },
+    "79": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/79/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Wakasa",
+      "region": "Chugoku"
+    },
+    "78": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/78/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Iwami",
+      "region": "Chugoku"
+    },
+    "77": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/77/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Sakaiminato",
+      "region": "Chugoku"
+    },
+    "76": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/76/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Kurayoshi",
+      "region": "Chugoku"
+    },
+    "75": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/75/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Yonago",
+      "region": "Chugoku"
+    },
+    "74": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/74/",
+      "prefecture_slug": "tottori",
+      "municipality_label": "Tottori",
+      "region": "Chugoku"
+    },
+    "277": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/277/",
+      "prefecture_slug": "toyama",
+      "municipality_label": "Toyama",
+      "region": "Chubu"
+    },
+    "276": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/276/",
+      "prefecture_slug": "toyama",
+      "municipality_label": "Toyama",
+      "region": "Chubu"
+    },
+    "275": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/275/",
+      "prefecture_slug": "toyama",
+      "municipality_label": "Toyama",
+      "region": "Chubu"
+    },
+    "346": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/346/",
+      "prefecture_slug": "wakayama",
+      "municipality_label": "Nachikatsuura",
+      "region": "Kansaï"
+    },
+    "345": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/345/",
+      "prefecture_slug": "wakayama",
+      "municipality_label": "Kushimoto",
+      "region": "Kansaï"
+    },
+    "344": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/344/",
+      "prefecture_slug": "wakayama",
+      "municipality_label": "Shirahama",
+      "region": "Kansaï"
+    },
+    "343": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/343/",
+      "prefecture_slug": "wakayama",
+      "municipality_label": "Koya",
+      "region": "Kansaï"
+    },
+    "342": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/342/",
+      "prefecture_slug": "wakayama",
+      "municipality_label": "Wakayama",
+      "region": "Kansaï"
+    },
+    "403": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/403/",
+      "prefecture_slug": "yamagata",
+      "municipality_label": "Tsuruoka",
+      "region": "Tohoku"
+    },
+    "402": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/402/",
+      "prefecture_slug": "yamagata",
+      "municipality_label": "Oguni",
+      "region": "Tohoku"
+    },
+    "401": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/401/",
+      "prefecture_slug": "yamagata",
+      "municipality_label": "Okura",
+      "region": "Tohoku"
+    },
+    "400": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/400/",
+      "prefecture_slug": "yamagata",
+      "municipality_label": "Sagae",
+      "region": "Tohoku"
+    },
+    "399": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/399/",
+      "prefecture_slug": "yamagata",
+      "municipality_label": "Yamagata",
+      "region": "Tohoku"
+    },
+    "291": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/291/",
+      "prefecture_slug": "yamaguchi",
+      "municipality_label": "Shimonoseki",
+      "region": "Chugoku"
+    },
+    "290": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/290/",
+      "prefecture_slug": "yamaguchi",
+      "municipality_label": "Shimonoseki",
+      "region": "Chugoku"
+    },
+    "289": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/289/",
+      "prefecture_slug": "yamaguchi",
+      "municipality_label": "Shimonoseki",
+      "region": "Chugoku"
+    },
+    "288": {
+      "url": "https://local.pokemon.jp/en/manhole/desc/288/",
+      "prefecture_slug": "yamaguchi",
+      "municipality_label": "Shimonoseki",
+      "region": "Chugoku"
+    }
+  },
+  "failed_prefectures": {}
+}
