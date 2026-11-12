@@ -3,9 +3,7 @@ name: Mise à jour Poké Lids (hebdomadaire)
 on:
   schedule:
     # Tous les lundis à 10:00 heure de Paris (UTC+1 en hiver, UTC+2 en été).
-    # GitHub Actions utilise le temps UTC. En hiver : 09:00 UTC. En été : 08:00 UTC.
-    # On met 09:00 UTC (couvre l'hiver, et tourne à 11:00 en été).
-    # Si tu veux être précis, utilise 08:00 UTC (10:00 en été, 09:00 en hiver).
+    # 09:00 UTC = 10:00 Paris en hiver (11:00 en été).
     - cron: '0 9 * * 1'
   workflow_dispatch:   # permet aussi un lancement manuel depuis l'onglet Actions
 
@@ -32,7 +30,9 @@ jobs:
           pip install requests beautifulsoup4 pillow tqdm
 
       - name: Lancer 01-crawl_url.py
-        run: python 01-crawl_url.py
+        run: |
+          cd 01-Maj-pokelids
+          python 01-crawl_url.py
 
       - name: Commit et push des modifications
         run: |
