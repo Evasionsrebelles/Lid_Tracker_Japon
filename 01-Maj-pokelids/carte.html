@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Poké Lids — Carte des plaques d'égout Pokémon</title>
+
+<!-- Leaflet + MarkerCluster depuis CDN -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+<style>
+  :root {
+    --bg: #1b1f24;
+    --panel: #242a31;
+    --panel-2: #2d343d;
+    --text: #e8eaed;
+    --muted: #9aa4b0;
+    --accent: #ffcb05;      /* jaune Pokémon */
+    --accent-2: #3b5ba7;    /* bleu Pokémon */
+    --border: #3a424c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #app { display: flex; height: 100vh; }
+
+  /* ── Panneau latéral ─────────────────────────────────────────────── */
+  #sidebar {
+    width: 340px; min-width: 340px; display: flex; flex-direction: column;
+    background: var(--panel); border-right: 1px solid var(--border);
+  }
+  #sidebar header {
+    padding: 14px 16px; border-bottom: 1px solid var(--border);
+    background: linear-gradient(135deg, var(--accent-2), #22355f);
+  }
+  #sidebar header h1 { margin: 0; font-size: 15px; letter-spacing: .3px; }
+  #sidebar header .sub { color: var(--muted); font-size: 12px; margin-top: 4px; }
+
+  .controls { padding: 12px; border-bottom: 1px solid var(--border); }
+  .controls input[type="search"], .controls select {
+    width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--panel-2); color: var(--text); font-size: 13px; margin-bottom: 8px;
+  }
+  .controls input[type="search"]:focus, .controls select:focus {
+    outline: none; border-color: var(--accent);
+  }
+  .controls .row { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
+  .controls .row button {
+    flex: 1; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--panel-2); color: var(--text); cursor: pointer; font-size: 12px;
+  }
+  .controls .row button:hover { border-color: var(--accent); }
+
+  /* Sélecteur de fond de carte */
+  .basemap-switch { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 8px; }
+  .basemap-switch button {
+    padding: 6px 4px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--panel-2); color: var(--text); cursor: pointer; font-size: 11px;
+    transition: all .15s;
+  }
+  .basemap-switch button:hover { border-color: var(--accent); }
+  .basemap-switch button.active { background: var(--accent); color: #1b1f24; border-color: var(--accent); font-weight: 600; }
+  .basemap-label { font-size: 11px; color: var(--muted); margin-bottom: 4px; text-transform: uppercase; letter-spacing: .5px; }
+
+  #stats { padding: 8px 12px; font-size: 12px; color: var(--muted); border-bottom: 1px solid var(--border); }
+  #stats strong { color: var(--accent); }
+
+  #results { flex: 1; overflow-y: auto; }
+  #results .item {
+    padding: 8px 12px; border-bottom: 1px solid var(--border); cursor: pointer;
+    display: flex; gap: 10px; align-items: center;
+  }
+  #results .item:hover { background: var(--panel-2); }
+  #results .item img {
+    width: 36px; height: 36px; object-fit: contain; background: #111; border-radius: 4px;
+    flex-shrink: 0;
+  }
+  #results .item .meta { min-width: 0; }
+  #results .item .meta .name { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #results .item .meta .loc { font-size: 11px; color: var(--muted); }
+  #results .empty { padding: 20px 12px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  /* ── Carte ───────────────────────────────────────────────────────── */
+  #map { flex: 1; height: 100%; background: #0d1117; }
+
+  /* ── Popup ───────────────────────────────────────────────────────── */
+  .leaflet-popup-content-wrapper { border-radius: 10px; }
+  .leaflet-popup-content { margin: 12px 14px; font-family: inherit; }
+  .pk-popup { width: 260px; }
+  .pk-popup .pk-img-wrap {
+    width: 100%; height: 160px; background: #f4f6f9; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .pk-popup .pk-img-wrap img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .pk-popup h3 { margin: 0 0 4px; font-size: 15px; color: #1b1f24; }
+  .pk-popup .pk-jp { font-size: 13px; color: #555; margin-bottom: 8px; }
+  .pk-popup .pk-row { display: flex; justify-content: space-between; gap: 8px;
+    font-size: 12px; padding: 3px 0; border-top: 1px dashed #e2e5ea; }
+  .pk-popup .pk-row .k { color: #6b7280; }
+  .pk-popup .pk-row .v { color: #111827; text-align: right; }
+  .pk-popup .pk-links { margin-top: 10px; display: flex; gap: 8px; }
+  .pk-popup .pk-links a {
+    flex: 1; text-align: center; padding: 6px 8px; border-radius: 6px;
+    background: #f0f3f7; color: #1f3a8a; text-decoration: none; font-size: 12px; font-weight: 600;
+  }
+  .pk-popup .pk-links a:hover { background: #e2e8f2; }
+
+  /* Marqueur custom (icône de plaque) */
+  .pk-marker { border-radius: 50%; border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.5); background: #fff; object-fit: contain; }
+
+  /* ── Bandeau d'erreur ────────────────────────────────────────────── */
+  #error {
+    display: none; position: absolute; inset: 16px 16px auto 16px; z-index: 9999;
+    padding: 12px 14px; border-radius: 8px; background: #5a1e1e; color: #ffdede;
+    border: 1px solid #a33; font-size: 13px; box-shadow: 0 4px 20px rgba(0,0,0,.4);
+  }
+  #error code { background: rgba(255,255,255,.1); padding: 1px 4px; border-radius: 3px; }
+
+  @media (max-width: 720px) {
+    #app { flex-direction: column; }
+    #sidebar { width: 100%; min-width: 0; height: 45vh; border-right: none;
+      border-bottom: 1px solid var(--border); }
+    #map { height: 55vh; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <header>
+      <h1>🗾 Poké Lids — Carte</h1>
+      <div class="sub" id="docTitle">Chargement…</div>
+    </header>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Rechercher (Pokémon, ville, préfecture…)" autocomplete="off" />
+      <select id="regionFilter">
+        <option value="">Toutes les régions</option>
+      </select>
+
+      <div class="basemap-label">Fond de carte</div>
+      <div class="basemap-switch" id="basemapSwitch">
+        <button type="button" data-key="roadmap" class="active">Plan</button>
+        <button type="button" data-key="terrain">Relief</button>
+        <button type="button" data-key="satellite">Satellite</button>
+        <button type="button" data-key="hybrid">Hybride</button>
+      </div>
+
+      <div class="row">
+        <button id="btnFit" type="button">Recentrer sur le Japon</button>
+        <button id="btnClear" type="button">Réinitialiser</button>
+      </div>
+    </div>
+
+    <div id="stats">—</div>
+    <div id="results"></div>
+  </aside>
+
+  <div id="map"></div>
+</div>
+
+<div id="error"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // ── Config ───────────────────────────────────────────────────────────
+  // URL du JSON hébergé sur GitHub (raw)
+  const DATA_URL = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/01-Maj-pokelids/pokelid.json";
+  
+  // Si l'image_url échoue, on tente ce chemin local (utile si tu télécharges les images à côté du HTML)
+  const IMAGES_BASE = "images/";         
+  
+  const JAPAN_CENTER = [36.2048, 138.2529];
+  const JAPAN_ZOOM = 5;
+
+  // ── État ─────────────────────────────────────────────────────────────
+  const state = {
+    data: null,             // objet pokelid.json
+    markersById: new Map(), // id -> L.Marker
+    region: "",
+    query: "",
+  };
+
+  // ── DOM ──────────────────────────────────────────────────────────────
+  const $ = (sel) => document.querySelector(sel);
+  const elTitle = $("#docTitle");
+  const elSearch = $("#search");
+  const elRegion = $("#regionFilter");
+  const elStats = $("#stats");
+  const elResults = $("#results");
+  const elError = $("#error");
+  const elBasemapSwitch = $("#basemapSwitch");
+
+  function showError(msg, hint) {
+    elError.innerHTML = msg + (hint ? "<br><br>" + hint : "");
+    elError.style.display = "block";
+  }
+
+  // ============================================================
+  // 1) Carte + fond de carte commutable
+  // ============================================================
+  const map = L.map("map", {
+    center: JAPAN_CENTER,
+    zoom: JAPAN_ZOOM,
+    zoomControl: true,
+    preferCanvas: true,
+    minZoom: 3,
+    worldCopyJump: true,
+  });
+
+  const BASEMAP_DEFS = {
+    roadmap:   { url: "https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", maxZoom: 20 },
+    terrain:   { url: "https://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}", maxZoom: 20 },
+    satellite: { url: "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}", maxZoom: 20 },
+    hybrid:    { url: "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}", maxZoom: 20 },
+  };
+
+  const BASEMAP_ATTRIBUTION = '&copy; <a href="https://www.google.com/maps" target="_blank">Google Maps</a>';
+  let currentBasemapKey = "roadmap";
+  let currentTileLayer = null;
+
+  function setBasemap(key) {
+    const def = BASEMAP_DEFS[key];
+    if (!def) return;
+    if (currentTileLayer) map.removeLayer(currentTileLayer);
+    currentTileLayer = L.tileLayer(def.url, {
+      attribution: BASEMAP_ATTRIBUTION,
+      maxZoom: def.maxZoom,
+      subdomains: ["mt0", "mt1", "mt2", "mt3"],
+    }).addTo(map);
+    currentBasemapKey = key;
+
+    elBasemapSwitch.querySelectorAll("button").forEach((b) => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
+  }
+  setBasemap(currentBasemapKey);
+  setTimeout(() => map.invalidateSize(), 200);
+  window.addEventListener("resize", () => map.invalidateSize());
+
+  elBasemapSwitch.addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-key]");
+    if (!btn) return;
+    setBasemap(btn.dataset.key);
+  });
+
+  // ============================================================
+  // 2) Clustering
+  // ============================================================
+  const clusterGroup = L.markerClusterGroup({
+    chunkedLoading: true,
+    maxClusterRadius: 50,
+    showCoverageOnHover: false,
+  });
+  map.addLayer(clusterGroup);
+
+  // ── Helpers ──────────────────────────────────────────────────────────
+  function escapeHtml(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function norm(s) {
+    return String(s == null ? "" : s)
+      .normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  }
+
+  function imageUrls(pm) {
+    const remote = pm.image_url || "";
+    const local = pm.image_file ? IMAGES_BASE + pm.image_file : "";
+    return { remote, local };
+  }
+
+  function markerIcon(pm) {
+    const { remote, local } = imageUrls(pm);
+    const src = remote || local;
+    const html = src
+      ? `<img class="pk-marker" src="${escapeHtml(src)}" width="32" height="32"
+             onerror="this.onerror=null;this.src='${escapeHtml(local || "")}';if(!this.src)this.style.background='#ffcb05';" />`
+      : `<div class="pk-marker" style="width:32px;height:32px;background:var(--accent);"></div>`;
+    return L.divIcon({
+      html,
+      className: "",
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -16],
+    });
+  }
+
+  // ── Popup ────────────────────────────────────────────────────────────
+  function popupHtml(pm) {
+    const { remote, local } = imageUrls(pm);
+    const src = remote || local || "";
+    const imgTag = src
+      ? `<img src="${escapeHtml(src)}" alt="${escapeHtml(pm.name)}"
+             onerror="this.onerror=null;this.src='${escapeHtml(local || "")}';if(!this.src){this.parentNode.innerHTML='<span style=&quot;color:#888;font-size:12px&quot;>Image indisponible</span>';}" />`
+      : `<span style="color:#888;font-size:12px">Image indisponible</span>`;
+
+    const gmaps = `https://www.google.com/maps?q=${pm.lat},${pm.lon}`;
+
+    return `
+      <div class="pk-popup">
+        <div class="pk-img-wrap">${imgTag}</div>
+        <h3>${escapeHtml(pm.name_fr || pm.name)}</h3>
+        ${pm.name_en && pm.name_en !== pm.name_fr
+          ? `<div class="pk-jp">${escapeHtml(pm.name_en)}</div>` : ""}
+        ${pm.name_jp ? `<div class="pk-jp">${escapeHtml(pm.name_jp)}</div>` : ""}
+
+        <div class="pk-row"><span class="k">Région</span><span class="v">${escapeHtml(pm.region)}</span></div>
+        ${pm.prefecture ? `<div class="pk-row"><span class="k">Préfecture</span><span class="v">${escapeHtml(pm.prefecture)}</span></div>` : ""}
+        ${pm.city ? `<div class="pk-row"><span class="k">Ville</span><span class="v">${escapeHtml(pm.city)}</span></div>` : ""}
+        <div class="pk-row"><span class="k">Coordonnées</span><span class="v">${pm.lat.toFixed(5)}, ${pm.lon.toFixed(5)}</span></div>
+
+        <div class="pk-links">
+          ${pm.source_url ? `<a href="${escapeHtml(pm.source_url)}" target="_blank" rel="noopener">Fiche officielle</a>` : ""}
+          <a href="${gmaps}" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+      </div>
+    `;
+  }
+
+  // ── Filtrage ─────────────────────────────────────────────────────────
+  function matches(pm) {
+    if (state.region && pm.region !== state.region) return false;
+    if (!state.query) return true;
+    const q = norm(state.query);
+    return (
+      norm(pm.name_fr).includes(q) ||
+      norm(pm.name_en).includes(q) ||
+      norm(pm.name_jp).includes(q) ||
+      norm(pm.city).includes(q) ||
+      norm(pm.prefecture).includes(q) ||
+      norm(pm.region).includes(q) ||
+      String(pm.id) === q
+    );
+  }
+
+  function applyFilters() {
+    if (!state.data) return;
+    const visible = state.data.placemarks.filter(matches);
+
+    clusterGroup.clearLayers();
+    const toAdd = [];
+    for (const pm of visible) {
+      const marker = state.markersById.get(pm.id);
+      if (marker) toAdd.push(marker);
+    }
+    clusterGroup.addLayers(toAdd);
+
+    renderResults(visible);
+    renderStats(visible.length, state.data.placemarks.length);
+
+    if (state.query || state.region) {
+      const group = L.featureGroup(toAdd);
+      if (toAdd.length) map.fitBounds(group.getBounds().pad(0.15), { maxZoom: 12 });
+    }
+  }
+
+  function renderStats(shown, total) {
+    elStats.innerHTML = `<strong>${shown}</strong> plaque(s) affichée(s) sur ${total}`;
+  }
+
+  function renderResults(list) {
+    elResults.innerHTML = "";
+    if (!list.length) {
+      elResults.innerHTML = `<div class="empty">Aucun résultat.</div>`;
+      return;
+    }
+    const frag = document.createDocumentFragment();
+    for (const pm of list) {
+      const item = document.createElement("div");
+      item.className = "item";
+      const { remote, local } = imageUrls(pm);
+      const src = remote || local || "";
+      item.innerHTML = `
+        <img src="${escapeHtml(src)}" alt="" loading="lazy"
+             onerror="this.style.visibility='hidden'" />
+        <div class="meta">
+          <div class="name">${escapeHtml(pm.name_fr || pm.name)}</div>
+          <div class="loc">${escapeHtml([pm.prefecture, pm.city].filter(Boolean).join(" · ") || pm.region)}</div>
+        </div>`;
+      item.addEventListener("click", () => focusMarker(pm.id));
+      frag.appendChild(item);
+    }
+    elResults.appendChild(frag);
+  }
+
+  function focusMarker(id) {
+    const marker = state.markersById.get(id);
+    if (!marker) return;
+    clusterGroup.zoomToShowLayer(marker, () => {
+      map.setView(marker.getLatLng(), Math.max(map.getZoom(), 13), { animate: true });
+      marker.openPopup();
+    });
+  }
+
+  // ── Construction des marqueurs ───────────────────────────────────────
+  function buildMarkers() {
+    clusterGroup.clearLayers();
+    state.markersById.clear();
+    const markers = [];
+    for (const pm of state.data.placemarks) {
+      if (typeof pm.lat !== "number" || typeof pm.lon !== "number") continue;
+      const marker = L.marker([pm.lat, pm.lon], { icon: markerIcon(pm) });
+      marker.bindPopup(popupHtml(pm), { maxWidth: 320, minWidth: 260 });
+      marker._pk = pm;
+      state.markersById.set(pm.id, marker);
+      markers.push(marker);
+    }
+    clusterGroup.addLayers(markers);
+  }
+
+  function populateRegions() {
+    const regions = state.data.regions || [];
+    for (const r of regions) {
+      const opt = document.createElement("option");
+      opt.value = r;
+      opt.textContent = r;
+      elRegion.appendChild(opt);
+    }
+  }
+
+  // ── Chargement initial ───────────────────────────────────────────────
+  async function init() {
+    try {
+      // On force le navigateur à ne pas utiliser de cache pour avoir les dernières données
+      const resp = await fetch(DATA_URL, { cache: "no-store" });
+      if (!resp.ok) throw new Error(`HTTP ${resp.status} ${resp.statusText}`);
+      state.data = await resp.json();
+    } catch (e) {
+      showError(
+        `Impossible de charger le fichier depuis GitHub : ${escapeHtml(e.message)}.`,
+        `Vérifie ta connexion internet et que le dépôt est public.<br>` +
+        `URL attendue : <code>${escapeHtml(DATA_URL)}</code>`
+      );
+      elTitle.textContent = "Erreur de chargement";
+      return;
+    }
+
+    const doc = state.data.document || {};
+    elTitle.textContent = doc.title || "Poké Lids";
+    if (doc.description) elTitle.title = doc.description.replace(/<[^>]+>/g, " ");
+
+    populateRegions();
+    buildMarkers();
+    renderResults(state.data.placemarks);
+    renderStats(state.data.placemarks.length, state.data.placemarks.length);
+
+    if (state.data.placemarks.length) {
+      const pts = state.data.placemarks.map((p) => [p.lat, p.lon]);
+      map.fitBounds(L.latLngBounds(pts).pad(0.1), { maxZoom: 6 });
+    }
+  }
+
+  // ── Événements ───────────────────────────────────────────────────────
+  let searchTimer = null;
+  elSearch.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      state.query = elSearch.value.trim();
+      applyFilters();
+    }, 150);
+  });
+
+  elRegion.addEventListener("change", () => {
+    state.region = elRegion.value;
+    applyFilters();
+  });
+
+  $("#btnFit").addEventListener("click", () => {
+    if (!state.data) return;
+    const pts = state.data.placemarks.map((p) => [p.lat, p.lon]);
+    if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(0.1), { maxZoom: 6 });
+  });
+
+  $("#btnClear").addEventListener("click", () => {
+    elSearch.value = "";
+    elRegion.value = "";
+    state.query = "";
+    state.region = "";
+    applyFilters();
+    if (state.data) {
+      const pts = state.data.placemarks.map((p) => [p.lat, p.lon]);
+      if (pts.length) map.fitBounds(L.latLngBounds(pts).pad(0.1), { maxZoom: 6 });
+    }
+  });
+
+  init();
+})();
+</script>
+</body>
+</html>
