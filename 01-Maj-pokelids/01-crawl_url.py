@@ -5,7 +5,7 @@
 Un seul script, un seul dossier d'images. Produit :
   • pokelid.kml        carte Google Earth / My Maps (kanji intégré)
   • pokelid.json       mêmes données que le KML (carte web, kanji intégré)
-  • images/            icônes locales (fallback)
+  • images_webp/       icônes locales (fallback)
   • .cache/            fichiers internes (invisibles, supprimables)
 
 --- Comportement d'un nouveau lancement (v11) ---
@@ -13,15 +13,18 @@ Un nouveau lancement CHERCHE les nouveautés et les modifications :
 
   1. RESOLVE : revisite SYSTÉMATIQUEMENT les 47 pages de préfecture.
   2. SCRAPE : classification (new, modified, same) :
-       • new       → scrape complet (image_url = site officiel)
-       • modified  → re-scrape ciblé (image_url = site officiel)
+       • new       → scrape complet (image_url = repo GitHub, image commitée dans ce run)
+       • modified  → re-scrape ciblé (image_url = repo GitHub, image commitée dans ce run)
        • same      → inchangée → image_url réécrite vers le repo GitHub !
   3. KANJI : résolution des kanji villes.
   4. GENERATE : écrit pokelid.kml + pokelid.json avec les bonnes URLs.
 
 --- URLs GitHub ---
-Les plaques "inchangées" voient leur image_url remplacée par :
+Toutes les plaques (new/modified/same) pointent vers :
 https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/01-Maj-pokelids/images_webp/icon-ci-{id}.webp
+(l'image est toujours téléchargée/encodée localement AVANT génération du JSON/KML, puis
+commitée dans le même run par l'étape "git add -A" du workflow — le lien est donc valide
+dès que le job se termine.)
 
 Usage :
     pip install requests beautifulsoup4 pillow tqdm
@@ -68,7 +71,7 @@ CACHE_DIR  = BASE_DIR / ".cache"
 # Livrables
 KML_FILE   = BASE_DIR / "pokelid.kml"
 JSON_FILE  = BASE_DIR / "pokelid.json"
-IMAGES_DIR = BASE_DIR / "images"
+IMAGES_DIR = BASE_DIR / "images_webp"
 
 # Caches
 REGIONS_CACHE = CACHE_DIR / "regions_cache.json"
@@ -547,7 +550,7 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
                 "city": pdata.get("city"),
                 "lat": pdata["lat"], "lon": pdata["lon"],
                 "image_file": img_result["filename"],
-                "image_url": pdata["image_url"], # URL de base (site officiel)
+                "image_url": f"{GITHUB_RAW_BASE}/icon-ci-{mid}.webp", # URL GitHub (image déjà téléchargée et commitée dans ce même run)
                 "image_etag": img_result.get("etag"),
                 "image_last_modified": img_result.get("last_modified"),
                 "page_hash": pdata.get("page_hash"),
@@ -650,10 +653,10 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
     if new_ids or modified_ids:
         print(f"\n⚠️  ATTENTION - MODIFICATIONS DÉTECTÉES :")
         if new_ids:
-            print(f"   🆕 {len(new_ids)} nouvelle(s) plaque(s) (URL site officiel conservée) :")
+            print(f"   🆕 {len(new_ids)} nouvelle(s) plaque(s) (URL GitHub) :")
             print(f"      {', '.join(sorted(new_ids, key=int))}")
         if modified_ids:
-            print(f"   🔧 {len(modified_ids)} plaque(s) modifiée(s) (URL site officiel conservée) :")
+            print(f"   🔧 {len(modified_ids)} plaque(s) modifiée(s) (URL GitHub) :")
             print(f"      {', '.join(sorted(modified_ids, key=int))}")
     else:
         print("   ✅ Aucune nouveauté ou modification détectée ce run.")
@@ -889,7 +892,7 @@ def style_block(mid, img_rel):
 
 def placemark_block(rec):
     mid = rec["id"]
-    desc_img = rec["image_url"] or f'images/{rec["image_file"]}'
+    desc_img = rec["image_url"] or f'images_webp/{rec["image_file"]}'
     desc = (f'<img src="{escape(desc_img)}" height="200" width="200" />'
             f'<br><br>{rec["source_url"]}<br>{rec["lat"]},{rec["lon"]}')
     city_display = rec["city"]
@@ -921,7 +924,7 @@ def build_kml_and_json(done):
         body = []
         for rec in records:
             # On utilise l'image_url de la rec (qui contient soit le site officiel, soit GitHub)
-            img_rel = rec["image_url"] or f'images/{rec["image_file"]}'
+            img_rel = rec["image_url"] or f'images_webp/{rec["image_file"]}'
             styles.append(style_block(rec["id"], img_rel))
             body.append(placemark_block(rec))
             all_records.append(rec)
@@ -1015,10 +1018,10 @@ def main():
         return
 
     t0 = time.time()
-    print("╔══════════════════════════════════════════════════════════╗")
-    print("║  Poké Lids — pipeline 01+02+03+04 (vérif. 2 niveaux)     ║")
-    print("║  Livrables : pokelid.kml, pokelid.json, images/          ║")
-    print("╚══════════════════════════════════════════════════════════╝")
+    print("╔══════════════════════════════════════════════════════════════════╗")
+    print("║  Poké Lids — pipeline 01+02+03+04 (vérif. 2 niveaux)             ║")
+    print("║  Livrables : pokelid.kml, pokelid.json, images_webp/             ║")
+    print("╚══════════════════════════════════════════════════════════════════╝")
     if args.dry_run:
         print("MODE --dry-run : aucune écriture.")
 
@@ -1081,7 +1084,7 @@ def main():
     print(f"✅ Terminé en {int(elapsed // 60)}m{int(elapsed % 60):02d}s")
     print(f"   pokelid.kml  : {KML_FILE.name}")
     print(f"   pokelid.json : {JSON_FILE.name}")
-    print(f"   images/      : {len(list(IMAGES_DIR.glob('icon-ci-*.webp')))} fichiers WebP")
+    print(f"   images_webp/ : {len(list(IMAGES_DIR.glob('icon-ci-*.webp')))} fichiers WebP")
     kanji_count = sum(1 for d in resume["done"].values() if d.get("city_kanji"))
     print(f"   kanji        : {kanji_count}/{len(resume['done'])} plaques enrichies")
     if resume["failed"]:
