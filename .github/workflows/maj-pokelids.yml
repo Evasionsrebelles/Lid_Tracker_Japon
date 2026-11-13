@@ -24,6 +24,30 @@ jobs:
       - name: Installer les dépendances
         run: python -m pip install --upgrade pip requests beautifulsoup4 pillow tqdm
 
+      - name: Archiver les anciennes versions
+        run: |
+          DIR=/home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids
+          ARCHIVE_DIR="$DIR/archives"
+          mkdir -p "$ARCHIVE_DIR"
+
+          TS=$(TZ=Europe/Paris date +"%d%m%y_%H%M")
+
+          if [ -f "$DIR/pokelid.json" ]; then
+            cp "$DIR/pokelid.json" "$ARCHIVE_DIR/pokelid_${TS}.json"
+          fi
+          if [ -f "$DIR/pokelid.kml" ]; then
+            cp "$DIR/pokelid.kml" "$ARCHIVE_DIR/pokelid_${TS}.kml"
+          fi
+
+          for ext in json kml; do
+            files=$(ls -t "$ARCHIVE_DIR"/pokelid_*."$ext" 2>/dev/null)
+            count=$(echo "$files" | grep -c . || true)
+            if [ "$count" -gt 5 ]; then
+              echo "$files" | tail -n +6 | xargs rm -f
+              echo "Suppression des .$ext au-delà des 5 plus récents."
+            fi
+          done
+
       - name: Lancer 01-crawl_url.py
         run: |
           python -u /home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids/01-crawl_url.py --workers 8 2>&1 | tee run.log
