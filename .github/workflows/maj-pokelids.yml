@@ -44,6 +44,10 @@ jobs:
             git push
           fi
 
+      - name: Préparer le résumé pour le mail
+        if: always()
+        run: grep -v 'OK | ' run.log | grep -v '⏳ Attente de' > run_summary.log
+
       - name: Envoyer les logs par mail
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -55,4 +59,4 @@ jobs:
           subject: "Poké Lids - résultat du workflow (${{ job.status }})"
           to: ${{ secrets.MAIL_TO }}
           from: Poké Lids Bot
-          body: file://run.log
+          body: file://run_summary.log
