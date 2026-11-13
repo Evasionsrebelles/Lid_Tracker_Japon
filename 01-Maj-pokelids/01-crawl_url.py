@@ -593,8 +593,12 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
                         if slug:
                             pdata["prefecture"] = slug.replace("_", " ").capitalize()
 
+                    # mid est forcément "new", "modified" (ou --force global) ici,
+                    # puisqu'il vient de `todo` : on force donc toujours le
+                    # re-téléchargement de l'image, même si un fichier local du
+                    # même nom existe déjà (ex. images_webp/ restauré par checkout).
                     fut = pool.submit(download_image, pdata["image_url"], mid,
-                                       force, quality, lossless, method)
+                                       True, quality, lossless, method)
                     pending[fut] = (mid, pdata, url)
 
                     for f in [f for f in pending if f.done()]:
