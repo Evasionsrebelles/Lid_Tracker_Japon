@@ -16,7 +16,8 @@
       "pokemon_names": [
         "Eevee"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1a0d76db2fb9b2cd5857ad3ee233e054_l.png"
     },
     "2": {
       "name": "Ibusuki",
@@ -34,7 +35,8 @@
       "pokemon_names": [
         "Vaporeon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/79b15b766a24880ed19bda2ec4863ab2_l.png"
     },
     "3": {
       "name": "Ibusuki",
@@ -52,7 +54,8 @@
       "pokemon_names": [
         "Jolteon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5c4e9fb2f499dee2fd8206c9a0926294_l.png"
     },
     "4": {
       "name": "Ibusuki",
@@ -70,7 +73,8 @@
       "pokemon_names": [
         "Flareon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3b15f5b988170e1ac987781317e3e6c4_l.png"
     },
     "5": {
       "name": "Ibusuki",
@@ -88,7 +92,8 @@
       "pokemon_names": [
         "Espeon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/80a6b07026c38a97c89436f59e3c5cc2_l.png"
     },
     "6": {
       "name": "Ibusuki",
@@ -106,7 +111,8 @@
       "pokemon_names": [
         "Umbreon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2662aede3a093feb445970ca2e077f85_l.png"
     },
     "7": {
       "name": "Ibusuki",
@@ -124,7 +130,8 @@
       "pokemon_names": [
         "Leafeon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/079877ac0df6af8da9edc55ca9a06ae8_l.png"
     },
     "8": {
       "name": "Ibusuki",
@@ -142,7 +149,8 @@
       "pokemon_names": [
         "Glaceon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/580f382c51079d1d67edbb02d23462f4_l.png"
     },
     "9": {
       "name": "Ibusuki",
@@ -160,7 +168,8 @@
       "pokemon_names": [
         "Sylveon"
       ],
-      "city_kanji": "指宿"
+      "city_kanji": "指宿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5953fdc915091e1bfb6a059b8de5a086_l.png"
     },
     "10": {
       "name": "Hirono",
@@ -178,7 +187,8 @@
       "pokemon_names": [
         "Kabuto"
       ],
-      "city_kanji": "広野"
+      "city_kanji": "広野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/03c8da68d0400d4eaf0d9bf03d274f98_l.png"
     },
     "11": {
       "name": "Kuji",
@@ -196,7 +206,8 @@
       "pokemon_names": [
         "Aerodactyl"
       ],
-      "city_kanji": "久慈"
+      "city_kanji": "久慈",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ce6927c9ff939ee9cb4936e6480b8333_l.png"
     },
     "12": {
       "name": "Noda",
@@ -214,7 +225,8 @@
       "pokemon_names": [
         "Onix"
       ],
-      "city_kanji": "野田"
+      "city_kanji": "野田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b30c30e0cdf7b450379ca2f43faa3aac_l.png"
     },
     "13": {
       "name": "Fudai",
@@ -232,7 +244,8 @@
       "pokemon_names": [
         "Shieldon"
       ],
-      "city_kanji": "普代"
+      "city_kanji": "普代",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/20fa066c221649e42e0aaf974678c05c_l.png"
     },
     "14": {
       "name": "Iwaizumi",
@@ -250,7 +263,8 @@
       "pokemon_names": [
         "Tyrunt"
       ],
-      "city_kanji": "岩泉町"
+      "city_kanji": "岩泉町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fd8ca30f4138a318860f226d8c6c99fc_l.png"
     },
     "15": {
       "name": "Tanohata",
@@ -268,7 +282,8 @@
       "pokemon_names": [
         "Nosepass"
       ],
-      "city_kanji": "田之畑"
+      "city_kanji": "田之畑",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9a02cf6fca246847485b2f0e17e2088a_l.png"
     },
     "16": {
       "name": "Miyako",
@@ -286,7 +301,8 @@
       "pokemon_names": [
         "Geodude"
       ],
-      "city_kanji": "宮古"
+      "city_kanji": "宮古",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3de728b1129d289ee8a8cfdc453d1beb_l.png"
     },
     "17": {
       "name": "Yamada",
@@ -304,7 +320,8 @@
       "pokemon_names": [
         "Omanyte"
       ],
-      "city_kanji": "山田"
+      "city_kanji": "山田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/54a462f0357b55fb5dfcac3067901572_l.png"
     },
     "18": {
       "name": "Otsuchi",
@@ -322,7 +339,8 @@
       "pokemon_names": [
         "Shuckle"
       ],
-      "city_kanji": "大津町"
+      "city_kanji": "大津町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1500f5e64d9158b2504bff2a8b9874da_l.png"
     },
     "19": {
       "name": "Kamaishi",
@@ -340,7 +358,8 @@
       "pokemon_names": [
         "Aron"
       ],
-      "city_kanji": "釜石"
+      "city_kanji": "釜石",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ef0d3f35693fea34981a2a6c5e14104f_l.png"
     },
     "20": {
       "name": "Ofunato",
@@ -358,7 +377,8 @@
       "pokemon_names": [
         "Rhyhorn"
       ],
-      "city_kanji": "大船渡"
+      "city_kanji": "大船渡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f7c29ccbcee1c86abe67c6c5df162231_l.png"
     },
     "21": {
       "name": "Rikuzentakata",
@@ -376,7 +396,8 @@
       "pokemon_names": [
         "Rockruff"
       ],
-      "city_kanji": "陸前高田"
+      "city_kanji": "陸前高田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b48f36c2ea4948e57d737a055d5fe47d_l.png"
     },
     "22": {
       "name": "Sumita",
@@ -394,7 +415,8 @@
       "pokemon_names": [
         "Larvitar"
       ],
-      "city_kanji": "吹田"
+      "city_kanji": "吹田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/83d5c100e0ee6372bd16490dbc67fa5d_l.png"
     },
     "23": {
       "name": "Yokohama",
@@ -412,7 +434,8 @@
       "pokemon_names": [
         "Pikachu"
       ],
-      "city_kanji": "横浜"
+      "city_kanji": "横浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/dd60987af1dda49a37486a2cbcb4d407_l.png"
     },
     "28": {
       "name": "Takamatsu",
@@ -430,7 +453,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "高松"
+      "city_kanji": "高松",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3f8606c250a83239f508571b1484d584_l.png"
     },
     "29": {
       "name": "Marugame",
@@ -448,7 +472,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "丸亀"
+      "city_kanji": "丸亀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/80456987ca2775b7af3dffce1efbf964_l.png"
     },
     "30": {
       "name": "Sakaide",
@@ -466,7 +491,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "中井出"
+      "city_kanji": "中井出",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c76924a522f5f4c6be3f7495f67175a3_l.png"
     },
     "31": {
       "name": "Zentsuji",
@@ -485,7 +511,8 @@
         "Slowpoke",
         "Slowbro"
       ],
-      "city_kanji": "円通寺"
+      "city_kanji": "円通寺",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c119928b9d5eaad8001359861af7ccad_l.png"
     },
     "32": {
       "name": "KAN-ONJI",
@@ -504,7 +531,8 @@
         "Slowpoke",
         "Slowking"
       ],
-      "city_kanji": "観音寺"
+      "city_kanji": "観音寺",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/30dbde7fe8d7f8d0cae358eecebfe44b_l.png"
     },
     "33": {
       "name": "Sanuki",
@@ -523,7 +551,8 @@
         "Slowpoke",
         "Clefairy"
       ],
-      "city_kanji": "佐貫"
+      "city_kanji": "佐貫",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2f6edaf36ce1857f7f8942cf0bac2b2c_l.png"
     },
     "34": {
       "name": "Higashikagawa",
@@ -541,7 +570,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "東かがわ"
+      "city_kanji": "東かがわ",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/55cd911fc9c25e0e8012891daa24946c_l.png"
     },
     "35": {
       "name": "Mitoyo",
@@ -560,7 +590,8 @@
         "Slowpoke",
         "Shellder"
       ],
-      "city_kanji": "三豊"
+      "city_kanji": "三豊",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b28655a215e13414ed57362a65800eef_l.png"
     },
     "36": {
       "name": "Tonosho",
@@ -579,7 +610,8 @@
         "Slowpoke",
         "Ditto"
       ],
-      "city_kanji": "土庄"
+      "city_kanji": "土庄",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4ce0a7a8695de3b57c977499c004ae68_l.png"
     },
     "37": {
       "name": "Shodoshima",
@@ -597,7 +629,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "小豆島"
+      "city_kanji": "小豆島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e898687780632f41f88293185dc187f9_l.png"
     },
     "38": {
       "name": "Miki",
@@ -615,7 +648,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "三木"
+      "city_kanji": "三木",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5b76f33d2939d085b7b8877e4843b710_l.png"
     },
     "39": {
       "name": "Naoshima",
@@ -634,7 +668,8 @@
         "Slowpoke",
         "Magikarp"
       ],
-      "city_kanji": "直島"
+      "city_kanji": "直島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a110919f47d4cf2b904ebc498d449df2_l.png"
     },
     "40": {
       "name": "Ayagawa",
@@ -652,7 +687,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "綾川"
+      "city_kanji": "綾川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/97364ac57cfec00bae3532e5b86993e1_l.png"
     },
     "41": {
       "name": "Kotohira",
@@ -670,7 +706,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "琴平"
+      "city_kanji": "琴平",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a657921a86223c0d151c52658fad232b_l.png"
     },
     "42": {
       "name": "Tadotsu",
@@ -688,7 +725,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "多度津町"
+      "city_kanji": "多度津町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2eeafabec505047777390acd55805848_l.png"
     },
     "43": {
       "name": "Manno",
@@ -706,7 +744,8 @@
       "pokemon_names": [
         "Slowpoke"
       ],
-      "city_kanji": "万野"
+      "city_kanji": "万野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f7183a39726aa627e14ad95fbeaf881f_l.png"
     },
     "44": {
       "name": "Kesennuma",
@@ -725,7 +764,8 @@
         "Lapras",
         "Geodude"
       ],
-      "city_kanji": "気仙沼"
+      "city_kanji": "気仙沼",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/196cb20d603ee6eae87932a61344e7e3_l.png"
     },
     "45": {
       "name": "Minamisanriku",
@@ -744,7 +784,8 @@
         "Lapras",
         "Octillery"
       ],
-      "city_kanji": "南三陸町"
+      "city_kanji": "南三陸町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/21dc0ec65a1eb468c86d336ad90ea120_l.png"
     },
     "46": {
       "name": "Onagawa",
@@ -763,7 +804,8 @@
         "Lapras",
         "Wingull"
       ],
-      "city_kanji": "女川"
+      "city_kanji": "女川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/bba07094c6513abf7611f18f842b4c11_l.png"
     },
     "47": {
       "name": "Ishinomaki",
@@ -785,7 +827,8 @@
         "Skitty",
         "Glameow"
       ],
-      "city_kanji": "石卷市"
+      "city_kanji": "石卷市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a6ba2f448a32de55a112c963c72589aa_l.png"
     },
     "48": {
       "name": "Higashimatsushima",
@@ -804,7 +847,8 @@
         "Lapras",
         "Latios"
       ],
-      "city_kanji": "東松島"
+      "city_kanji": "東松島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c90a0f605f37f87cfefb496c80e8a0dc_l.png"
     },
     "49": {
       "name": "Matsushima",
@@ -822,7 +866,8 @@
       "pokemon_names": [
         "Lapras"
       ],
-      "city_kanji": "松島"
+      "city_kanji": "松島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/21ee5b603bbc503949a5160aac6211c9_l.png"
     },
     "50": {
       "name": "Shiogama",
@@ -841,7 +886,8 @@
         "Lapras",
         "Plusle"
       ],
-      "city_kanji": "塩竃"
+      "city_kanji": "塩竃",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/879f9a0774db8f5a92918b55779f41de_l.png"
     },
     "51": {
       "name": "Rifu",
@@ -860,7 +906,8 @@
         "Lapras",
         "Minun"
       ],
-      "city_kanji": "利府"
+      "city_kanji": "利府",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c696ccb7c089d73174b41ab9fca770c8_l.png"
     },
     "52": {
       "name": "Shichigahama",
@@ -880,7 +927,8 @@
         "Ditto",
         "Staryu"
       ],
-      "city_kanji": "七里ガ浜"
+      "city_kanji": "七里ガ浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/75e862975740feba88601a636fc95395_l.png"
     },
     "53": {
       "name": "Tagajo",
@@ -899,7 +947,8 @@
         "Lapras",
         "Horsea"
       ],
-      "city_kanji": "多賀城市"
+      "city_kanji": "多賀城市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cf7ba94b9548c4c34a1904f0a45ffd48_l.png"
     },
     "54": {
       "name": "Sendai",
@@ -918,7 +967,8 @@
         "Lapras",
         "Jirachi"
       ],
-      "city_kanji": "川内"
+      "city_kanji": "川内",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6e116f60e1990858c1709d0ad7168ed0_l.png"
     },
     "55": {
       "name": "Natori",
@@ -936,7 +986,8 @@
       "pokemon_names": [
         "Lapras"
       ],
-      "city_kanji": "名取"
+      "city_kanji": "名取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b66498501b206eb2ec6a710f114c44bd_l.png"
     },
     "56": {
       "name": "Iwanuma",
@@ -955,7 +1006,8 @@
         "Lapras",
         "Togepi"
       ],
-      "city_kanji": "岩沼"
+      "city_kanji": "岩沼",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/122c918889a88df0101103652da66ffc_l.png"
     },
     "57": {
       "name": "Watari",
@@ -977,7 +1029,8 @@
         "Taillow",
         "Pidove"
       ],
-      "city_kanji": "渡"
+      "city_kanji": "渡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/31b568509d0a74bdd6d418b9107da7ea_l.png"
     },
     "58": {
       "name": "Yamamoto",
@@ -996,7 +1049,8 @@
         "Lapras",
         "Chansey"
       ],
-      "city_kanji": "山本"
+      "city_kanji": "山本",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/da648e1b955aa58ff9d29764c3b14098_l.png"
     },
     "59": {
       "name": "Ishikari",
@@ -1015,7 +1069,8 @@
         "Vulpix",
         "Turtwig"
       ],
-      "city_kanji": "石狩"
+      "city_kanji": "石狩",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9a5bcd8fc9acb25f4bd0f7ad5ed029ee_l.png"
     },
     "60": {
       "name": "Eniwa",
@@ -1033,7 +1088,8 @@
       "pokemon_names": [
         "Vulpix"
       ],
-      "city_kanji": "恵庭"
+      "city_kanji": "恵庭",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cf19a848cc495397f84897ca1edb35f5_l.png"
     },
     "61": {
       "name": "Toyako",
@@ -1052,7 +1108,8 @@
         "Vulpix",
         "Swinub"
       ],
-      "city_kanji": "洞爺湖町"
+      "city_kanji": "洞爺湖町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c9b1ca1743f22f22ec0cc61d901b5dad_l.png"
     },
     "62": {
       "name": "Mori",
@@ -1071,7 +1128,8 @@
         "Alolan Vulpix",
         "Inkay"
       ],
-      "city_kanji": "森"
+      "city_kanji": "森",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7304ef666e025271c5f04399faf2bc07_l.png"
     },
     "63": {
       "name": "Kaminokuni",
@@ -1090,7 +1148,8 @@
         "Vulpix",
         "Chimchar"
       ],
-      "city_kanji": "上ノ国"
+      "city_kanji": "上ノ国",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/835ef4993bfa0a192e0f0fe4a51c13a3_l.png"
     },
     "64": {
       "name": "Shibetsu",
@@ -1109,7 +1168,8 @@
         "Vulpix",
         "Mareep"
       ],
-      "city_kanji": "标津"
+      "city_kanji": "标津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c5ca9b484bde47acd0cd18e4c115eb74_l.png"
     },
     "65": {
       "name": "Pippu",
@@ -1128,7 +1188,8 @@
         "Alolan Vulpix",
         "Piplup"
       ],
-      "city_kanji": "比布町"
+      "city_kanji": "比布町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f5e2dff8844d9a78c1baca3405a0737b_l.png"
     },
     "66": {
       "name": "Teshio",
@@ -1147,7 +1208,8 @@
         "Vulpix",
         "Alolan Vulpix"
       ],
-      "city_kanji": "天塩"
+      "city_kanji": "天塩",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ad2274e40919a0301047f6e809a040fd_l.png"
     },
     "67": {
       "name": "Wakkanai",
@@ -1166,7 +1228,8 @@
         "Alolan Vulpix",
         "Alolan Ninetales"
       ],
-      "city_kanji": "稚內市"
+      "city_kanji": "稚內市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/92f6a149a9614bf12a606d2c691f4def_l.png"
     },
     "68": {
       "name": "Toyotomi",
@@ -1185,7 +1248,8 @@
         "Alolan Vulpix",
         "Miltank"
       ],
-      "city_kanji": "豊富"
+      "city_kanji": "豊富",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d4e4eb2b9d3e88657aec298b6778c90d_l.png"
     },
     "69": {
       "name": "Mombetsu",
@@ -1204,7 +1268,8 @@
         "Alolan Vulpix",
         "Spheal"
       ],
-      "city_kanji": "紋別"
+      "city_kanji": "紋別",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/708b89a16446446c4f4b67b89afb40b2_l.png"
     },
     "70": {
       "name": "Engaru",
@@ -1223,7 +1288,8 @@
         "Alolan Vulpix",
         "Froslass"
       ],
-      "city_kanji": "向遠軽"
+      "city_kanji": "向遠軽",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ea59f21d2187fb600591f5b4843bf63d_l.png"
     },
     "71": {
       "name": "Ohzora",
@@ -1242,7 +1308,8 @@
         "Vulpix",
         "Staraptor"
       ],
-      "city_kanji": "大空町"
+      "city_kanji": "大空町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fdf28d6a85b570757b1a6a6045c05ace_l.png"
     },
     "72": {
       "name": "Shintoku",
@@ -1261,7 +1328,8 @@
         "Alolan Vulpix",
         "Teddiursa"
       ],
-      "city_kanji": "新得町"
+      "city_kanji": "新得町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0ae31f4e9e07a44469e899c4f8a7c0d1_l.png"
     },
     "73": {
       "name": "Ashoro",
@@ -1282,7 +1350,8 @@
         "Mesprit",
         "Azelf"
       ],
-      "city_kanji": "足寄町"
+      "city_kanji": "足寄町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/18709c0795ab510b4759d0a7d51bd645_l.png"
     },
     "74": {
       "name": "Tottori",
@@ -1302,7 +1371,8 @@
         "Alolan Sandshrew",
         "Buneary"
       ],
-      "city_kanji": "鳥取"
+      "city_kanji": "鳥取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ff3da633c56590b1692d2cc729807dd8_l.png"
     },
     "75": {
       "name": "Yonago",
@@ -1322,7 +1392,8 @@
         "Farfetch'd",
         "Swanna"
       ],
-      "city_kanji": "米子"
+      "city_kanji": "米子",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d41137bea205741d5a7f4cb7e5646494_l.png"
     },
     "76": {
       "name": "Kurayoshi",
@@ -1341,7 +1412,8 @@
         "Sandshrew",
         "Alolan Sandshrew"
       ],
-      "city_kanji": "倉吉"
+      "city_kanji": "倉吉",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5eab25e1ec94bbda4e016964c1e4c0c2_l.png"
     },
     "77": {
       "name": "Sakaiminato",
@@ -1361,7 +1433,8 @@
         "Alolan Sandshrew",
         "Krabby"
       ],
-      "city_kanji": "境港"
+      "city_kanji": "境港",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f6da3dcbdb1a5e3805efeae1aed62a31_l.png"
     },
     "78": {
       "name": "Iwami",
@@ -1380,7 +1453,8 @@
         "Sandshrew",
         "Xatu"
       ],
-      "city_kanji": "石見"
+      "city_kanji": "石見",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/abf9db7af4414278a820045649dd91b9_l.png"
     },
     "79": {
       "name": "Wakasa",
@@ -1399,7 +1473,8 @@
         "Alolan Sandshrew",
         "Snover"
       ],
-      "city_kanji": "若桜"
+      "city_kanji": "若桜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/89266fc70148e3988d2505b8bebec5e7_l.png"
     },
     "80": {
       "name": "Misasa",
@@ -1419,7 +1494,8 @@
         "Alolan Sandshrew",
         "Froakie"
       ],
-      "city_kanji": "三朝"
+      "city_kanji": "三朝",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fa7745d9d2cf27532ece0df7ae94cdef_l.png"
     },
     "81": {
       "name": "Yurihama",
@@ -1438,7 +1514,8 @@
         "Sandshrew",
         "Shellder"
       ],
-      "city_kanji": "久里浜駅"
+      "city_kanji": "久里浜駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/97b31d2afb1854865151081ffff89c13_l.png"
     },
     "82": {
       "name": "Kotoura",
@@ -1457,7 +1534,8 @@
         "Sandshrew",
         "Alolan Sandshrew"
       ],
-      "city_kanji": "琴浦"
+      "city_kanji": "琴浦",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b895c47d2aa420b0ee4f6de752d0b52b_l.png"
     },
     "83": {
       "name": "Daisen",
@@ -1476,7 +1554,8 @@
         "Alolan Sandshrew",
         "Litwick"
       ],
-      "city_kanji": "大山"
+      "city_kanji": "大山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9dbcf5bd5c6c3fe0923fbe26eb38b5fd_l.png"
     },
     "84": {
       "name": "Nanbu",
@@ -1496,7 +1575,8 @@
         "Alolan Sandshrew",
         "Trapinch"
       ],
-      "city_kanji": "南部"
+      "city_kanji": "南部",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d3e1aa315a234beed33b5fdf0e57273f_l.png"
     },
     "85": {
       "name": "Houki",
@@ -1516,7 +1596,8 @@
         "Alolan Sandshrew",
         "Glalie"
       ],
-      "city_kanji": "法木"
+      "city_kanji": "法木",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c2c30a5636c8110a39aa6c37a46833a9_l.png"
     },
     "86": {
       "name": "Nichinan",
@@ -1536,7 +1617,8 @@
         "Volbeat",
         "Illumise"
       ],
-      "city_kanji": "日南"
+      "city_kanji": "日南",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/93d997a517ea711ef84cf02652df9b5d_l.png"
     },
     "87": {
       "name": "Hino",
@@ -1556,7 +1638,8 @@
         "Alolan Sandshrew",
         "Swablu"
       ],
-      "city_kanji": "日野"
+      "city_kanji": "日野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/699a59ecb60c1f784eb89c546316a66c_l.png"
     },
     "88": {
       "name": "Shinchi",
@@ -1575,7 +1658,8 @@
         "Chansey",
         "Stantler"
       ],
-      "city_kanji": "新地"
+      "city_kanji": "新地",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3551920549897ca17bd2d417b3461b56_l.png"
     },
     "89": {
       "name": "Soma",
@@ -1594,7 +1678,8 @@
         "Chansey",
         "Ponyta"
       ],
-      "city_kanji": "相馬"
+      "city_kanji": "相馬",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4b56f3842cbe9066c7d01f0c9df96c92_l.png"
     },
     "90": {
       "name": "Minamisoma",
@@ -1613,7 +1698,8 @@
         "Chansey",
         "Rapidash"
       ],
-      "city_kanji": "南相馬"
+      "city_kanji": "南相馬",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/438cf3fd7fda58f2fb64fe9a8cae6d5f_l.png"
     },
     "91": {
       "name": "Namie",
@@ -1631,7 +1717,8 @@
       "pokemon_names": [
         "Chansey"
       ],
-      "city_kanji": "浪江町"
+      "city_kanji": "浪江町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e0030b2398b3c23c69eeb288202d02bb_l.png"
     },
     "92": {
       "name": "Naraha",
@@ -1650,7 +1737,8 @@
         "Chansey",
         "Raboot"
       ],
-      "city_kanji": "楢原"
+      "city_kanji": "楢原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/912960b2605434d5780a92ab51dd92b9_l.png"
     },
     "93": {
       "name": "Iwaki",
@@ -1669,7 +1757,8 @@
         "Chansey",
         "Bellossom"
       ],
-      "city_kanji": "いわき市"
+      "city_kanji": "いわき市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8f4823eaabb4acedd31afc1be79c0bd8_l.png"
     },
     "94": {
       "name": "Kawamata",
@@ -1689,7 +1778,8 @@
         "Silcoon",
         "Cascoon"
       ],
-      "city_kanji": "川俣"
+      "city_kanji": "川俣",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b65e0102732f5ec6a2473bd0372bb6c3_l.png"
     },
     "95": {
       "name": "Tamura",
@@ -1708,7 +1798,8 @@
         "Chansey",
         "Heracross"
       ],
-      "city_kanji": "田村"
+      "city_kanji": "田村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/482de2cc901ee6970a9196ef63fcc05b_l.png"
     },
     "96": {
       "name": "Kawauchi",
@@ -1728,7 +1819,8 @@
         "Wishiwashi",
         "Arrokuda"
       ],
-      "city_kanji": "川内町"
+      "city_kanji": "川内町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c846e8317054bcfad601d9de4ed1bddb_l.png"
     },
     "97": {
       "name": "Utazu",
@@ -1747,7 +1839,8 @@
         "Galarian Slowpoke",
         "Quagsire"
       ],
-      "city_kanji": "宇多津町"
+      "city_kanji": "宇多津町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/46149907aafef8ebbb532d3adedfc0a6_l.png"
     },
     "98": {
       "name": "Machida",
@@ -1765,7 +1858,8 @@
       "pokemon_names": [
         "Bulbasaur"
       ],
-      "city_kanji": "町田"
+      "city_kanji": "町田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4c77c6c7e731ed37ef071ab402d5c1bd_l.png"
     },
     "99": {
       "name": "Machida",
@@ -1783,7 +1877,8 @@
       "pokemon_names": [
         "Charmander"
       ],
-      "city_kanji": "町田"
+      "city_kanji": "町田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5a62f4b93b6a63de11a8f9ff794e48ca_l.png"
     },
     "100": {
       "name": "Machida",
@@ -1801,7 +1896,8 @@
       "pokemon_names": [
         "Squirtle"
       ],
-      "city_kanji": "町田"
+      "city_kanji": "町田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6f89f0fea8421c663d939f07d9d3e170_l.png"
     },
     "101": {
       "name": "Machida",
@@ -1821,7 +1917,8 @@
         "Weedle",
         "Caterpie"
       ],
-      "city_kanji": "町田"
+      "city_kanji": "町田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f440e59f4dc8e8eb3d6dbc063c121101_l.png"
     },
     "102": {
       "name": "Machida",
@@ -1840,7 +1937,8 @@
         "Pidgey",
         "Rattata"
       ],
-      "city_kanji": "町田"
+      "city_kanji": "町田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0a991953b4543cb86f11bc3581aae7d1_l.png"
     },
     "103": {
       "name": "Machida",
@@ -1858,7 +1956,8 @@
       "pokemon_names": [
         "Poliwag"
       ],
-      "city_kanji": "町田"
+      "city_kanji": "町田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5ad8fe31b6a39f7b0d1dcbc4d366b54b_l.png"
     },
     "104": {
       "name": "Otsu",
@@ -1876,7 +1975,8 @@
       "pokemon_names": [
         "Gyarados"
       ],
-      "city_kanji": "大津"
+      "city_kanji": "大津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/984ab29a7f1a717d60d8faf6ab4ba956_l.png"
     },
     "105": {
       "name": "Otsu",
@@ -1894,7 +1994,8 @@
       "pokemon_names": [
         "Gyarados"
       ],
-      "city_kanji": "大津"
+      "city_kanji": "大津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d457b0b0d22eb88c9ef87d755c435ee0_l.png"
     },
     "106": {
       "name": "Chizu",
@@ -1914,7 +2015,8 @@
         "Sandslash",
         "Sudowoodo"
       ],
-      "city_kanji": "智頭町"
+      "city_kanji": "智頭町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9124edb433debfc805f8e3dcf81142ef_l.png"
     },
     "107": {
       "name": "Yazu",
@@ -1933,7 +2035,8 @@
         "Alolan Sandshrew",
         "Alolan Sandslash"
       ],
-      "city_kanji": "谷頭"
+      "city_kanji": "谷頭",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e4cc762f5c45d2e3b1c89fe016cad306_l.png"
     },
     "108": {
       "name": "Hokuei",
@@ -1952,7 +2055,8 @@
         "Sandshrew",
         "Alolan Sandshrew"
       ],
-      "city_kanji": "北栄"
+      "city_kanji": "北栄",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d63d0cd135a8ea0fdffba8c4c1a91044_l.png"
     },
     "109": {
       "name": "Hiezu",
@@ -1971,7 +2075,8 @@
         "Sandshrew",
         "Ditto"
       ],
-      "city_kanji": "日吉津村"
+      "city_kanji": "日吉津村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3af8acc5e98898f553ef0a9d3472dd75_l.png"
     },
     "110": {
       "name": "Kofu",
@@ -1990,7 +2095,8 @@
         "Sandshrew",
         "Alolan Sandshrew"
       ],
-      "city_kanji": "甲府"
+      "city_kanji": "甲府",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/14cce541fd36605c5e7663e88d87aaa7_l.png"
     },
     "111": {
       "name": "Miyazaki",
@@ -2009,7 +2115,8 @@
         "Exeggutor",
         "Castform"
       ],
-      "city_kanji": "宫崎县"
+      "city_kanji": "宫崎县",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4df805be8a64d2c988d992788be19a9b_l.png"
     },
     "112": {
       "name": "Miyakonojo",
@@ -2028,7 +2135,8 @@
         "Alolan Exeggutor",
         "Minior"
       ],
-      "city_kanji": "都城"
+      "city_kanji": "都城",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/669e4e9f0164e147c365f0fa159d5186_l.png"
     },
     "113": {
       "name": "Nobeoka",
@@ -2047,7 +2155,8 @@
         "Exeggutor",
         "Alolan Exeggutor"
       ],
-      "city_kanji": "延岡"
+      "city_kanji": "延岡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3a5e9189da60b8c54d2ccdbd184dc9dd_l.png"
     },
     "114": {
       "name": "Nichinan",
@@ -2066,7 +2175,8 @@
         "Alolan Exeggutor",
         "Probopass"
       ],
-      "city_kanji": "日南"
+      "city_kanji": "日南",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8ce155eced18eb9355d00e77741e924b_l.png"
     },
     "115": {
       "name": "Kobayashi",
@@ -2085,7 +2195,8 @@
         "Exeggutor",
         "Rowlet"
       ],
-      "city_kanji": "小林"
+      "city_kanji": "小林",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0dc396d7b4e206b302245cb286cb828c_l.png"
     },
     "116": {
       "name": "Hyuga",
@@ -2104,7 +2215,8 @@
         "Exeggutor",
         "Oricorio"
       ],
-      "city_kanji": "日向"
+      "city_kanji": "日向",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cce5f8178d3186bff628ad5efe8e9962_l.png"
     },
     "117": {
       "name": "Kushima",
@@ -2123,7 +2235,8 @@
         "Exeggutor",
         "Galarian Ponyta"
       ],
-      "city_kanji": "九島"
+      "city_kanji": "九島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/eb72ab472d06b001ae7e522937fda3b7_l.png"
     },
     "118": {
       "name": "Saito",
@@ -2142,7 +2255,8 @@
         "Exeggutor",
         "Sunflora"
       ],
-      "city_kanji": "財当"
+      "city_kanji": "財当",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/40deb7e698a707b7ae456f46634f6a14_l.png"
     },
     "119": {
       "name": "ebino",
@@ -2161,7 +2275,8 @@
         "Exeggutor",
         "Torkoal"
       ],
-      "city_kanji": "蛇野"
+      "city_kanji": "蛇野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c66068946bb57f85df1cc9221816f761_l.png"
     },
     "120": {
       "name": "Shiroishi",
@@ -2180,7 +2295,8 @@
         "Lapras",
         "Nickit"
       ],
-      "city_kanji": "白石"
+      "city_kanji": "白石",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d86f9fbdc323ccf8a44a1cc61f14cf5a_l.png"
     },
     "121": {
       "name": "Kakuda",
@@ -2199,7 +2315,8 @@
         "Lapras",
         "Latias"
       ],
-      "city_kanji": "角田"
+      "city_kanji": "角田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8773aebd30abe08aa9ad070610b62d93_l.png"
     },
     "122": {
       "name": "Tome",
@@ -2218,7 +2335,8 @@
         "Lapras",
         "Lotad"
       ],
-      "city_kanji": "登米"
+      "city_kanji": "登米",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0276a1166ecab2b87231d3556c765167_l.png"
     },
     "123": {
       "name": "Kurihara",
@@ -2237,7 +2355,8 @@
         "Lapras",
         "Ducklett"
       ],
-      "city_kanji": "栗原"
+      "city_kanji": "栗原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/495aa4a82e4831df7c4df483ec3818a8_l.png"
     },
     "124": {
       "name": "Osaki",
@@ -2257,7 +2376,8 @@
         "Dugtrio",
         "Spearow"
       ],
-      "city_kanji": "大崎"
+      "city_kanji": "大崎",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/60a517309907d70d3227450081b4ca08_l.png"
     },
     "125": {
       "name": "Tomiya",
@@ -2276,7 +2396,8 @@
         "Lapras",
         "Snubbull"
       ],
-      "city_kanji": "富谷市"
+      "city_kanji": "富谷市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/eb65307347f95b410b10f6de91169728_l.png"
     },
     "126": {
       "name": "Zao",
@@ -2295,7 +2416,8 @@
         "Lapras",
         "Abomasnow"
       ],
-      "city_kanji": "蔵王"
+      "city_kanji": "蔵王",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e293e09c17892a05563f1b2726ed2877_l.png"
     },
     "127": {
       "name": "Shichikashuku",
@@ -2314,7 +2436,8 @@
         "Lapras",
         "Bibarel"
       ],
-      "city_kanji": "七ヶ宿湖"
+      "city_kanji": "七ヶ宿湖",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/71836918b6a718ac1241f1e1cdd1ef85_l.png"
     },
     "128": {
       "name": "Ogawara",
@@ -2333,7 +2456,8 @@
         "Lapras",
         "Cherrim"
       ],
-      "city_kanji": "小川原"
+      "city_kanji": "小川原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b842dfc9874d2e09445e1fc3f38ad9ac_l.png"
     },
     "129": {
       "name": "Murata",
@@ -2352,7 +2476,8 @@
         "Lapras",
         "Lickilicky"
       ],
-      "city_kanji": "村田"
+      "city_kanji": "村田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d1c747bb4e5729cfed493a58e2755d01_l.png"
     },
     "130": {
       "name": "Shibata",
@@ -2371,7 +2496,8 @@
         "Lapras",
         "Flabébé"
       ],
-      "city_kanji": "新発田"
+      "city_kanji": "新発田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/db51e7b93287a6d4f02f087a430671d5_l.png"
     },
     "131": {
       "name": "Kawasaki",
@@ -2389,7 +2515,8 @@
       "pokemon_names": [
         "Lapras"
       ],
-      "city_kanji": "川崎"
+      "city_kanji": "川崎",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8d71ae197fd04fb3260e7d1a0696b39d_l.png"
     },
     "132": {
       "name": "Marumori",
@@ -2409,7 +2536,8 @@
         "Meowth",
         "Espurr"
       ],
-      "city_kanji": "丸森"
+      "city_kanji": "丸森",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6a672a743cad949bf943ff691d54c14b_l.png"
     },
     "133": {
       "name": "Taiwa",
@@ -2429,7 +2557,8 @@
         "Foongus",
         "Torterra"
       ],
-      "city_kanji": "多和"
+      "city_kanji": "多和",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/322d4458c639327625e8314186014e1c_l.png"
     },
     "134": {
       "name": "Osato",
@@ -2448,7 +2577,8 @@
         "Lapras",
         "Petilil"
       ],
-      "city_kanji": "大里"
+      "city_kanji": "大里",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e4d64849c631f1c55792c162210f83ca_l.png"
     },
     "135": {
       "name": "Ohira",
@@ -2468,7 +2598,8 @@
         "Frillish",
         "Luvdisc"
       ],
-      "city_kanji": "大平"
+      "city_kanji": "大平",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a6650f6580df0e0e5debb154e1d26824_l.png"
     },
     "136": {
       "name": "shikam",
@@ -2487,7 +2618,8 @@
         "Lapras",
         "Lombre"
       ],
-      "city_kanji": "四竃"
+      "city_kanji": "四竃",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f153fccd4c39fd161721923ee9a1b1db_l.png"
     },
     "137": {
       "name": "Kami",
@@ -2506,7 +2638,8 @@
         "Lapras",
         "Roselia"
       ],
-      "city_kanji": "上"
+      "city_kanji": "上",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/122780b137abcc24c9987cd2842f4e9e_l.png"
     },
     "138": {
       "name": "Wakuya",
@@ -2525,7 +2658,8 @@
         "Lapras",
         "Mudsdale"
       ],
-      "city_kanji": "涌谷"
+      "city_kanji": "涌谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f1eb53fbcfe726de54e319a9741feed6_l.png"
     },
     "139": {
       "name": "Misato",
@@ -2545,7 +2679,8 @@
         "Doduo",
         "Dodrio"
       ],
-      "city_kanji": "美里"
+      "city_kanji": "美里",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e491789809d4a47d823bfe69df54712c_l.png"
     },
     "140": {
       "name": "Tomakomai",
@@ -2564,7 +2699,8 @@
         "Vulpix",
         "Ninetales"
       ],
-      "city_kanji": "苫小牧"
+      "city_kanji": "苫小牧",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d0fd3269d1c6446d47a5d73e39c3273c_l.png"
     },
     "141": {
       "name": "Mikasa",
@@ -2584,7 +2720,8 @@
         "Omanyte",
         "Cranidos"
       ],
-      "city_kanji": "三笠"
+      "city_kanji": "三笠",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/37eb2bacbb680049ab0ce47cd56cb080_l.png"
     },
     "142": {
       "name": "Kamifurano",
@@ -2603,7 +2740,8 @@
         "Alolan Vulpix",
         "Delcatty"
       ],
-      "city_kanji": "上深野"
+      "city_kanji": "上深野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/333446f14d9d7487fd1051ed1a5564d8_l.png"
     },
     "143": {
       "name": "Kembuchi",
@@ -2622,7 +2760,8 @@
         "Alolan Vulpix",
         "Honedge"
       ],
-      "city_kanji": "剣淵町"
+      "city_kanji": "剣淵町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/130ae2f0d814df1b0a14c36032523a85_l.png"
     },
     "144": {
       "name": "Ojiya",
@@ -2640,7 +2779,8 @@
       "pokemon_names": [
         "Magikarp"
       ],
-      "city_kanji": "小千谷"
+      "city_kanji": "小千谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cb0b83a72c4a02d3828408438fe69c79_l.png"
     },
     "145": {
       "name": "Ojiya",
@@ -2658,7 +2798,8 @@
       "pokemon_names": [
         "Magikarp"
       ],
-      "city_kanji": "小千谷"
+      "city_kanji": "小千谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5b25c222f6dcfd8f930f37bcbc9e1d36_l.png"
     },
     "146": {
       "name": "Ojiya",
@@ -2677,7 +2818,8 @@
         "Magikarp",
         "Feebas"
       ],
-      "city_kanji": "小千谷"
+      "city_kanji": "小千谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1eb3ac5b96b69515307e7b8d461b83b7_l.png"
     },
     "147": {
       "name": "Ojiya",
@@ -2696,7 +2838,8 @@
         "Magikarp",
         "Pidgeotto"
       ],
-      "city_kanji": "小千谷"
+      "city_kanji": "小千谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1779749989a248a4d80438774bd31c5c_l.png"
     },
     "148": {
       "name": "Ikaruga",
@@ -2715,7 +2858,8 @@
         "Bronzong",
         "Simisear"
       ],
-      "city_kanji": "鵤"
+      "city_kanji": "鵤",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8c606a972fea1746e45dea9cf3f87c9e_l.png"
     },
     "149": {
       "name": "Ikaruga",
@@ -2734,7 +2878,8 @@
         "Bellsprout",
         "Growlithe"
       ],
-      "city_kanji": "鵤"
+      "city_kanji": "鵤",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d3e08e12b17d3ff3befcd5225d3af30d_l.png"
     },
     "150": {
       "name": "Ikaruga",
@@ -2753,7 +2898,8 @@
         "Magby",
         "Chimecho"
       ],
-      "city_kanji": "鵤"
+      "city_kanji": "鵤",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/138c801dc7696711d46521e013d6d7c3_l.png"
     },
     "151": {
       "name": "Ikaruga",
@@ -2772,7 +2918,8 @@
         "Fletchinder",
         "Deerling"
       ],
-      "city_kanji": "鵤"
+      "city_kanji": "鵤",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d0bfb7bbc2a06d730b47b017a3e77cf7_l.png"
     },
     "152": {
       "name": "Ikaruga",
@@ -2790,7 +2937,8 @@
       "pokemon_names": [
         "Entei"
       ],
-      "city_kanji": "鵤"
+      "city_kanji": "鵤",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cf516896b4b7eb0cad8e8e3eeebbc99f_l.png"
     },
     "154": {
       "name": "Ogasawara",
@@ -2808,7 +2956,8 @@
       "pokemon_names": [
         "Charizard"
       ],
-      "city_kanji": "小笠原"
+      "city_kanji": "小笠原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/12cfb1b31e8a73d64c0467c702e420f7_l.png"
     },
     "153": {
       "name": "Ogasawara",
@@ -2826,7 +2975,8 @@
       "pokemon_names": [
         "Venusaur"
       ],
-      "city_kanji": "小笠原"
+      "city_kanji": "小笠原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f8bada1702ac9b24058746e324095bac_l.png"
     },
     "155": {
       "name": "Ogasawara",
@@ -2844,7 +2994,8 @@
       "pokemon_names": [
         "Blastoise"
       ],
-      "city_kanji": "小笠原"
+      "city_kanji": "小笠原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a0a9f2d7186f56fedadabc010c395e83_l.png"
     },
     "156": {
       "name": "Ogasawara",
@@ -2862,7 +3013,8 @@
       "pokemon_names": [
         "Mew"
       ],
-      "city_kanji": "小笠原"
+      "city_kanji": "小笠原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ad8932065d369c0b5ae27c3836637f61_l.png"
     },
     "157": {
       "name": "Hachinohe",
@@ -2881,7 +3033,8 @@
         "Geodude",
         "Wingull"
       ],
-      "city_kanji": "八戸"
+      "city_kanji": "八戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/980e5418dbdef7582b162d577ad77cf7_l.png"
     },
     "158": {
       "name": "Hashikami",
@@ -2901,7 +3054,8 @@
         "Pincurchin",
         "Snom"
       ],
-      "city_kanji": "橋上"
+      "city_kanji": "橋上",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1723f48f98735fe88693db2547152835_l.png"
     },
     "159": {
       "name": "Kyoto",
@@ -2919,7 +3073,8 @@
       "pokemon_names": [
         "Ho-Oh"
       ],
-      "city_kanji": "京都駅"
+      "city_kanji": "京都駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/dadd75c86a5e66bf5392ba13716c2dfe_l.png"
     },
     "160": {
       "name": "Kyoto",
@@ -2939,7 +3094,8 @@
         "Cleffa",
         "Igglybuff"
       ],
-      "city_kanji": "京都駅"
+      "city_kanji": "京都駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/61ed5a9f280a92b6a49269897c80870c_l.png"
     },
     "161": {
       "name": "Kyoto",
@@ -2958,7 +3114,8 @@
         "Chikorita",
         "Shiftry"
       ],
-      "city_kanji": "京都駅"
+      "city_kanji": "京都駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cec84609550ebe0986175832b49f3666_l.png"
     },
     "163": {
       "name": "Kyoto",
@@ -2977,7 +3134,8 @@
         "Totodile",
         "Azumarill"
       ],
-      "city_kanji": "京都駅"
+      "city_kanji": "京都駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e923d93de75da9471bc1eb6b2504b721_l.png"
     },
     "162": {
       "name": "Kyoto",
@@ -2996,7 +3154,8 @@
         "Cyndaquil",
         "Darmanitan"
       ],
-      "city_kanji": "京都駅"
+      "city_kanji": "京都駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6e0c231cc1175791b00694844dc42904_l.png"
     },
     "164": {
       "name": "Mimata",
@@ -3015,7 +3174,8 @@
         "Exeggutor",
         "Woobat"
       ],
-      "city_kanji": "三又"
+      "city_kanji": "三又",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7e8cdc1e3864f6802fe5c7c531f68074_l.png"
     },
     "165": {
       "name": "Takanabe",
@@ -3034,7 +3194,8 @@
         "Alolan Exeggutor",
         "Alolan Raichu"
       ],
-      "city_kanji": "高鍋町"
+      "city_kanji": "高鍋町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7020590767375a1d51a3bb6af9b37edf_l.png"
     },
     "166": {
       "name": "Shintomi",
@@ -3053,7 +3214,8 @@
         "Alolan Exeggutor",
         "Makuhita"
       ],
-      "city_kanji": "新富"
+      "city_kanji": "新富",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/73c6c49f8aa194dcb52da6808758de16_l.png"
     },
     "167": {
       "name": "Kijo",
@@ -3072,7 +3234,8 @@
         "Exeggutor",
         "Ditto"
       ],
-      "city_kanji": "桂城"
+      "city_kanji": "桂城",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/dd75e9254b02cf00906b22ece20ed6a2_l.png"
     },
     "168": {
       "name": "Kawaminami",
@@ -3091,7 +3254,8 @@
         "Exeggutor",
         "Marshtomp"
       ],
-      "city_kanji": "川南"
+      "city_kanji": "川南",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3da8c4d33f82dbd65c7092f4080c88ab_l.png"
     },
     "169": {
       "name": "Tsuno",
@@ -3110,7 +3274,8 @@
         "Alolan Exeggutor",
         "Buizel"
       ],
-      "city_kanji": "都農町"
+      "city_kanji": "都農町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/249dfc49428f58aff38f37c46131982e_l.png"
     },
     "170": {
       "name": "Kadogawa",
@@ -3129,7 +3294,8 @@
         "Alolan Exeggutor",
         "Crabrawler"
       ],
-      "city_kanji": "門川町"
+      "city_kanji": "門川町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1d1261134ec64c046aacae63dba74c6f_l.png"
     },
     "171": {
       "name": "Misato",
@@ -3148,7 +3314,8 @@
         "Exeggutor",
         "Exeggcute"
       ],
-      "city_kanji": "美里"
+      "city_kanji": "美里",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/338c34ed7b70c9a65755b2894a04ecc1_l.png"
     },
     "172": {
       "name": "Ueno",
@@ -3167,7 +3334,8 @@
         "Tyrunt",
         "Wynaut"
       ],
-      "city_kanji": "上野駅"
+      "city_kanji": "上野駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/461c1ae602ab3848aaa395fd03e5fa00_l.png"
     },
     "173": {
       "name": "Ueno",
@@ -3186,7 +3354,8 @@
         "Baltoy",
         "Bronzor"
       ],
-      "city_kanji": "上野駅"
+      "city_kanji": "上野駅",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/eb25062c31cfbbbf2e120451b3b76492_l.png"
     },
     "174": {
       "name": "Naha",
@@ -3204,7 +3373,8 @@
       "pokemon_names": [
         "Arcanine"
       ],
-      "city_kanji": "那覇"
+      "city_kanji": "那覇",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/38ee8e633d933570a2506d1ceba9290b_l.png"
     },
     "175": {
       "name": "Ginowan",
@@ -3223,7 +3393,8 @@
         "Corsola",
         "Luvdisc"
       ],
-      "city_kanji": "宜野湾"
+      "city_kanji": "宜野湾",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/130f21e980593ce7e537a81a804a1bc3_l.png"
     },
     "176": {
       "name": "Okinawa",
@@ -3242,7 +3413,8 @@
         "Thwackey",
         "Lurantis"
       ],
-      "city_kanji": "冲绳县"
+      "city_kanji": "冲绳县",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b084912808574bde91de683704e1503d_l.png"
     },
     "177": {
       "name": "Uruma",
@@ -3260,7 +3432,8 @@
       "pokemon_names": [
         "Tauros"
       ],
-      "city_kanji": "うるま市"
+      "city_kanji": "うるま市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1a8c0a85ed3586e6076dac22272185d7_l.png"
     },
     "178": {
       "name": "Takaharu",
@@ -3279,7 +3452,8 @@
         "Exeggutor",
         "Smoochum"
       ],
-      "city_kanji": "高原"
+      "city_kanji": "高原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/916517348882e6d81c6fd8e163ac8352_l.png"
     },
     "179": {
       "name": "Kunitomi",
@@ -3298,7 +3472,8 @@
         "Alolan Exeggutor",
         "Gulpin"
       ],
-      "city_kanji": "国富"
+      "city_kanji": "国富",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/73fdb713c9cec2bed36f015248b51725_l.png"
     },
     "180": {
       "name": "Aya",
@@ -3317,7 +3492,8 @@
         "Exeggutor",
         "Slakoth"
       ],
-      "city_kanji": "加悦"
+      "city_kanji": "加悦",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ec206a3b8bd4d61296485b207d204370_l.png"
     },
     "181": {
       "name": "Nishimera",
@@ -3336,7 +3512,8 @@
         "Alolan Exeggutor",
         "Golurk"
       ],
-      "city_kanji": "西邑"
+      "city_kanji": "西邑",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d8eb6198c178641e316d0936fccd06e0_l.png"
     },
     "182": {
       "name": "Morotsuka",
@@ -3355,7 +3532,8 @@
         "Exeggutor",
         "Regirock"
       ],
-      "city_kanji": "諸塚村"
+      "city_kanji": "諸塚村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4214e59f59260308035a93441400b6fa_l.png"
     },
     "183": {
       "name": "Shiiba",
@@ -3374,7 +3552,8 @@
         "Exeggutor",
         "Sigilyph"
       ],
-      "city_kanji": "椎原"
+      "city_kanji": "椎原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a612a2a3e3d6d9a6cb7641ce25cfcdb7_l.png"
     },
     "184": {
       "name": "Takachiho",
@@ -3393,7 +3572,8 @@
         "Exeggutor",
         "Regigigas"
       ],
-      "city_kanji": "高志保"
+      "city_kanji": "高志保",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ba1ab8ae9af98b080f9ed1d867cb75c9_l.png"
     },
     "185": {
       "name": "Hinokage",
@@ -3412,7 +3592,8 @@
         "Exeggutor",
         "Registeel"
       ],
-      "city_kanji": "日之影町"
+      "city_kanji": "日之影町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/dbe8fa0ecdf59974cf1c01b55f7f089b_l.png"
     },
     "186": {
       "name": "Gokase",
@@ -3431,7 +3612,8 @@
         "Exeggutor",
         "Regice"
       ],
-      "city_kanji": "五ヶ瀬"
+      "city_kanji": "五ヶ瀬",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/aa92f7d136b868b5252b1fc6994ce947_l.png"
     },
     "187": {
       "name": "Hakodate",
@@ -3450,7 +3632,8 @@
         "Alolan Vulpix",
         "Togekiss"
       ],
-      "city_kanji": "函館"
+      "city_kanji": "函館",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/acac72c0b33b4df7f2a735443fc8eacf_l.png"
     },
     "188": {
       "name": "Otaru",
@@ -3468,7 +3651,8 @@
       "pokemon_names": [
         "Alolan Vulpix"
       ],
-      "city_kanji": "小樽"
+      "city_kanji": "小樽",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5a324c4217960388cb12d0c412bb2ae5_l.png"
     },
     "189": {
       "name": "Nemuro",
@@ -3487,7 +3671,8 @@
         "Alolan Vulpix",
         "Mr. Rime"
       ],
-      "city_kanji": "根室"
+      "city_kanji": "根室",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ef06fc22ce5dae9e3683d8fec4a9f68e_l.png"
     },
     "190": {
       "name": "Noboribetsu",
@@ -3506,7 +3691,8 @@
         "Vulpix",
         "Bewear"
       ],
-      "city_kanji": "登別"
+      "city_kanji": "登別",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/171f0782befe20c0ce34ea9cf2a069ef_l.png"
     },
     "191": {
       "name": "Honbetsu",
@@ -3525,7 +3711,8 @@
         "Vulpix",
         "Ditto"
       ],
-      "city_kanji": "本別"
+      "city_kanji": "本別",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c196a6a082f5b38bd76fb1a6acb8b999_l.png"
     },
     "192": {
       "name": "Rikubetsu",
@@ -3544,7 +3731,8 @@
         "Alolan Vulpix",
         "Bergmite"
       ],
-      "city_kanji": "陸別"
+      "city_kanji": "陸別",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3085ebc53a5477aed032335bdc1c5d7e_l.png"
     },
     "193": {
       "name": "Nakashibetsu",
@@ -3563,7 +3751,8 @@
         "Vulpix",
         "Combusken"
       ],
-      "city_kanji": "中標津"
+      "city_kanji": "中標津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/690d084c832f1c94f9c765c47fb5d3b4_l.png"
     },
     "194": {
       "name": "Kurashiki",
@@ -3581,7 +3770,8 @@
       "pokemon_names": [
         "Lucario"
       ],
-      "city_kanji": "倉敷"
+      "city_kanji": "倉敷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/12a7f3eb91387a2de15ce4a4d07b76d9_l.png"
     },
     "196": {
       "name": "Kurashiki",
@@ -3600,7 +3790,8 @@
         "Grookey",
         "Eldegoss"
       ],
-      "city_kanji": "倉敷"
+      "city_kanji": "倉敷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/bc3943f41c55662b08fff143d35e6001_l.png"
     },
     "195": {
       "name": "Kurashiki",
@@ -3619,7 +3810,8 @@
         "Poochyena",
         "Beautifly"
       ],
-      "city_kanji": "倉敷"
+      "city_kanji": "倉敷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0fece4439cad84d032b8b5b1abe4bfbe_l.png"
     },
     "197": {
       "name": "Kurashiki",
@@ -3637,7 +3829,8 @@
       "pokemon_names": [
         "Unfezant"
       ],
-      "city_kanji": "倉敷"
+      "city_kanji": "倉敷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/57b32929e283717a3c17bf5694ee5331_l.png"
     },
     "198": {
       "name": "Kitakyushu",
@@ -3655,7 +3848,8 @@
       "pokemon_names": [
         "Aggron"
       ],
-      "city_kanji": "北九州"
+      "city_kanji": "北九州",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b13f6216991b853d40f37921b7b1a75c_l.png"
     },
     "199": {
       "name": "Kitakyushu",
@@ -3674,7 +3868,8 @@
         "Alolan Dugtrio",
         "Carkol"
       ],
-      "city_kanji": "北九州"
+      "city_kanji": "北九州",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/19ddba7b284e5f5bc16a8ac6b62776d1_l.png"
     },
     "200": {
       "name": "Kitakyushu",
@@ -3693,7 +3888,8 @@
         "Sableye",
         "Duraludon"
       ],
-      "city_kanji": "北九州"
+      "city_kanji": "北九州",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ffa7e3a05b778ee19eb7e1c648fab1d3_l.png"
     },
     "201": {
       "name": "Kitakyushu",
@@ -3712,7 +3908,8 @@
         "Gardevoir",
         "Lunatone"
       ],
-      "city_kanji": "北九州"
+      "city_kanji": "北九州",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c61b90c00e7cc84c950a7c030240fc4f_l.png"
     },
     "202": {
       "name": "Kitakyushu",
@@ -3730,7 +3927,8 @@
       "pokemon_names": [
         "Tropius"
       ],
-      "city_kanji": "北九州"
+      "city_kanji": "北九州",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8bc29983cee8593f888c394b13b50b06_l.png"
     },
     "203": {
       "name": "Awaji",
@@ -3748,7 +3946,8 @@
       "pokemon_names": [
         "Lugia"
       ],
-      "city_kanji": "淡路"
+      "city_kanji": "淡路",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3b9a7a603fe46a8c9ca44daa6d465c4e_l.png"
     },
     "204": {
       "name": "Awaji",
@@ -3767,7 +3966,8 @@
         "Bayleef",
         "Aromatisse"
       ],
-      "city_kanji": "淡路"
+      "city_kanji": "淡路",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/521884db6e67a711689a534f225e5555_l.png"
     },
     "205": {
       "name": "Awaji",
@@ -3786,7 +3986,8 @@
         "Cloyster",
         "Gastrodon"
       ],
-      "city_kanji": "淡路"
+      "city_kanji": "淡路",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8e5813792f66a65c189ff519bafd76e8_l.png"
     },
     "206": {
       "name": "Higashiosaka",
@@ -3805,7 +4006,8 @@
         "Magnemite",
         "Magneton"
       ],
-      "city_kanji": "東大阪"
+      "city_kanji": "東大阪",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8b79e350ab1d04a38f8dffc6baed16e5_l.png"
     },
     "208": {
       "name": "Higashiosaka",
@@ -3824,7 +4026,8 @@
         "Elekid",
         "Mawile"
       ],
-      "city_kanji": "東大阪"
+      "city_kanji": "東大阪",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/82bcc43d44a0c0ce158820a770ea8abb_l.png"
     },
     "207": {
       "name": "Higashiosaka",
@@ -3843,7 +4046,8 @@
         "Klink",
         "Klang"
       ],
-      "city_kanji": "東大阪"
+      "city_kanji": "東大阪",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cd700d469950e929688fda7b763b46b9_l.png"
     },
     "209": {
       "name": "Higashiosaka",
@@ -3861,7 +4065,8 @@
       "pokemon_names": [
         "Raikou"
       ],
-      "city_kanji": "東大阪"
+      "city_kanji": "東大阪",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d39830afa4791086bcb803f16950c7a2_l.png"
     },
     "210": {
       "name": "Higashiosaka",
@@ -3880,7 +4085,8 @@
         "Yamper",
         "Togedemaru"
       ],
-      "city_kanji": "東大阪"
+      "city_kanji": "東大阪",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c5b049a0ebabbe4653c901d1d7d285a5_l.png"
     },
     "211": {
       "name": "Tokorozawa",
@@ -3899,7 +4105,8 @@
         "Dratini",
         "Corviknight"
       ],
-      "city_kanji": "所沢"
+      "city_kanji": "所沢",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f2dfd29ec753fb46d12d81af9736e548_l.png"
     },
     "212": {
       "name": "Tokorozawa",
@@ -3918,7 +4125,8 @@
         "Dragonair",
         "Skarmory"
       ],
-      "city_kanji": "所沢"
+      "city_kanji": "所沢",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5296fd3ea597bbc66ac66444cd22cbf3_l.png"
     },
     "213": {
       "name": "Tokorozawa",
@@ -3936,7 +4144,8 @@
       "pokemon_names": [
         "Dragonite"
       ],
-      "city_kanji": "所沢"
+      "city_kanji": "所沢",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/aeaf1d2fff879ae33fca2eb1ba4a69e8_l.png"
     },
     "214": {
       "name": "Asahikawa",
@@ -3956,7 +4165,8 @@
         "Eiscue",
         "Cubchoo"
       ],
-      "city_kanji": "旭川"
+      "city_kanji": "旭川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/98f049601f822ae15722cb1f18b781b0_l.png"
     },
     "215": {
       "name": "Kushiro",
@@ -3975,7 +4185,8 @@
         "Alolan Vulpix",
         "Decidueye"
       ],
-      "city_kanji": "久代"
+      "city_kanji": "久代",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a3d69726d4c689718117f62c9aef41e7_l.png"
     },
     "216": {
       "name": "Obihiro",
@@ -3995,7 +4206,8 @@
         "Alolan Vulpix",
         "Mudbray"
       ],
-      "city_kanji": "帯広"
+      "city_kanji": "帯広",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/978d53fbb05f1fc405e8f52a26325b90_l.png"
     },
     "217": {
       "name": "Abashiri",
@@ -4014,7 +4226,8 @@
         "Alolan Vulpix",
         "Weavile"
       ],
-      "city_kanji": "網走"
+      "city_kanji": "網走",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7f513d0f647dc5adfe2e0576aedaf871_l.png"
     },
     "218": {
       "name": "Akaigawa",
@@ -4034,7 +4247,8 @@
         "Vanillite",
         "Hatenna"
       ],
-      "city_kanji": "赤井川"
+      "city_kanji": "赤井川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f141860f843e06b962fcbd5c4d699d6e_l.png"
     },
     "219": {
       "name": "Higashikawa",
@@ -4053,7 +4267,8 @@
         "Alolan Vulpix",
         "Dialga"
       ],
-      "city_kanji": "東川"
+      "city_kanji": "東川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/97cab8cd9571ac26cba4a7a16bb12770_l.png"
     },
     "221": {
       "name": "Erimo",
@@ -4072,7 +4287,8 @@
         "Alolan Vulpix",
         "Lycanroc"
       ],
-      "city_kanji": "えりも町"
+      "city_kanji": "えりも町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d6112e741a398a77436b6a4eca00b2cf_l.png"
     },
     "220": {
       "name": "Shari",
@@ -4091,7 +4307,8 @@
         "Vulpix",
         "Palkia"
       ],
-      "city_kanji": "針"
+      "city_kanji": "針",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1c18c9f749dced78800c3893890d0fbc_l.png"
     },
     "222": {
       "name": "Katori",
@@ -4109,7 +4326,8 @@
       "pokemon_names": [
         "Galarian Farfetch’d"
       ],
-      "city_kanji": "香取"
+      "city_kanji": "香取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c9284e72a57917ac1347408c2c48b8a7_l.png"
     },
     "223": {
       "name": "Katori",
@@ -4128,7 +4346,8 @@
         "Rookidee",
         "Falinks"
       ],
-      "city_kanji": "香取"
+      "city_kanji": "香取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e20be7f7c65fda5d7808a88ca8ed6d78_l.png"
     },
     "224": {
       "name": "Katori",
@@ -4147,7 +4366,8 @@
         "Florges",
         "Fletchling"
       ],
-      "city_kanji": "香取"
+      "city_kanji": "香取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0ca06ae099f30906d35f7061ac70f433_l.png"
     },
     "225": {
       "name": "Katori",
@@ -4167,7 +4387,8 @@
         "Seedot",
         "Staravia"
       ],
-      "city_kanji": "香取"
+      "city_kanji": "香取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/23d6d594e7a3c463148f8a6122377134_l.png"
     },
     "226": {
       "name": "Utsunomiya",
@@ -4186,7 +4407,8 @@
         "Electabuzz",
         "Skwovet"
       ],
-      "city_kanji": "宇都宮"
+      "city_kanji": "宇都宮",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/52fdbecd02d60456608847e86f3e8964_l.png"
     },
     "227": {
       "name": "Utsunomiya",
@@ -4205,7 +4427,8 @@
         "Electrike",
         "Crustle"
       ],
-      "city_kanji": "宇都宮"
+      "city_kanji": "宇都宮",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e3b4858f5d9d3e0dc78c355976453448_l.png"
     },
     "228": {
       "name": "Utsunomiya",
@@ -4223,7 +4446,8 @@
       "pokemon_names": [
         "Thundurus"
       ],
-      "city_kanji": "宇都宮"
+      "city_kanji": "宇都宮",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/614ba5f80e044574e4f5fa79677fa37f_l.png"
     },
     "229": {
       "name": "Urasoe",
@@ -4242,7 +4466,8 @@
         "Solrock",
         "Skiploom"
       ],
-      "city_kanji": "浦添"
+      "city_kanji": "浦添",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e7c237860cafa6647a8a41ea77066f22_l.png"
     },
     "230": {
       "name": "Nago",
@@ -4261,7 +4486,8 @@
         "Emolga",
         "Pikipek"
       ],
-      "city_kanji": "那古"
+      "city_kanji": "那古",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2fe8dcc15673cdcdbe781d3893d552eb_l.png"
     },
     "231": {
       "name": "Itoman",
@@ -4280,7 +4506,8 @@
         "Wartortle",
         "Sandygast"
       ],
-      "city_kanji": "糸満"
+      "city_kanji": "糸満",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d921024635f0de3420c032f5a1afa708_l.png"
     },
     "232": {
       "name": "Motobu",
@@ -4298,7 +4525,8 @@
       "pokemon_names": [
         "Wailord"
       ],
-      "city_kanji": "本部"
+      "city_kanji": "本部",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ace6dd945ee55438d6cc274d7d64dce2_l.png"
     },
     "233": {
       "name": "Tomigusuku",
@@ -4317,7 +4545,8 @@
         "Axew",
         "Jangmo-o"
       ],
-      "city_kanji": "豊見城"
+      "city_kanji": "豊見城",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/07ed34f46b856337cea843d294287933_l.png"
     },
     "234": {
       "name": "Nanjo",
@@ -4336,7 +4565,8 @@
         "Seviper",
         "Zangoose"
       ],
-      "city_kanji": "南城"
+      "city_kanji": "南城",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/037ab104126f6843a4d1264f42926ab5_l.png"
     },
     "235": {
       "name": "Ishigaki",
@@ -4355,7 +4585,8 @@
         "Mantine",
         "Remoraid"
       ],
-      "city_kanji": "石垣"
+      "city_kanji": "石垣",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/070b79a26c3156a55e5f6b29b4780493_l.png"
     },
     "236": {
       "name": "Miyakojima",
@@ -4373,7 +4604,8 @@
       "pokemon_names": [
         "Kyogre"
       ],
-      "city_kanji": "都島"
+      "city_kanji": "都島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/088f26f6fd18af3f64cc8d3e05af29ba_l.png"
     },
     "237": {
       "name": "Koka",
@@ -4391,7 +4623,8 @@
       "pokemon_names": [
         "Greninja"
       ],
-      "city_kanji": "甲賀"
+      "city_kanji": "甲賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/675edfc1e37d6a294429a9e35ed48504_l.png"
     },
     "238": {
       "name": "Koka",
@@ -4409,7 +4642,8 @@
       "pokemon_names": [
         "Greninja"
       ],
-      "city_kanji": "甲賀"
+      "city_kanji": "甲賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/696baacc3630dbd8654850d1fb764e25_l.png"
     },
     "239": {
       "name": "Koka",
@@ -4428,7 +4662,8 @@
         "Greninja",
         "Frogadier"
       ],
-      "city_kanji": "甲賀"
+      "city_kanji": "甲賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/723d14bb4afb1187b258976aa5094e0a_l.png"
     },
     "240": {
       "name": "Tsu",
@@ -4446,7 +4681,8 @@
       "pokemon_names": [
         "Oshawott"
       ],
-      "city_kanji": "津"
+      "city_kanji": "津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ff1d441d552b5c89cd7254c986834349_l.png"
     },
     "241": {
       "name": "Yokkaichi",
@@ -4465,7 +4701,8 @@
         "Oshawott",
         "Samurott"
       ],
-      "city_kanji": "四日"
+      "city_kanji": "四日",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/38c81224354dc5eded2c52057638d817_l.png"
     },
     "242": {
       "name": "Ise",
@@ -4484,7 +4721,8 @@
         "Oshawott",
         "Chingling"
       ],
-      "city_kanji": "伊勢"
+      "city_kanji": "伊勢",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a61f60d4ef8ae9a401cc322fe9953951_l.png"
     },
     "243": {
       "name": "Toba",
@@ -4503,7 +4741,8 @@
         "Oshawott",
         "Dewgong"
       ],
-      "city_kanji": "鳥羽"
+      "city_kanji": "鳥羽",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c59edcc8c3f844e2d4b2d50b5b63f70e_l.png"
     },
     "244": {
       "name": "Kumano",
@@ -4522,7 +4761,8 @@
         "Oshawott",
         "Stufful"
       ],
-      "city_kanji": "熊野"
+      "city_kanji": "熊野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/642d73fc0560c98d9bb2123d61fe178a_l.png"
     },
     "245": {
       "name": "Shima",
@@ -4541,7 +4781,8 @@
         "Oshawott",
         "Clamperl"
       ],
-      "city_kanji": "四万"
+      "city_kanji": "四万",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2ff24b4155bf1e32a81d809c7e8fa0c4_l.png"
     },
     "246": {
       "name": "Iga",
@@ -4560,7 +4801,8 @@
         "Oshawott",
         "Accelgor"
       ],
-      "city_kanji": "伊賀"
+      "city_kanji": "伊賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/871d23d6e3da74231cd6d0c402b2ec3e_l.png"
     },
     "247": {
       "name": "Fukushima",
@@ -4579,7 +4821,8 @@
         "Chansey",
         "Morpeko"
       ],
-      "city_kanji": "福島"
+      "city_kanji": "福島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/51ecc24c889978ded00d42af017a2958_l.png"
     },
     "248": {
       "name": "Aizuwakamatsu",
@@ -4598,7 +4841,8 @@
         "Chansey",
         "Gallade"
       ],
-      "city_kanji": "会津若松"
+      "city_kanji": "会津若松",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1adfd8a3e9e1b10828f4e0deefa93853_l.png"
     },
     "249": {
       "name": "Koriyama",
@@ -4617,7 +4861,8 @@
         "Chansey",
         "Jigglypuff"
       ],
-      "city_kanji": "郡山"
+      "city_kanji": "郡山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ca3e03abbe191764b6fde926eed1a5da_l.png"
     },
     "250": {
       "name": "Minamiaizu",
@@ -4636,7 +4881,8 @@
         "Chansey",
         "Timburr"
       ],
-      "city_kanji": "南安威"
+      "city_kanji": "南安威",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/50c29ca481ea4d2f804361c903447b30_l.png"
     },
     "251": {
       "name": "Yanaizu",
@@ -4655,7 +4901,8 @@
         "Chansey",
         "Happiny"
       ],
-      "city_kanji": "柳津"
+      "city_kanji": "柳津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d2bf4080f4238cfa64011f8329c35fd1_l.png"
     },
     "253": {
       "name": "Futaba",
@@ -4674,7 +4921,8 @@
         "Chansey",
         "Sunkern"
       ],
-      "city_kanji": "双葉"
+      "city_kanji": "双葉",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8d9e484d1f4e4ded757f196708543042_l.png"
     },
     "252": {
       "name": "Showa",
@@ -4693,7 +4941,8 @@
         "Chansey",
         "Sewaddle"
       ],
-      "city_kanji": "昭和"
+      "city_kanji": "昭和",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6b321ff06f50ac051b7f30760a91a093_l.png"
     },
     "254": {
       "name": "Iitate",
@@ -4712,7 +4961,8 @@
         "Chansey",
         "Floette"
       ],
-      "city_kanji": "飯舘村"
+      "city_kanji": "飯舘村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3260540897d76440bd153d443780999d_l.png"
     },
     "256": {
       "name": "Saga",
@@ -4730,7 +4980,8 @@
       "pokemon_names": [
         "Alolan Meowth"
       ],
-      "city_kanji": "佐賀"
+      "city_kanji": "佐賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/aa70252404971db18df4f2bc527a951c_l.png"
     },
     "255": {
       "name": "Saga",
@@ -4748,7 +4999,8 @@
       "pokemon_names": [
         "Meowth"
       ],
-      "city_kanji": "佐賀"
+      "city_kanji": "佐賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f7760dab549440c477f8b489e1add1ed_l.png"
     },
     "257": {
       "name": "Saga",
@@ -4766,7 +5018,8 @@
       "pokemon_names": [
         "Galarian Meowth"
       ],
-      "city_kanji": "佐賀"
+      "city_kanji": "佐賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/64eddebc32fe29d163ab826aea4181c1_l.png"
     },
     "258": {
       "name": "Hanamaki",
@@ -4786,7 +5039,8 @@
         "Cosmog",
         "Rayquaza"
       ],
-      "city_kanji": "花卷市"
+      "city_kanji": "花卷市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/17c410916387ddddbd7f807b04947683_l.png"
     },
     "259": {
       "name": "Tono",
@@ -4806,7 +5060,8 @@
         "Lombre",
         "Ludicolo"
       ],
-      "city_kanji": "遠野"
+      "city_kanji": "遠野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/863f98fb33b3066069009fc1ca95df3a_l.png"
     },
     "260": {
       "name": "Ichinoseki",
@@ -4826,7 +5081,8 @@
         "Roggenrola",
         "Rhyperior"
       ],
-      "city_kanji": "一关市"
+      "city_kanji": "一关市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/453d04268259621cd2081a81428b81d8_l.png"
     },
     "261": {
       "name": "Ninohe",
@@ -4845,7 +5101,8 @@
         "Geodude",
         "Snorunt"
       ],
-      "city_kanji": "二戸"
+      "city_kanji": "二戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ea457a9ac12cd61461471430fa04872e_l.png"
     },
     "262": {
       "name": "Hachimantai",
@@ -4864,7 +5121,8 @@
         "Geodude",
         "Amaura"
       ],
-      "city_kanji": "八幡平"
+      "city_kanji": "八幡平",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ceed9f9a751f47fe1f935b99da1e094e_l.png"
     },
     "263": {
       "name": "Takizawa",
@@ -4884,7 +5142,8 @@
         "Mudbray",
         "Hawlucha"
       ],
-      "city_kanji": "滝沢"
+      "city_kanji": "滝沢",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2490baa3ed8a260be964d24128fd0154_l.png"
     },
     "264": {
       "name": "Iwate",
@@ -4904,7 +5163,8 @@
         "Ditto",
         "Alolan Geodude"
       ],
-      "city_kanji": "岩手"
+      "city_kanji": "岩手",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ae475fe4a3bc02e9f2c71b5b530bdec9_l.png"
     },
     "265": {
       "name": "Shiwa",
@@ -4923,7 +5183,8 @@
         "Geodude",
         "Steenee"
       ],
-      "city_kanji": "志和"
+      "city_kanji": "志和",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a6b1f66c93b0ccde014798e169a62ab7_l.png"
     },
     "266": {
       "name": "Nishiwaga",
@@ -4943,7 +5204,8 @@
         "Burmy",
         "Sawsbuck"
       ],
-      "city_kanji": "西和田"
+      "city_kanji": "西和田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ad2314607356eb76b53f042d0d0c789e_l.png"
     },
     "267": {
       "name": "Hiraizumi",
@@ -4962,7 +5224,8 @@
         "Cresselia",
         "Lunatone"
       ],
-      "city_kanji": "平泉"
+      "city_kanji": "平泉",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8836400faac2d8e8a399cbb3d4486759_l.png"
     },
     "268": {
       "name": "Karumai",
@@ -4982,7 +5245,8 @@
         "Passimian",
         "Rockruff"
       ],
-      "city_kanji": "軽米"
+      "city_kanji": "軽米",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c1d89eb9977a98ddc9928fcc01679954_l.png"
     },
     "269": {
       "name": "Kunohe",
@@ -5002,7 +5266,8 @@
         "Hoothoot",
         "Dartrix"
       ],
-      "city_kanji": "九戸村"
+      "city_kanji": "九戸村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4cabd14c034857349d2f7dbfe2c962c8_l.png"
     },
     "270": {
       "name": "Ichinohe",
@@ -5021,7 +5286,8 @@
         "Geodude",
         "Baltoy"
       ],
-      "city_kanji": "一戸"
+      "city_kanji": "一戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f13194f5bef52f5ccefbec9e2a63045d_l.png"
     },
     "271": {
       "name": "Toyohashi",
@@ -5039,7 +5305,8 @@
       "pokemon_names": [
         "Typhlosion"
       ],
-      "city_kanji": "豊橋"
+      "city_kanji": "豊橋",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2b38fff3956d1bef47f96d05ce465f6f_l.png"
     },
     "272": {
       "name": "Toyohashi",
@@ -5058,7 +5325,8 @@
         "Grubbin",
         "Ribombee"
       ],
-      "city_kanji": "豊橋"
+      "city_kanji": "豊橋",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/149f024197e1e9af562412f1f861e87b_l.png"
     },
     "274": {
       "name": "Toyohashi",
@@ -5077,7 +5345,8 @@
         "Kabuto",
         "Vikavolt"
       ],
-      "city_kanji": "豊橋"
+      "city_kanji": "豊橋",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e42f805cec6afc6610bf3fb60fa1302e_l.png"
     },
     "273": {
       "name": "Toyohashi",
@@ -5096,7 +5365,8 @@
         "Starmie",
         "Charjabug"
       ],
-      "city_kanji": "豊橋"
+      "city_kanji": "豊橋",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/81a26e93499f4f7b7646f134dceaf98e_l.png"
     },
     "275": {
       "name": "Toyama",
@@ -5114,7 +5384,8 @@
       "pokemon_names": [
         "Absol"
       ],
-      "city_kanji": "富山"
+      "city_kanji": "富山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3d9b3d56b93482869a6a2c7474c4be35_l.png"
     },
     "276": {
       "name": "Toyama",
@@ -5132,7 +5403,8 @@
       "pokemon_names": [
         "Inkay"
       ],
-      "city_kanji": "富山"
+      "city_kanji": "富山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/63bb2eadb08b4706570c5bee8384d345_l.png"
     },
     "277": {
       "name": "Toyama",
@@ -5151,7 +5423,8 @@
         "Ledyba",
         "Comfey"
       ],
-      "city_kanji": "富山"
+      "city_kanji": "富山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6c44395065c204322fb25c9d622810f6_l.png"
     },
     "278": {
       "name": "Tobetsu",
@@ -5171,7 +5444,8 @@
         "Sinistea",
         "Polteageist"
       ],
-      "city_kanji": "当別町"
+      "city_kanji": "当別町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b156dff51cd08f5fedd446271f2af5cb_l.png"
     },
     "280": {
       "name": "Date",
@@ -5190,7 +5464,8 @@
         "Chansey",
         "Rillaboom"
       ],
-      "city_kanji": "伊達"
+      "city_kanji": "伊達",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1e3c96c981ef34d92e733c0ecf2590cb_l.png"
     },
     "279": {
       "name": "Nihonmatsu",
@@ -5209,7 +5484,8 @@
         "Chansey",
         "Swirlix"
       ],
-      "city_kanji": "二本松"
+      "city_kanji": "二本松",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0d3e282f7e5ed43a671c095bc963353b_l.png"
     },
     "281": {
       "name": "Kitashiobara",
@@ -5228,7 +5504,8 @@
         "Chansey",
         "Vanillish"
       ],
-      "city_kanji": "北塩原村"
+      "city_kanji": "北塩原村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/79e3301122aa9216bddd37f23732abff_l.png"
     },
     "282": {
       "name": "Iwanashiro",
@@ -5248,7 +5525,8 @@
         "Grotle",
         "Swanna"
       ],
-      "city_kanji": "岩成村"
+      "city_kanji": "岩成村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2472c4c2415ec4c71ca043ba35fbbd1b_l.png"
     },
     "283": {
       "name": "Aizumisato",
@@ -5267,7 +5545,8 @@
         "Chansey",
         "Lilligant"
       ],
-      "city_kanji": "泉郷"
+      "city_kanji": "泉郷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0f281a785f667a4ee9bac0d93500476a_l.png"
     },
     "284": {
       "name": "Nishigo",
@@ -5286,7 +5565,8 @@
         "Chansey",
         "Wooper"
       ],
-      "city_kanji": "西郷"
+      "city_kanji": "西郷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1177578c6fc8b006e9b2e53ac8ea99cd_l.png"
     },
     "285": {
       "name": "Yabuki",
@@ -5305,7 +5585,8 @@
         "Chansey",
         "Talonflame"
       ],
-      "city_kanji": "矢吹"
+      "city_kanji": "矢吹",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2602675c5b001db979a74bfda76749aa_l.png"
     },
     "286": {
       "name": "Furudono",
@@ -5324,7 +5605,8 @@
         "Chansey",
         "Blissey"
       ],
-      "city_kanji": "古殿"
+      "city_kanji": "古殿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2b62ebefd99578ba22804a9f3d8cbd5e_l.png"
     },
     "287": {
       "name": "Miharu",
@@ -5343,7 +5625,8 @@
         "Chansey",
         "Roserade"
       ],
-      "city_kanji": "宮原"
+      "city_kanji": "宮原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/726c846d91cf52f7516cf1e6401637b7_l.png"
     },
     "288": {
       "name": "Shimonoseki",
@@ -5362,7 +5645,8 @@
         "Empoleon",
         "Wailmer"
       ],
-      "city_kanji": "下关市"
+      "city_kanji": "下关市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/45b93f3bf2e0617781b54d098c85e938_l.png"
     },
     "289": {
       "name": "Shimonoseki",
@@ -5381,7 +5665,8 @@
         "Chinchou",
         "Qwilfish"
       ],
-      "city_kanji": "下关市"
+      "city_kanji": "下关市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/639984e012e0fb49cb6697784322f5a6_l.png"
     },
     "291": {
       "name": "Shimonoseki",
@@ -5399,7 +5684,8 @@
       "pokemon_names": [
         "Koffing"
       ],
-      "city_kanji": "下关市"
+      "city_kanji": "下关市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1bf730cea4b0376a673d2aedefc19ce6_l.png"
     },
     "290": {
       "name": "Shimonoseki",
@@ -5417,7 +5703,8 @@
       "pokemon_names": [
         "Ekans"
       ],
-      "city_kanji": "下关市"
+      "city_kanji": "下关市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/19e9d673ad1d496efdf895ddf8b2dd9e_l.png"
     },
     "292": {
       "name": "Kameyama",
@@ -5437,7 +5724,8 @@
         "Riolu",
         "Torterra"
       ],
-      "city_kanji": "亀山"
+      "city_kanji": "亀山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e576fe03cd6caedf734295b94e40b1d3_l.png"
     },
     "293": {
       "name": "Asahi",
@@ -5456,7 +5744,8 @@
         "Oshawott",
         "Whimsicott"
       ],
-      "city_kanji": "旭"
+      "city_kanji": "旭",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/13bc40cf9c71d3585a1d7250ec072043_l.png"
     },
     "294": {
       "name": "Meiwa",
@@ -5476,7 +5765,8 @@
         "Bounsweet",
         "Florges"
       ],
-      "city_kanji": "明和"
+      "city_kanji": "明和",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5d34514d91c421e7eb38d33dd3aa4d5e_l.png"
     },
     "295": {
       "name": "Odai",
@@ -5496,7 +5786,8 @@
         "Pansage",
         "Virizion"
       ],
-      "city_kanji": "佐原"
+      "city_kanji": "佐原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3d94649159a7193785e0d718e9419ae4_l.png"
     },
     "296": {
       "name": "Watarai",
@@ -5516,7 +5807,8 @@
         "Marill",
         "Claydol"
       ],
-      "city_kanji": "渡"
+      "city_kanji": "渡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/08fd5108b2fa7f649a3b4288b51dbb81_l.png"
     },
     "297": {
       "name": "Kiho",
@@ -5535,7 +5827,8 @@
         "Oshawott",
         "Tirtouga"
       ],
-      "city_kanji": "海保"
+      "city_kanji": "海保",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/11b856a2714d8732b97c4de3a3eb54b3_l.png"
     },
     "298": {
       "name": "Ayagawa",
@@ -5555,7 +5848,8 @@
         "Galarian Slowpoke",
         "Shellder"
       ],
-      "city_kanji": "綾川"
+      "city_kanji": "綾川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1ec34abda217efe011cff081f744466e_l.png"
     },
     "299": {
       "name": "Kuji",
@@ -5575,7 +5869,8 @@
         "Aerodactyl",
         "Bibarel"
       ],
-      "city_kanji": "久慈"
+      "city_kanji": "久慈",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2542a462ffbb774db2a3a9c72fc44239_l.png"
     },
     "300": {
       "name": "Tottori",
@@ -5595,7 +5890,8 @@
         "Alolan Sandshrew",
         "Bunnelby"
       ],
-      "city_kanji": "鳥取"
+      "city_kanji": "鳥取",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4ed2700dca6b81175e2041b6015883ad_l.png"
     },
     "301": {
       "name": "Kanazawa",
@@ -5613,7 +5909,8 @@
       "pokemon_names": [
         "Milotic"
       ],
-      "city_kanji": "金沢"
+      "city_kanji": "金沢",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c940415d26bf0831bbc369b7616083e1_l.png"
     },
     "302": {
       "name": "Muroran",
@@ -5633,7 +5930,8 @@
         "Alolan Vulpix",
         "Illumise"
       ],
-      "city_kanji": "室蘭"
+      "city_kanji": "室蘭",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8926749b6373a6631574db18ea39adf7_l.png"
     },
     "303": {
       "name": "Kitami",
@@ -5652,7 +5950,8 @@
         "Vulpix",
         "Alolan Vulpix"
       ],
-      "city_kanji": "北見"
+      "city_kanji": "北見",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5d4acfcb12a887332d63082b2bfcae8a_l.png"
     },
     "304": {
       "name": "Utashinai",
@@ -5672,7 +5971,8 @@
         "Alolan Vulpix",
         "Joltik"
       ],
-      "city_kanji": "歌志內市"
+      "city_kanji": "歌志內市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9e92a35e490e653f3cdbc4836a94263e_l.png"
     },
     "305": {
       "name": "Kikonai",
@@ -5692,7 +5992,8 @@
         "Alolan Vulpix",
         "Gossifleur"
       ],
-      "city_kanji": "木古内"
+      "city_kanji": "木古内",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9c50492829220e1aa07a60b268ddfa1e_l.png"
     },
     "306": {
       "name": "Sarufutsu",
@@ -5712,7 +6013,8 @@
         "Alolan Vulpix",
         "Aipom"
       ],
-      "city_kanji": "猿払"
+      "city_kanji": "猿払",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e37f84100e487f76745f084394ae7d07_l.png"
     },
     "308": {
       "name": "Nabari",
@@ -5731,7 +6033,8 @@
         "Oshawott",
         "Dewott"
       ],
-      "city_kanji": "名張"
+      "city_kanji": "名張",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/be9daa94605e7406128c8aef5c159b77_l.png"
     },
     "307": {
       "name": "Bihoro",
@@ -5751,7 +6054,8 @@
         "Alolan Vulpix",
         "Hoppip"
       ],
-      "city_kanji": "美幌"
+      "city_kanji": "美幌",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8ec01130d0c20e3a3957f36e64315883_l.png"
     },
     "309": {
       "name": "Kisosaki",
@@ -5770,7 +6074,8 @@
         "Oshawott",
         "Machoke"
       ],
-      "city_kanji": "城崎町"
+      "city_kanji": "城崎町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/063983c387a9eb6bb1ca4748018fb7df_l.png"
     },
     "310": {
       "name": "Toin",
@@ -5789,7 +6094,8 @@
         "Oshawott",
         "Mime Jr."
       ],
-      "city_kanji": "唐院"
+      "city_kanji": "唐院",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/73080cfd2979568b56409864ffb75c41_l.png"
     },
     "311": {
       "name": "Yokohama",
@@ -5808,7 +6114,8 @@
         "Pikachu",
         "Raichu"
       ],
-      "city_kanji": "横浜"
+      "city_kanji": "横浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/022cc45747413f97e8b5bf0873da6695_l.png"
     },
     "312": {
       "name": "Yokohama",
@@ -5827,7 +6134,8 @@
         "Pikachu",
         "Pelipper"
       ],
-      "city_kanji": "横浜"
+      "city_kanji": "横浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/680c8828351a0c325e338868e99f0a0a_l.png"
     },
     "313": {
       "name": "Yokohama",
@@ -5847,7 +6155,8 @@
         "Victini",
         "Munchlax"
       ],
-      "city_kanji": "横浜"
+      "city_kanji": "横浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3a15037b379ab433f3c857ef5d2535eb_l.png"
     },
     "314": {
       "name": "Yokohama",
@@ -5867,7 +6176,8 @@
         "Psyduck",
         "Machop"
       ],
-      "city_kanji": "横浜"
+      "city_kanji": "横浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ac4ed4c5f7ff0704cd3e3bc890c7a217_l.png"
     },
     "318": {
       "name": "Akita",
@@ -5887,7 +6197,8 @@
         "Rockruff",
         "Dachsbun"
       ],
-      "city_kanji": "秋田"
+      "city_kanji": "秋田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/75d7b8121f07fb3655b214e5bc97fd10_l.png"
     },
     "319": {
       "name": "Yokote",
@@ -5906,7 +6217,8 @@
         "Fidough",
         "Snorunt"
       ],
-      "city_kanji": "横手"
+      "city_kanji": "横手",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/77213c59ad91f8db66797f0066bc9b6e_l.png"
     },
     "320": {
       "name": "Oga",
@@ -5926,7 +6238,8 @@
         "Houndoom",
         "Granbull"
       ],
-      "city_kanji": "男鹿"
+      "city_kanji": "男鹿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f472a2f36f3ef6d95fc671aa272be760_l.png"
     },
     "321": {
       "name": "Kazuno",
@@ -5945,7 +6258,8 @@
         "Cubone",
         "Galarian Yamask"
       ],
-      "city_kanji": "鹿角"
+      "city_kanji": "鹿角",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/01e7a194efa8ccf1f402fd3748124ea6_l.png"
     },
     "315": {
       "name": "Dazaifu",
@@ -5965,7 +6279,8 @@
         "Sawsbuck",
         "Fletchling"
       ],
-      "city_kanji": "太宰府"
+      "city_kanji": "太宰府",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/82a8e4547e0d8ae6938fc9ca802c90e0_l.png"
     },
     "322": {
       "name": "Senboku",
@@ -5984,7 +6299,8 @@
         "Dragonair",
         "Rufflet"
       ],
-      "city_kanji": "仙北"
+      "city_kanji": "仙北",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e2e2f0492f0c7751a975073c6ec29d61_l.png"
     },
     "317": {
       "name": "Dazaifu",
@@ -6002,7 +6318,8 @@
       "pokemon_names": [
         "Aegislash"
       ],
-      "city_kanji": "太宰府"
+      "city_kanji": "太宰府",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9f18ef1fb249c26b80202eabfd32d469_l.png"
     },
     "316": {
       "name": "Dazaifu",
@@ -6022,7 +6339,8 @@
         "Slowking",
         "Oranguru"
       ],
-      "city_kanji": "太宰府"
+      "city_kanji": "太宰府",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5cd7a8385c92d8774ca9fcf6577d93eb_l.png"
     },
     "323": {
       "name": "Kitakami",
@@ -6041,7 +6359,8 @@
         "Golem",
         "Bisharp"
       ],
-      "city_kanji": "北上"
+      "city_kanji": "北上",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/078ccb34c03eff812d8749fed35e679a_l.png"
     },
     "324": {
       "name": "Biei",
@@ -6060,7 +6379,8 @@
         "Alolan Vulpix",
         "Hisuian Braviary"
       ],
-      "city_kanji": "美瑛町"
+      "city_kanji": "美瑛町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/de1fad5b97b1302c551d9589cad60c01_l.png"
     },
     "325": {
       "name": "Matsuyama",
@@ -6079,7 +6399,8 @@
         "Tsareena",
         "Bounsweet"
       ],
-      "city_kanji": "松山"
+      "city_kanji": "松山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2c463a2dd4f605a830d338c012f560f1_l.png"
     },
     "326": {
       "name": "Matsuyama",
@@ -6098,7 +6419,8 @@
         "Escavalier",
         "Sirfetch’d"
       ],
-      "city_kanji": "松山"
+      "city_kanji": "松山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5cfd8d62b32230e7062a428e6a8d5314_l.png"
     },
     "327": {
       "name": "Naruto",
@@ -6116,7 +6438,8 @@
       "pokemon_names": [
         "Suicune"
       ],
-      "city_kanji": "成東町"
+      "city_kanji": "成東町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/db86984d919f6b77c13d3595895d4033_l.png"
     },
     "328": {
       "name": "Naruto",
@@ -6135,7 +6458,8 @@
         "Seadra",
         "Kingdra"
       ],
-      "city_kanji": "成東町"
+      "city_kanji": "成東町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ec4704ac964ad623fcdc8e707c4cab98_l.png"
     },
     "329": {
       "name": "Naruto",
@@ -6155,7 +6479,8 @@
         "Poliwhirl",
         "Diglett"
       ],
-      "city_kanji": "成東町"
+      "city_kanji": "成東町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b7feef9605334785b629220d93968bd0_l.png"
     },
     "330": {
       "name": "Suzuka",
@@ -6174,7 +6499,8 @@
         "Oshawott",
         "Cyclizar"
       ],
-      "city_kanji": "鈴鹿"
+      "city_kanji": "鈴鹿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5e7b0f7a590d610047c48864ebaa692f_l.png"
     },
     "331": {
       "name": "Kawagoe",
@@ -6194,7 +6520,8 @@
         "Taillow",
         "Surskit"
       ],
-      "city_kanji": "川越"
+      "city_kanji": "川越",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/54d0f6d4443b068cf2328ea975e6f54a_l.png"
     },
     "333": {
       "name": "Matsusaka",
@@ -6213,7 +6540,8 @@
         "Oshawott",
         "Meowth"
       ],
-      "city_kanji": "松栄"
+      "city_kanji": "松栄",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5fd9256575a991a946731d58af9d9177_l.png"
     },
     "332": {
       "name": "Taki",
@@ -6233,7 +6561,8 @@
         "Lechonk",
         "Phanpy"
       ],
-      "city_kanji": "滝"
+      "city_kanji": "滝",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3079076ac9d1bd591d3d9fed6d5490bf_l.png"
     },
     "335": {
       "name": "Minamiise",
@@ -6252,7 +6581,8 @@
         "Oshawott",
         "Ditto"
       ],
-      "city_kanji": "南伊勢町"
+      "city_kanji": "南伊勢町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/43f237d285100171554ac6f1a0b3d5ae_l.png"
     },
     "334": {
       "name": "Tamashiro",
@@ -6271,7 +6601,8 @@
         "Oshawott",
         "Spoink"
       ],
-      "city_kanji": "玉城"
+      "city_kanji": "玉城",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/44742a17501610a31bcbed2c84e725ff_l.png"
     },
     "336": {
       "name": "Katsuyama",
@@ -6291,7 +6622,8 @@
         "Archen",
         "Tyrantrum"
       ],
-      "city_kanji": "勝山"
+      "city_kanji": "勝山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8911ceb39e882e398c2d3ce2c706e4cd_l.png"
     },
     "339": {
       "name": "Eiheiji-cho",
@@ -6310,7 +6642,8 @@
         "Dragonite",
         "Kubfu"
       ],
-      "city_kanji": "永平寺町"
+      "city_kanji": "永平寺町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/82eb8843dce5a6e807c44b4d02cac7f4_l.png"
     },
     "343": {
       "name": "Koya",
@@ -6328,7 +6661,8 @@
       "pokemon_names": [
         "Urshifu"
       ],
-      "city_kanji": "昆陽"
+      "city_kanji": "昆陽",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1361a905da2d83b5309cd04822de4f32_l.png"
     },
     "342": {
       "name": "Wakayama",
@@ -6347,7 +6681,8 @@
         "Luxray",
         "Primarina"
       ],
-      "city_kanji": "和歌山"
+      "city_kanji": "和歌山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e5ee70fdd320e4d6792e7ee9890b2ace_l.png"
     },
     "344": {
       "name": "Shirahama",
@@ -6366,7 +6701,8 @@
         "Pancham",
         "Finizen"
       ],
-      "city_kanji": "白浜町"
+      "city_kanji": "白浜町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/03e9a0983c54cc918c63b4db3a0fcc5e_l.png"
     },
     "338": {
       "name": "Echizen-shi",
@@ -6386,7 +6722,8 @@
         "Toxel",
         "Honedge"
       ],
-      "city_kanji": "越前"
+      "city_kanji": "越前",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ae37578bd4f8d92f43b00865ff9a4592_l.png"
     },
     "337": {
       "name": "Awara",
@@ -6406,7 +6743,8 @@
         "Togetic",
         "Zigzagoon"
       ],
-      "city_kanji": "あわら市"
+      "city_kanji": "あわら市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6a7679a424968fb14c2d9d0de5761ac7_l.png"
     },
     "345": {
       "name": "Kushimoto",
@@ -6426,7 +6764,8 @@
         "Elgyem",
         "Magnezone"
       ],
-      "city_kanji": "串本町"
+      "city_kanji": "串本町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5f390e91fa19495f13ca11ded3be39a0_l.png"
     },
     "341": {
       "name": "Mihama",
@@ -6446,7 +6785,8 @@
         "Mareanie",
         "Wiglett"
       ],
-      "city_kanji": "美浜"
+      "city_kanji": "美浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/aa96cff87252e9d15d1050c3dfdb32b9_l.png"
     },
     "340": {
       "name": "Takahama",
@@ -6465,7 +6805,8 @@
         "Dragonite",
         "Tatsugiri"
       ],
-      "city_kanji": "高浜町"
+      "city_kanji": "高浜町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/40a7836c54804faf50d4fec9edf7b2cf_l.png"
     },
     "348": {
       "name": "Hamamatsu",
@@ -6484,7 +6825,8 @@
         "Meloetta",
         "Eelektross"
       ],
-      "city_kanji": "浜松"
+      "city_kanji": "浜松",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e7918b84cc982219422e8d442611a8fe_l.png"
     },
     "346": {
       "name": "Nachikatsuura",
@@ -6502,7 +6844,8 @@
       "pokemon_names": [
         "Celebi"
       ],
-      "city_kanji": "中津浦"
+      "city_kanji": "中津浦",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0647823671ac088cf1c2812389b1b5c9_l.png"
     },
     "347": {
       "name": "Shizuoka",
@@ -6521,7 +6864,8 @@
         "Ivysaur",
         "Staraptor"
       ],
-      "city_kanji": "静冈县"
+      "city_kanji": "静冈县",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2b3b0900b7cdfb28b04ebb960c115ec9_l.png"
     },
     "349": {
       "name": "Numazu",
@@ -6541,7 +6885,8 @@
         "Relicanth",
         "Gorebyss"
       ],
-      "city_kanji": "沼津"
+      "city_kanji": "沼津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/69a0c3234cff806f768ffdd1db611679_l.png"
     },
     "350": {
       "name": "Fuji",
@@ -6559,7 +6904,8 @@
       "pokemon_names": [
         "Moltres"
       ],
-      "city_kanji": "富士"
+      "city_kanji": "富士",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/dd4782c37fab19b0621283b4e8253ffa_l.png"
     },
     "351": {
       "name": "Izu",
@@ -6578,7 +6924,8 @@
         "Pancham",
         "Pangoro"
       ],
-      "city_kanji": "伊豆"
+      "city_kanji": "伊豆",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/54b23fd2424c86f488e780a6dd137276_l.png"
     },
     "352": {
       "name": "Uji",
@@ -6597,7 +6944,8 @@
         "Scorbunny",
         "Spinda"
       ],
-      "city_kanji": "宇治"
+      "city_kanji": "宇治",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ba4d976110fe6bb12c1e0b7c0a312f7b_l.png"
     },
     "353": {
       "name": "Uji",
@@ -6616,7 +6964,8 @@
         "Poltchageist",
         "Sinistcha"
       ],
-      "city_kanji": "宇治"
+      "city_kanji": "宇治",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/11fd9be6e92dc0be962656f7c238bef0_l.png"
     },
     "354": {
       "name": "Nagasaki",
@@ -6636,7 +6985,8 @@
         "Togepi",
         "Wingull"
       ],
-      "city_kanji": "長崎"
+      "city_kanji": "長崎",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8a66b9b0f3d34972338794fc1b07dacd_l.png"
     },
     "355": {
       "name": "Sasebo",
@@ -6656,7 +7006,8 @@
         "Treecko",
         "Lilligant"
       ],
-      "city_kanji": "佐世保"
+      "city_kanji": "佐世保",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6440346e37eff89ad1803987d49c5289_l.png"
     },
     "356": {
       "name": "Omura",
@@ -6675,7 +7026,8 @@
         "Ampharos",
         "Cherrim"
       ],
-      "city_kanji": "大村"
+      "city_kanji": "大村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fd830fce9e6898daa219f632addce1a8_l.png"
     },
     "357": {
       "name": "Unzen",
@@ -6695,7 +7047,8 @@
         "Torkoal",
         "Camerupt"
       ],
-      "city_kanji": "雲仙"
+      "city_kanji": "雲仙",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5b656d359478392214ecfa0fdfbd1cb6_l.png"
     },
     "358": {
       "name": "Shinkamigoto",
@@ -6714,7 +7067,8 @@
         "Ampharos",
         "Palafin"
       ],
-      "city_kanji": "新上五島町"
+      "city_kanji": "新上五島町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/2f09d6ddf8f545c9a622b7365735839f_l.png"
     },
     "359": {
       "name": "Kakamigahara",
@@ -6733,7 +7087,8 @@
         "Whiscash",
         "Barboach"
       ],
-      "city_kanji": "各务原市"
+      "city_kanji": "各务原市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9b3860d131b58b6066c6d4237d0cdb6b_l.png"
     },
     "360": {
       "name": "Gero",
@@ -6753,7 +7108,8 @@
         "Palpitoad",
         "Tympole"
       ],
-      "city_kanji": "下呂"
+      "city_kanji": "下呂",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/61f691b88819240129496347dde2c36b_l.png"
     },
     "361": {
       "name": "Seki",
@@ -6771,7 +7127,8 @@
       "pokemon_names": [
         "Cramorant"
       ],
-      "city_kanji": "関"
+      "city_kanji": "関",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e2886e52fc662f5a6a64616a5355b250_l.png"
     },
     "362": {
       "name": "Sekigahara",
@@ -6790,7 +7147,8 @@
         "Kingambit",
         "Pawniard"
       ],
-      "city_kanji": "関ケ原"
+      "city_kanji": "関ケ原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e417eecf891ba9e041c137c544a8b57a_l.png"
     },
     "365": {
       "name": "Tsuruga",
@@ -6809,7 +7167,8 @@
         "Dragonite",
         "Stunfisk"
       ],
-      "city_kanji": "敦賀"
+      "city_kanji": "敦賀",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f25d208e515596f3044c613f8c221a7d_l.png"
     },
     "363": {
       "name": "Takayama",
@@ -6829,7 +7188,8 @@
         "Pansear",
         "Panpour"
       ],
-      "city_kanji": "飛騨の高山"
+      "city_kanji": "飛騨の高山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1a58002d4c3745b11517f8eeae645f82_l.png"
     },
     "364": {
       "name": "Ono",
@@ -6847,7 +7207,8 @@
       "pokemon_names": [
         "Dragonite"
       ],
-      "city_kanji": "小野"
+      "city_kanji": "小野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4004f0ce0f42a5ef7a83d3a2e31c2849_l.png"
     },
     "366": {
       "name": "Minami Echizen",
@@ -6866,7 +7227,8 @@
         "Dragonite",
         "Butterfree"
       ],
-      "city_kanji": "南越前町"
+      "city_kanji": "南越前町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9dcb25b385c233d8d26af0040a30d329_l.png"
     },
     "367": {
       "name": "Obama",
@@ -6885,7 +7247,8 @@
         "Dragonite",
         "Rookidee"
       ],
-      "city_kanji": "小浜"
+      "city_kanji": "小浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4d9f218970b4bfd3c8d6020a4f155050_l.png"
     },
     "368": {
       "name": "Ikeda",
@@ -6905,7 +7268,8 @@
         "Dragonair",
         "Dratini"
       ],
-      "city_kanji": "池田"
+      "city_kanji": "池田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9144ea3aa592e063e8c206726ea9a5a1_l.png"
     },
     "369": {
       "name": "Aizubange",
@@ -6924,7 +7288,8 @@
         "Chansey",
         "Machamp"
       ],
-      "city_kanji": "会津坂下町"
+      "city_kanji": "会津坂下町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0f579224c6b8b65ba3e6230a35d0401d_l.png"
     },
     "370": {
       "name": "Kagamiishi",
@@ -6944,7 +7309,8 @@
         "Miltank",
         "Mareep"
       ],
-      "city_kanji": "神石"
+      "city_kanji": "神石",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/80227c9271b9281cb486741200d56324_l.png"
     },
     "374": {
       "name": "Hirono",
@@ -6963,7 +7329,8 @@
         "Chansey",
         "Yanma"
       ],
-      "city_kanji": "広野"
+      "city_kanji": "広野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/472d481f4f93133c377f8e220abc5dca_l.png"
     },
     "373": {
       "name": "Kunimi",
@@ -6984,7 +7351,8 @@
         "Swadloon",
         "Audino"
       ],
-      "city_kanji": "国見"
+      "city_kanji": "国見",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/be6d25642a21e17dac465e21aa08372c_l.png"
     },
     "371": {
       "name": "Tanagura",
@@ -7004,7 +7372,8 @@
         "Politoed",
         "Drednaw"
       ],
-      "city_kanji": "棚倉"
+      "city_kanji": "棚倉",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/72eb2c8e38d7e27e9a4df0d1b68f7458_l.png"
     },
     "372": {
       "name": "Yugawa",
@@ -7024,7 +7393,8 @@
         "Cutiefly",
         "Ralts"
       ],
-      "city_kanji": "湯川"
+      "city_kanji": "湯川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/8365c7bd00bdd8d2c9a777fde01d9a6d_l.png"
     },
     "375": {
       "name": "Hirata",
@@ -7044,7 +7414,8 @@
         "Capsakid",
         "Scovillain"
       ],
-      "city_kanji": "平田"
+      "city_kanji": "平田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1e873a3be5ea9c32be9dc36e0e501f99_l.png"
     },
     "376": {
       "name": "Shirakawa",
@@ -7063,7 +7434,8 @@
         "Chansey",
         "Darumaka"
       ],
-      "city_kanji": "白川"
+      "city_kanji": "白川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9f523b52954278d31137611b04cae08f_l.png"
     },
     "377": {
       "name": "Hamada",
@@ -7082,7 +7454,8 @@
         "Omastar",
         "Stunfisk"
       ],
-      "city_kanji": "浜田"
+      "city_kanji": "浜田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b394f41c1a92270caadde96879540675_l.png"
     },
     "378": {
       "name": "Izumo",
@@ -7101,7 +7474,8 @@
         "Tandemaus",
         "Luvdisc"
       ],
-      "city_kanji": "出雲"
+      "city_kanji": "出雲",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3c9c0b472e5a716415b65f5fd222035c_l.png"
     },
     "379": {
       "name": "Oda",
@@ -7120,7 +7494,8 @@
         "Gallade",
         "Hydreigon"
       ],
-      "city_kanji": "小田"
+      "city_kanji": "小田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/24ee50a876d722099a40bd736aa424d0_l.png"
     },
     "380": {
       "name": "Yasugi",
@@ -7139,7 +7514,8 @@
         "Barboach",
         "Mr. Mime"
       ],
-      "city_kanji": "安来"
+      "city_kanji": "安来",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/626d7178748566491c9757ab1611d4b6_l.png"
     },
     "382": {
       "name": "Uji",
@@ -7157,7 +7533,8 @@
       "pokemon_names": [
         "Pikachu"
       ],
-      "city_kanji": "宇治"
+      "city_kanji": "宇治",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/47baa8ef80858e014f938cb01f16ab7b_l.png"
     },
     "383": {
       "name": "Kuwana",
@@ -7177,7 +7554,8 @@
         "Hakamo-o",
         "Loudred"
       ],
-      "city_kanji": "桑名"
+      "city_kanji": "桑名",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/34f38b612591f542f7cde91c92431fe1_l.png"
     },
     "381": {
       "name": "Okinoshima",
@@ -7196,7 +7574,8 @@
         "Dedenne",
         "Lopunny"
       ],
-      "city_kanji": "沖ノ島"
+      "city_kanji": "沖ノ島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b9231fe3c20c2f21aa3b59fa2e15d2c9_l.png"
     },
     "384": {
       "name": "Owase",
@@ -7215,7 +7594,8 @@
         "Oshawott",
         "Perrserker"
       ],
-      "city_kanji": "尾鷲"
+      "city_kanji": "尾鷲",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a9212a2a3b6d5b9347985b9ccd1beb0e_l.png"
     },
     "385": {
       "name": "Inabe",
@@ -7235,7 +7615,8 @@
         "Plusle",
         "Minun"
       ],
-      "city_kanji": "いなべ市"
+      "city_kanji": "いなべ市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/17c4234b2ec1619a5801f73f87742e27_l.png"
     },
     "386": {
       "name": "Komono",
@@ -7255,7 +7636,8 @@
         "Skiddo",
         "Gogoat"
       ],
-      "city_kanji": "菰野"
+      "city_kanji": "菰野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/db40a95379113f5cdffb84dc02a956e7_l.png"
     },
     "387": {
       "name": "Taiki",
@@ -7276,7 +7658,8 @@
         "Duosion",
         "Miltank"
       ],
-      "city_kanji": "大樹"
+      "city_kanji": "大樹",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f435d5251cfe91fa5532d1ab26ca47e4_l.png"
     },
     "388": {
       "name": "Kihoku",
@@ -7295,7 +7678,8 @@
         "Oshawott",
         "Alomomola"
       ],
-      "city_kanji": "紀北町"
+      "city_kanji": "紀北町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/de7b40100ef8846319095eeda71c4089_l.png"
     },
     "390": {
       "name": "Kami",
@@ -7315,7 +7699,8 @@
         "Pawniard",
         "Deino"
       ],
-      "city_kanji": "上"
+      "city_kanji": "上",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9b80e14141a8c41fc519beaa1bde69f8_l.png"
     },
     "389": {
       "name": "Mihama",
@@ -7334,7 +7719,8 @@
         "Oshawott",
         "Pachirisu"
       ],
-      "city_kanji": "美浜"
+      "city_kanji": "美浜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/598c154d6772e0df2a69b8aa78f442ef_l.png"
     },
     "391": {
       "name": "Nahari",
@@ -7354,7 +7740,8 @@
         "Cacturne",
         "Corsola"
       ],
-      "city_kanji": "奈半利町"
+      "city_kanji": "奈半利町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9326f1ab7b66840ba918c10e7c8478b2_l.png"
     },
     "392": {
       "name": "Otoyo",
@@ -7373,7 +7760,8 @@
         "Quagsire",
         "Altaria"
       ],
-      "city_kanji": "大豊"
+      "city_kanji": "大豊",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/05938aa1104a2226b71dbc2b1e6de194_l.png"
     },
     "393": {
       "name": "Hidaka",
@@ -7393,7 +7781,8 @@
         "Dewpider",
         "Yanma"
       ],
-      "city_kanji": "日高"
+      "city_kanji": "日高",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4ac408636042cae5deaff75207b9bf30_l.png"
     },
     "394": {
       "name": "Tsuno",
@@ -7413,7 +7802,8 @@
         "Lileep",
         "Cleffa"
       ],
-      "city_kanji": "都農町"
+      "city_kanji": "都農町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7fc86d8a52fce05b93042fe1a127342a_l.png"
     },
     "395": {
       "name": "Otsuki",
@@ -7433,7 +7823,8 @@
         "Phione",
         "Finneon"
       ],
-      "city_kanji": "大月"
+      "city_kanji": "大月",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/31ea84ec8f10061d987ef8d7fc15c1da_l.png"
     },
     "397": {
       "name": "Kitakami",
@@ -7453,7 +7844,8 @@
         "Ogerpon",
         "Dipplin"
       ],
-      "city_kanji": "北上"
+      "city_kanji": "北上",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/74be692413e89b4fec7143be21b89187_l.png"
     },
     "399": {
       "name": "Yamagata",
@@ -7473,7 +7865,8 @@
         "Vileplume",
         "Lilligant"
       ],
-      "city_kanji": "山形"
+      "city_kanji": "山形",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d83e17697e33d9ed20040ea92890fa38_l.png"
     },
     "400": {
       "name": "Sagae",
@@ -7492,7 +7885,8 @@
         "Cherrim",
         "Cherubi"
       ],
-      "city_kanji": "寒河江"
+      "city_kanji": "寒河江",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c09268e65f3623546d6818d5ad41f872_l.png"
     },
     "401": {
       "name": "Okura",
@@ -7512,7 +7906,8 @@
         "Galarian Darmanitan",
         "Braixen"
       ],
-      "city_kanji": "大蔵"
+      "city_kanji": "大蔵",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/756596314ba4cb80fcddec5aacd40fa7_l.png"
     },
     "396": {
       "name": "Mihara",
@@ -7531,7 +7926,8 @@
         "Quagsire",
         "Clodsire"
       ],
-      "city_kanji": "三原"
+      "city_kanji": "三原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/207a12127b5a99f94f0fa04d69543a4a_l.png"
     },
     "398": {
       "name": "Morioka",
@@ -7551,7 +7947,8 @@
         "Alolan Geodude",
         "Sudowoodo"
       ],
-      "city_kanji": "盛岡"
+      "city_kanji": "盛岡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d0ba56dc0960526c6c25a5e6bfaf3d09_l.png"
     },
     "402": {
       "name": "Oguni",
@@ -7571,7 +7968,8 @@
         "Beartic",
         "Cetoddle"
       ],
-      "city_kanji": "小国"
+      "city_kanji": "小国",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/af8622d0fb9c0dcd8ae7662c09346e5f_l.png"
     },
     "403": {
       "name": "Tsuruoka",
@@ -7592,7 +7990,8 @@
         "Tentacool",
         "Frillish"
       ],
-      "city_kanji": "鶴岡"
+      "city_kanji": "鶴岡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/682832fc77641227f5f45a0ba883c392_l.png"
     },
     "404": {
       "name": "Nagoya",
@@ -7611,7 +8010,8 @@
         "Magikarp",
         "Komala"
       ],
-      "city_kanji": "名古屋"
+      "city_kanji": "名古屋",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1e8ca4125f1e840c139362bef0854ae6_l.png"
     },
     "405": {
       "name": "Seto",
@@ -7630,7 +8030,8 @@
         "Torracat",
         "Magmar"
       ],
-      "city_kanji": "瀬戸"
+      "city_kanji": "瀬戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f11b36b1639166804131d9e464fac8d9_l.png"
     },
     "406": {
       "name": "Tokoname",
@@ -7649,7 +8050,8 @@
         "Pidgeot",
         "Alolan Meowth"
       ],
-      "city_kanji": "常滑"
+      "city_kanji": "常滑",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9e73d3dac08706213606acfa5508d3f2_l.png"
     },
     "407": {
       "name": "Kariya",
@@ -7669,7 +8071,8 @@
         "Sceptile",
         "Axew"
       ],
-      "city_kanji": "刈谷"
+      "city_kanji": "刈谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b74fd1d13c5402743ee665a0b7b52adc_l.png"
     },
     "408": {
       "name": "Nishio",
@@ -7688,7 +8091,8 @@
         "Alcremie",
         "Gulpin"
       ],
-      "city_kanji": "西尾"
+      "city_kanji": "西尾",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b8558e0a74714d9f0519a90cbffb2bd8_l.png"
     },
     "409": {
       "name": "Kamisu",
@@ -7707,7 +8111,8 @@
         "Maractus",
         "Bombirdier"
       ],
-      "city_kanji": "神栖"
+      "city_kanji": "神栖",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b7ce2257a00adad91661a580d6305fd4_l.png"
     },
     "410": {
       "name": "Chikusei",
@@ -7726,7 +8131,8 @@
         "Croagunk",
         "Bellibolt"
       ],
-      "city_kanji": "筑西"
+      "city_kanji": "筑西",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/077e657dad03480b92569da298fdd44b_l.png"
     },
     "411": {
       "name": "Tsukuba",
@@ -7744,7 +8150,8 @@
       "pokemon_names": [
         "Rayquaza"
       ],
-      "city_kanji": "つくば市"
+      "city_kanji": "つくば市",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9849d1409331da248994adbdfce3509b_l.png"
     },
     "412": {
       "name": "Hitachiota",
@@ -7763,7 +8170,8 @@
         "Salamence",
         "Hawlucha"
       ],
-      "city_kanji": "常陸太田"
+      "city_kanji": "常陸太田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/22efba09e43fc13bf4834b0f6157cde5_l.png"
     },
     "413": {
       "name": "Mito",
@@ -7783,7 +8191,8 @@
         "Ferrothorn",
         "Herdier"
       ],
-      "city_kanji": "水戸"
+      "city_kanji": "水戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/223f1b131033a42ab2891fecab366ef0_l.png"
     },
     "416": {
       "name": "Sakai",
@@ -7802,7 +8211,8 @@
         "Dragonite",
         "Mabosstiff"
       ],
-      "city_kanji": "境"
+      "city_kanji": "境",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/292964dec0cb7ddb638e94dcd4388ad1_l.png"
     },
     "417": {
       "name": "Fukui",
@@ -7821,7 +8231,8 @@
         "Dragonite",
         "Kommo-o"
       ],
-      "city_kanji": "福井"
+      "city_kanji": "福井",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/01f288197426c4ecd10018babaf52ce1_l.png"
     },
     "418": {
       "name": "Ohi",
@@ -7841,7 +8252,8 @@
         "Abra",
         "Meowstic"
       ],
-      "city_kanji": "大肥"
+      "city_kanji": "大肥",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/bc3a6278d1b847a6c3ee8d6a320303c8_l.png"
     },
     "419": {
       "name": "Sabae",
@@ -7861,7 +8273,8 @@
         "Morpeko",
         "Blipbug"
       ],
-      "city_kanji": "鯖江"
+      "city_kanji": "鯖江",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/602c4f607f16ab68a51dda3da2b63bac_l.png"
     },
     "420": {
       "name": "Wakasa",
@@ -7881,7 +8294,8 @@
         "Ducklett",
         "Quaxly"
       ],
-      "city_kanji": "若桜"
+      "city_kanji": "若桜",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a24ce3b6e6ded0b78634c88d850a1f93_l.png"
     },
     "421": {
       "name": "Echizen-cho",
@@ -7900,7 +8314,8 @@
         "Dragonite",
         "Wigglytuff"
       ],
-      "city_kanji": "越前町"
+      "city_kanji": "越前町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a4b9ed8fd6f982a51e508d614e8bc9c7_l.png"
     },
     "414": {
       "name": "Toba",
@@ -7918,7 +8333,8 @@
       "pokemon_names": [
         "Oshawott"
       ],
-      "city_kanji": "鳥羽"
+      "city_kanji": "鳥羽",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a89748231037b875f1fa7ac013603073_l.png"
     },
     "415": {
       "name": "Suzuka",
@@ -7936,7 +8352,8 @@
       "pokemon_names": [
         "Oshawott"
       ],
-      "city_kanji": "鈴鹿"
+      "city_kanji": "鈴鹿",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7f1168d3590ddc36c4964cd276776c02_l.png"
     },
     "422": {
       "name": "Chatan",
@@ -7954,7 +8371,8 @@
       "pokemon_names": [
         "Growlithe"
       ],
-      "city_kanji": "北谷"
+      "city_kanji": "北谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5607d35bb32e267fd37f06948e578902_l.png"
     },
     "423": {
       "name": "Tokashiki",
@@ -7974,7 +8392,8 @@
         "Azurill",
         "Salandit"
       ],
-      "city_kanji": "渡嘉敷"
+      "city_kanji": "渡嘉敷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/623f50d4f0f1212ad2d8e5bebf791b51_l.png"
     },
     "424": {
       "name": "Zamami",
@@ -7993,7 +8412,8 @@
         "Growlithe",
         "Wailmer"
       ],
-      "city_kanji": "座間味"
+      "city_kanji": "座間味",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ad1c1aa56457a1e78f7b08da82f89868_l.png"
     },
     "425": {
       "name": "Kumejima",
@@ -8012,7 +8432,8 @@
         "Growlithe",
         "Clauncher"
       ],
-      "city_kanji": "久米島"
+      "city_kanji": "久米島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e4ee32e72e4e30c41254652f0b1383bf_l.png"
     },
     "426": {
       "name": "Kuzumaki",
@@ -8032,7 +8453,8 @@
         "Miltank",
         "Milcery"
       ],
-      "city_kanji": "葛巻町"
+      "city_kanji": "葛巻町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e0af9a218a104af4f32e4c65f047155a_l.png"
     },
     "427": {
       "name": "Shimabara",
@@ -8052,7 +8474,8 @@
         "Flittle",
         "Spheal"
       ],
-      "city_kanji": "島原"
+      "city_kanji": "島原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9bc84a22210b01d1330da1a3d459e5d8_l.png"
     },
     "428": {
       "name": "Iki",
@@ -8072,7 +8495,8 @@
         "Squawkabilly",
         "Nosepass"
       ],
-      "city_kanji": "壱岐"
+      "city_kanji": "壱岐",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e126c5112eda03d677eff9b92cab10cc_l.png"
     },
     "429": {
       "name": "Togitsu",
@@ -8093,7 +8517,8 @@
         "Graveler",
         "Sentret"
       ],
-      "city_kanji": "時津町"
+      "city_kanji": "時津町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fcac6f042fa67019abd2dca48d815440_l.png"
     },
     "431": {
       "name": "Saza",
@@ -8113,7 +8538,8 @@
         "Tynamo",
         "Eelektrik"
       ],
-      "city_kanji": "伊左座"
+      "city_kanji": "伊左座",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/41ee5c22850c88cabf369c70302bd777_l.png"
     },
     "430": {
       "name": "Higashisonogi",
@@ -8133,7 +8559,8 @@
         "Banette",
         "Jumpluff"
       ],
-      "city_kanji": "東大野"
+      "city_kanji": "東大野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7e0358daa2f0bd5c89903de1a57cecf8_l.png"
     },
     "432": {
       "name": "Muroto",
@@ -8152,7 +8579,8 @@
         "Quagsire",
         "Nacli"
       ],
-      "city_kanji": "室戸"
+      "city_kanji": "室戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d9bd03a57b3501b93226b157abadbb2d_l.png"
     },
     "433": {
       "name": "Aki",
@@ -8171,7 +8599,8 @@
         "Quagsire",
         "Hoothoot"
       ],
-      "city_kanji": "安芸"
+      "city_kanji": "安芸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/551bad185b3f9a9d17c5f6f40d7febfc_l.png"
     },
     "434": {
       "name": "Susaki",
@@ -8191,7 +8620,8 @@
         "Buizel",
         "Floatzel"
       ],
-      "city_kanji": "須崎"
+      "city_kanji": "須崎",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c4bd71337c16e241b3b9203a89f970e8_l.png"
     },
     "435": {
       "name": "Sukumo",
@@ -8210,7 +8640,8 @@
         "Quagsire",
         "Wooper"
       ],
-      "city_kanji": "宿毛"
+      "city_kanji": "宿毛",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d0827223105f6648da72d7595907c786_l.png"
     },
     "436": {
       "name": "Konan",
@@ -8229,7 +8660,8 @@
         "Quagsire",
         "Tynamo"
       ],
-      "city_kanji": "港南"
+      "city_kanji": "港南",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c1359eed647d0b370136b487d0854b70_l.png"
     },
     "437": {
       "name": "Toyo",
@@ -8248,7 +8680,8 @@
         "Quagsire",
         "Mantine"
       ],
-      "city_kanji": "東陽"
+      "city_kanji": "東陽",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/299ea9629aaed7f41bf1554d2a09b05a_l.png"
     },
     "438": {
       "name": "Sapporo",
@@ -8267,7 +8700,8 @@
         "Vulpix",
         "Slaking"
       ],
-      "city_kanji": "札幌"
+      "city_kanji": "札幌",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/531b4a4ba848285085f50bb59b5a7a61_l.png"
     },
     "439": {
       "name": "Sunagawa",
@@ -8287,7 +8721,8 @@
         "Alolan Vulpix",
         "Slurpuff"
       ],
-      "city_kanji": "砂川"
+      "city_kanji": "砂川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d6b485b2485506fb3022e809a4c2876c_l.png"
     },
     "440": {
       "name": "Yuni",
@@ -8307,7 +8742,8 @@
         "Alolan Vulpix",
         "Sizzlipede"
       ],
-      "city_kanji": "由仁町"
+      "city_kanji": "由仁町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7dd1c2ca558b28c070cf52b3cf98f68d_l.png"
     },
     "441": {
       "name": "Assabu",
@@ -8327,7 +8763,8 @@
         "Alolan Vulpix",
         "Wormadam"
       ],
-      "city_kanji": "厚沢部町"
+      "city_kanji": "厚沢部町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/00de3645760fd45cc9adfdb0967ac056_l.png"
     },
     "442": {
       "name": "Horonobe",
@@ -8347,7 +8784,8 @@
         "Alolan Vulpix",
         "Flabébé"
       ],
-      "city_kanji": "幌延"
+      "city_kanji": "幌延",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c109d6f01a11e1abe9df06af4196d73c_l.png"
     },
     "443": {
       "name": "Tsubetsu",
@@ -8367,7 +8805,8 @@
         "Alolan Vulpix",
         "Sawsbuck"
       ],
-      "city_kanji": "津別町"
+      "city_kanji": "津別町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fa60bb5908c2b1825c3022acdc8aac53_l.png"
     },
     "444": {
       "name": "Yubetsu",
@@ -8387,7 +8826,8 @@
         "Alolan Vulpix",
         "Cutiefly"
       ],
-      "city_kanji": "止別"
+      "city_kanji": "止別",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/80d67fcbafef57060bff53c8de34985b_l.png"
     },
     "445": {
       "name": "Betsukai",
@@ -8406,7 +8846,8 @@
         "Alolan Vulpix",
         "Sealeo"
       ],
-      "city_kanji": "別海"
+      "city_kanji": "別海",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/63d1b0ab4923f1c3cd03a928dd57d7b5_l.png"
     },
     "446": {
       "name": "Naha",
@@ -8424,7 +8865,8 @@
       "pokemon_names": [
         "Growlithe"
       ],
-      "city_kanji": "那覇"
+      "city_kanji": "那覇",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/6ea8d929a518be32eb78754371390526_l.png"
     },
     "448": {
       "name": "PokéPark KANTO",
@@ -8443,7 +8885,8 @@
         "Pikachu",
         "Eevee"
       ],
-      "city_kanji": "ポケパーク関東"
+      "city_kanji": "ポケパーク関東",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/cada9697883c11b0ee2a095132e65a31_l.png"
     },
     "447": {
       "name": "Kasenuma Park",
@@ -8463,7 +8906,8 @@
         "Swanna",
         "Mantyke"
       ],
-      "city_kanji": "加瀬沼公園"
+      "city_kanji": "加瀬沼公園",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/416bb8faf8d814dec25f300d3bf43db9_l.png"
     },
     "449": {
       "name": "Kochi",
@@ -8482,7 +8926,8 @@
         "Quagsire",
         "Goldeen"
       ],
-      "city_kanji": "幸知"
+      "city_kanji": "幸知",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c788095c5594cd56004ce5193f87f011_l.png"
     },
     "450": {
       "name": "Tosashimizu",
@@ -8501,7 +8946,8 @@
         "Quagsire",
         "Shellos"
       ],
-      "city_kanji": "土佐清水"
+      "city_kanji": "土佐清水",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/3ab25d9876c61cc403ff6fd8bb3987c8_l.png"
     },
     "451": {
       "name": "Yasuda",
@@ -8520,7 +8966,8 @@
         "Quagsire",
         "Ditto"
       ],
-      "city_kanji": "保田"
+      "city_kanji": "保田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/902cc23866cd95b207c0938bbefff0dd_l.png"
     },
     "452": {
       "name": "Motoyama",
@@ -8540,7 +8987,8 @@
         "Surskit",
         "Masquerain"
       ],
-      "city_kanji": "本山"
+      "city_kanji": "本山",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9c0a595989dd526afbd07bf111d7a2d3_l.png"
     },
     "453": {
       "name": "Niyodogawa",
@@ -8559,7 +9007,8 @@
         "Quagsire",
         "Sobble"
       ],
-      "city_kanji": "淀川"
+      "city_kanji": "淀川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b616658313fb3050e2608e53805bbe69_l.png"
     },
     "454": {
       "name": "Sukagawa",
@@ -8578,7 +9027,8 @@
         "Chansey",
         "Delphox"
       ],
-      "city_kanji": "須賀川"
+      "city_kanji": "須賀川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/31610e9bff9bfc8fdc64683e1e1bc75f_l.png"
     },
     "456": {
       "name": "Shimogo",
@@ -8599,7 +9049,8 @@
         "Farfetch’d",
         "Chimecho"
       ],
-      "city_kanji": "下郷"
+      "city_kanji": "下郷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5d9b7729ce8952e05c6fdedcbf82dcce_l.png"
     },
     "455": {
       "name": "Tenei",
@@ -8618,7 +9069,8 @@
         "Chansey",
         "Indeedee"
       ],
-      "city_kanji": "天永"
+      "city_kanji": "天永",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/fc5fefcde24d0eaf98672ed0dc0e7abd_l.png"
     },
     "457": {
       "name": "Nishiaizu",
@@ -8638,7 +9090,8 @@
         "Shiinotic",
         "Clefable"
       ],
-      "city_kanji": "西焼津"
+      "city_kanji": "西焼津",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e7dc3b5a9cbd1d327172ad540f6c6b08_l.png"
     },
     "458": {
       "name": "Izumizaki",
@@ -8658,7 +9111,8 @@
         "Baltoy",
         "Corvisquire"
       ],
-      "city_kanji": "泉崎"
+      "city_kanji": "泉崎",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/24d020c935a2ad0492a860df592cb9f2_l.png"
     },
     "459": {
       "name": "Samegawa",
@@ -8678,7 +9132,8 @@
         "Sharpedo",
         "Gible"
       ],
-      "city_kanji": "佐女川"
+      "city_kanji": "佐女川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b530a464344989e265f4a1013337ab42_l.png"
     },
     "460": {
       "name": "Asakawa",
@@ -8698,7 +9153,8 @@
         "Happiny",
         "Pansear"
       ],
-      "city_kanji": "浅川"
+      "city_kanji": "浅川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e2e9702c4eaa677732ff81abb89aa1c7_l.png"
     },
     "461": {
       "name": "Ono",
@@ -8718,7 +9174,8 @@
         "Gothorita",
         "Hatterene"
       ],
-      "city_kanji": "小野"
+      "city_kanji": "小野",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f674a1951c9a5d26ddb126221756eca1_l.png"
     },
     "462": {
       "name": "Okuma",
@@ -8739,7 +9196,8 @@
         "Bewear",
         "Stufful"
       ],
-      "city_kanji": "大隈"
+      "city_kanji": "大隈",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/80d89bd52e1edb0d93f1a0cdc06d4757_l.png"
     },
     "463": {
       "name": "Oshu",
@@ -8759,7 +9217,8 @@
         "Garchomp",
         "Applin"
       ],
-      "city_kanji": "奥州"
+      "city_kanji": "奥州",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/d769d590f73bfec332de82f0a5dd7d06_l.png"
     },
     "464": {
       "name": "Shizukuishi",
@@ -8779,7 +9238,8 @@
         "Rockruff",
         "Wooloo"
       ],
-      "city_kanji": "雫石"
+      "city_kanji": "雫石",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/05aa91a5c54fced8bdf19152189ccd66_l.png"
     },
     "465": {
       "name": "Yahaba",
@@ -8799,7 +9259,8 @@
         "Sunflora",
         "Hisuian Growlithe"
       ],
-      "city_kanji": "矢巾町"
+      "city_kanji": "矢巾町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/28333d9283ea549934e01301b4fe5b97_l.png"
     },
     "466": {
       "name": "Kanegasaki",
@@ -8819,7 +9280,8 @@
         "Varoom",
         "Meltan"
       ],
-      "city_kanji": "金ケ崎町"
+      "city_kanji": "金ケ崎町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/bc9b6ce686085c3e074bd69dc23dee60_l.png"
     },
     "468": {
       "name": "Nanao",
@@ -8839,7 +9301,8 @@
         "Gyarados",
         "Poliwag"
       ],
-      "city_kanji": "七尾"
+      "city_kanji": "七尾",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f1da1d7cec53987ff936da3fbd11f18f_l.png"
     },
     "467": {
       "name": "Morioka",
@@ -8859,7 +9322,8 @@
         "Rockruff",
         "Lycanroc"
       ],
-      "city_kanji": "盛岡"
+      "city_kanji": "盛岡",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/950280bab6a52375f60a30456007e6e9_l.png"
     },
     "469": {
       "name": "Wajima",
@@ -8878,7 +9342,8 @@
         "Darumaka",
         "Greninja"
       ],
-      "city_kanji": "輪島"
+      "city_kanji": "輪島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5bde37f1ca046581e26582ecfca9bdcd_l.png"
     },
     "470": {
       "name": "Suzu",
@@ -8897,7 +9362,8 @@
         "Luvdisc",
         "Sylveon"
       ],
-      "city_kanji": "珠洲"
+      "city_kanji": "珠洲",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/13e5c3a4028ded1bfa96f4b816bfe631_l.png"
     },
     "472": {
       "name": "Anamizu",
@@ -8917,7 +9383,8 @@
         "Plusle",
         "Minun"
       ],
-      "city_kanji": "穴水町"
+      "city_kanji": "穴水町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/87a3fd9365e386e00d23128242ee50b4_l.png"
     },
     "471": {
       "name": "Shika",
@@ -8936,7 +9403,8 @@
         "Wattrel",
         "Gorebyss"
       ],
-      "city_kanji": "四箇"
+      "city_kanji": "四箇",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5a893a52dcdef186d0629ca2c52a7546_l.png"
     },
     "473": {
       "name": "Noto",
@@ -8956,7 +9424,8 @@
         "Minior",
         "Lotad"
       ],
-      "city_kanji": "大戸"
+      "city_kanji": "大戸",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e839dd22163b193f2e7d8c3db59ee6ec_l.png"
     },
     "474": {
       "name": "Sendai",
@@ -8977,7 +9446,8 @@
         "Wailmer",
         "Wiglett"
       ],
-      "city_kanji": "川内"
+      "city_kanji": "川内",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0dfe96c54ef7f6271d17c9ea3fb43e65_l.png"
     },
     "475": {
       "name": "Wajima",
@@ -8996,7 +9466,8 @@
         "Bagon",
         "Salamence"
       ],
-      "city_kanji": "輪島"
+      "city_kanji": "輪島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ebbdbee7f35498be1af93b5dc2f8e6c2_l.png"
     },
     "477": {
       "name": "Tsushima",
@@ -9016,7 +9487,8 @@
         "Liepard",
         "Breloom"
       ],
-      "city_kanji": "津島"
+      "city_kanji": "津島",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7cab4fbef67520a2aa892e78044ba411_l.png"
     },
     "478": {
       "name": "Goto",
@@ -9036,7 +9508,8 @@
         "Flaaffy",
         "Mareep"
       ],
-      "city_kanji": "五斗"
+      "city_kanji": "五斗",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1fd094dccc46d6d5a016ab6fc88a5ebf_l.png"
     },
     "476": {
       "name": "Isahaya",
@@ -9055,7 +9528,8 @@
         "Ampharos",
         "Metagross"
       ],
-      "city_kanji": "諌早"
+      "city_kanji": "諌早",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/9ad3148fd75c57b00c5e66503d73af38_l.png"
     },
     "480": {
       "name": "Hasami",
@@ -9075,7 +9549,8 @@
         "Pinsir",
         "Scizor"
       ],
-      "city_kanji": "浅海"
+      "city_kanji": "浅海",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/273a40e9db77b08bc4a8aadd8d8f5d6d_l.png"
     },
     "479": {
       "name": "Saikai",
@@ -9095,7 +9570,8 @@
         "Kilowattrel",
         "Gastrodon"
       ],
-      "city_kanji": "西海"
+      "city_kanji": "西海",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4543d040f87f6f6edbc37f69e73abde7_l.png"
     },
     "481": {
       "name": "Okaya",
@@ -9114,7 +9590,8 @@
         "Frosmoth",
         "Snom"
       ],
-      "city_kanji": "岡谷"
+      "city_kanji": "岡谷",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/38dbfc1d6e8a42120c2fd6136f511a97_l.png"
     },
     "482": {
       "name": "Ina",
@@ -9134,7 +9611,8 @@
         "Darmanitan",
         "Tsareena"
       ],
-      "city_kanji": "伊那"
+      "city_kanji": "伊那",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/1cd7407c636a3fdfb846915335153d04_l.png"
     },
     "484": {
       "name": "Minamimaki",
@@ -9153,7 +9631,8 @@
         "Heliolisk",
         "Helioptile"
       ],
-      "city_kanji": "南目垣"
+      "city_kanji": "南目垣",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/34adefec6db50af8befe1d98435efa6c_l.png"
     },
     "483": {
       "name": "Omachi",
@@ -9172,7 +9651,8 @@
         "Dratini",
         "Bidoof"
       ],
-      "city_kanji": "大町"
+      "city_kanji": "大町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b04877fef931bfc2dd4b85cee9758ede_l.png"
     },
     "485": {
       "name": "Kiso",
@@ -9192,7 +9672,8 @@
         "Trevenant",
         "Rookidee"
       ],
-      "city_kanji": "小磯"
+      "city_kanji": "小磯",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/391c9a8f8b3ef650a85d3b05d39e1fd5_l.png"
     },
     "486": {
       "name": "Yamanouchi",
@@ -9212,7 +9693,8 @@
         "Galarian Darumaka",
         "Panpour"
       ],
-      "city_kanji": "山ノ内"
+      "city_kanji": "山ノ内",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/7fe9b42164a7f9fbaeb73ef90a2790ea_l.png"
     },
     "487": {
       "name": "Kunigami",
@@ -9231,7 +9713,8 @@
         "Growlithe",
         "Lunala"
       ],
-      "city_kanji": "国上"
+      "city_kanji": "国上",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f79121a17f5f589b40e2feedb2848d3b_l.png"
     },
     "489": {
       "name": "Higashi",
@@ -9251,7 +9734,8 @@
         "Politoed",
         "Croagunk"
       ],
-      "city_kanji": "東"
+      "city_kanji": "東",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/b6f977b3a49bcc88bf754f3729612c3d_l.png"
     },
     "488": {
       "name": "Ogimi",
@@ -9270,7 +9754,8 @@
         "Growlithe",
         "Fletchling"
       ],
-      "city_kanji": "大宜味"
+      "city_kanji": "大宜味",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/f745f645cf152dfe2988aa4105859155_l.png"
     },
     "490": {
       "name": "Kitadaito",
@@ -9289,7 +9774,8 @@
         "Growlithe",
         "Solgaleo"
       ],
-      "city_kanji": "北大東港"
+      "city_kanji": "北大東港",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/692b4dc5772e4a42da8117ac26f2fdda_l.png"
     },
     "491": {
       "name": "Tosa",
@@ -9308,7 +9794,8 @@
         "Quagsire",
         "Drampa"
       ],
-      "city_kanji": "土佐"
+      "city_kanji": "土佐",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/a7bf75de1464cafe2e899f9a9846ebcd_l.png"
     },
     "492": {
       "name": "Shimanto",
@@ -9327,7 +9814,8 @@
         "Quagsire",
         "Yanmega"
       ],
-      "city_kanji": "四万十"
+      "city_kanji": "四万十",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/0510daf2e1728f2b1e5931db32e1d72f_l.png"
     },
     "494": {
       "name": "Ino",
@@ -9346,7 +9834,8 @@
         "Quagsire",
         "Wooper"
       ],
-      "city_kanji": "いの町"
+      "city_kanji": "いの町",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/c2fc4a03a9ddd75d66cdb4201b3c24cc_l.png"
     },
     "493": {
       "name": "Geisei",
@@ -9366,7 +9855,8 @@
         "Floette",
         "Clefairy"
       ],
-      "city_kanji": "芸西村"
+      "city_kanji": "芸西村",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/77beaceac75f4b25be9d8a9b927618c0_l.png"
     },
     "495": {
       "name": "Sakawa",
@@ -9386,7 +9876,8 @@
         "Skiploom",
         "Cufant"
       ],
-      "city_kanji": "酒匂"
+      "city_kanji": "酒匂",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/e6b77c917f9959cbe6320565b3cbd361_l.png"
     },
     "496": {
       "name": "Numata",
@@ -9405,7 +9896,8 @@
         "Dudunsparce",
         "Shiftry"
       ],
-      "city_kanji": "沼田"
+      "city_kanji": "沼田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/eabc71ac59552a17b9931a44866e6dcb_l.png"
     },
     "497": {
       "name": "Tatebayashi",
@@ -9424,7 +9916,8 @@
         "Zigzagoon",
         "Galarian Zigzagoon"
       ],
-      "city_kanji": "館林"
+      "city_kanji": "館林",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/ad43bc051cd5f1984730e863794e9cf9_l.png"
     },
     "498": {
       "name": "Shibukawa",
@@ -9442,7 +9935,8 @@
       "pokemon_names": [
         "Zapdos"
       ],
-      "city_kanji": "渋川"
+      "city_kanji": "渋川",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/865f19a7112a16fa3b88eda62b686e5f_l.png"
     },
     "499": {
       "name": "Shimonita",
@@ -9462,7 +9956,8 @@
         "Sirfetch’d",
         "Galarian Farfetch’d"
       ],
-      "city_kanji": "下仁田"
+      "city_kanji": "下仁田",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/4881d33c7f04e11367f22e6b081c6e55_l.png"
     },
     "500": {
       "name": "Naganohara",
@@ -9482,7 +9977,8 @@
         "Meltan",
         "Seaking"
       ],
-      "city_kanji": "長野原"
+      "city_kanji": "長野原",
+      "source_image_url": "https://local.pokemon.jp/img/p/manhole/5dbab683b67538f7d0478d89f4711ab5_l.png"
     }
   },
   "failed": {}
