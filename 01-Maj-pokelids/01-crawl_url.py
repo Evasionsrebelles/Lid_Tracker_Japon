@@ -1,38 +1,58 @@
 #!/usr/bin/env python3
 """
-01-crawl_url.py (v11) — Pipeline fusionné 01+02+03+04 avec vérification à deux niveaux.
+01-pipeline_complet.py (v12) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
+GENERATE) et de 05-generation_sprites_en_ligne.py (SPRITE).
 
 Un seul script, un seul dossier d'images. Produit :
-  • pokelid.kml        carte Google Earth / My Maps (kanji intégré)
-  • pokelid.json       mêmes données que le KML (carte web, kanji intégré)
-  • images_webp/       icônes locales (fallback)
-  • .cache/            fichiers internes (invisibles, supprimables)
+  • pokelid.kml            carte Google Earth / My Maps (kanji intégré)
+  • pokelid.json           mêmes données que le KML (carte web, kanji intégré)
+  • images_webp/           icônes locales pokelids (fallback + source de la sprite)
+  • Generation_sprites/    manholes_sprite.png + manholes_sprite.json + version.txt
+                          (dossier frère de 01-Maj-pokelids/, à la racine du dépôt)
+  • .cache/                fichiers internes (invisibles, supprimables)
 
---- Comportement d'un nouveau lancement (v11) ---
+--- Comportement d'un nouveau lancement ---
 Un nouveau lancement CHERCHE les nouveautés et les modifications :
 
-  1. RESOLVE : revisite SYSTÉMATIQUEMENT les 47 pages de préfecture.
-  2. SCRAPE : classification (new, modified, same) :
+  1. RESOLVE  : revisite SYSTÉMATIQUEMENT les 47 pages de préfecture.
+  2. SCRAPE   : classification (new, modified, same) :
        • new       → scrape complet (image_url = repo GitHub, image commitée dans ce run)
        • modified  → re-scrape ciblé (image_url = repo GitHub, image commitée dans ce run)
        • same      → inchangée → image_url réécrite vers le repo GitHub !
-  3. KANJI : résolution des kanji villes.
+  3. KANJI    : résolution des kanji villes.
   4. GENERATE : écrit pokelid.kml + pokelid.json avec les bonnes URLs.
+  5. SPRITE   : (ex-05) régénère manholes_sprite.png/.json/version.txt, MAIS
+                uniquement si quelque chose a changé depuis le dernier run :
+                  - une plaque pokelid "new" ou "modified" a été scrapée
+                    (donc une image a été (re)téléchargée), OU
+                  - le fichier externe plaques_pop_placemarks.json (maj
+                    manuelle, dans 02-MAJ-plaques-pop/) a changé depuis la
+                    dernière exécution (détecté par hash du JSON brut), OU
+                  - la sprite n'existe pas encore sur le disque, OU
+                  - --force-sprite est passé.
+                Sinon la phase 5 est sautée (rien à régénérer).
 
 --- URLs GitHub ---
-Toutes les plaques (new/modified/same) pointent vers :
+Toutes les plaques pokelid (new/modified/same) pointent vers :
 https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/01-Maj-pokelids/images_webp/icon-ci-{id}.webp
 (l'image est toujours téléchargée/encodée localement AVANT génération du JSON/KML, puis
 commitée dans le même run par l'étape "git add -A" du workflow — le lien est donc valide
-dès que le job se termine.)
+dès que le job se termine. La phase SPRITE réutilise directement ces fichiers LOCAUX,
+sans retélécharger, pour les plaques pokelid.)
 
 Usage :
     pip install requests beautifulsoup4 pillow tqdm
-    python 01-crawl_url.py
-    python 01-crawl_url.py --deep-check
-    python 01-crawl_url.py --force
-    python 01-crawl_url.py --resume-only
-    python 01-crawl_url.py --limit 20
+    python 01-pipeline_complet.py
+    python 01-pipeline_complet.py --deep-check
+    python 01-pipeline_complet.py --force
+    python 01-pipeline_complet.py --resume-only
+    python 01-pipeline_complet.py --limit 20
+    python 01-pipeline_complet.py --no-sprite        # saute la phase 5
+    python 01-pipeline_complet.py --force-sprite     # force la régénération de la sprite
+    python 01-pipeline_complet.py --sprite-only      # ne fait QUE la phase 5 (ex: pour
+                                                       # capter une maj manuelle de
+                                                       # plaques_pop_placemarks.json sans
+                                                       # relancer tout le crawl)
 """
 
 import argparse
@@ -41,12 +61,15 @@ import difflib
 import hashlib
 import io
 import json
+import math
+import os
 import re
 import sys
 import threading
 import time
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
 from urllib.parse import urljoin
@@ -68,16 +91,29 @@ except ImportError:
 BASE_DIR   = Path(__file__).resolve().parent
 CACHE_DIR  = BASE_DIR / ".cache"
 
-# Livrables
+# Livrables (phases 1-4, ex-01)
 KML_FILE   = BASE_DIR / "pokelid.kml"
 JSON_FILE  = BASE_DIR / "pokelid.json"
 IMAGES_DIR = BASE_DIR / "images_webp"
 
+# Livrables (phase 5, ex-05)
+#   Le script vit dans 01-Maj-pokelids/ (ex: .../01-Maj-pokelids/01-crawl_url.py)
+#   mais la sprite doit être committée dans Generation_sprites/, un dossier
+#   FRÈRE (au même niveau que 01-Maj-pokelids/) à la racine du dépôt — le
+#   workflow fait un `git add -A` depuis la racine du checkout, donc le
+#   chemin relatif ne pose pas de problème.
+SPRITE_DIR     = BASE_DIR.parent / "Generation_sprites"
+SPRITE_PNG     = SPRITE_DIR / "manholes_sprite.png"
+SPRITE_JSON    = SPRITE_DIR / "manholes_sprite.json"
+SPRITE_VERSION = SPRITE_DIR / "version.txt"
+SPRITE_NAME    = "manholes_sprite"
+
 # Caches
-REGIONS_CACHE = CACHE_DIR / "regions_cache.json"
-RESUME_CACHE  = CACHE_DIR / "resume_data.json"
-KANJI_CACHE   = CACHE_DIR / "kanji_cache.json"
-KANJI_MISSING = CACHE_DIR / "villes_non_trouvees.csv"
+REGIONS_CACHE     = CACHE_DIR / "regions_cache.json"
+RESUME_CACHE      = CACHE_DIR / "resume_data.json"
+KANJI_CACHE       = CACHE_DIR / "kanji_cache.json"
+KANJI_MISSING     = CACHE_DIR / "villes_non_trouvees.csv"
+SPRITE_STATE_CACHE = CACHE_DIR / "sprite_state.json"   # hash de plaques_pop_placemarks.json
 
 # Optionnels
 REGIONS_TMP    = BASE_DIR / "regions.json"
@@ -88,7 +124,11 @@ POKEMON_LEGACY = BASE_DIR / "pokemon_fr_en.json"
 # ── URLs GitHub ────────────────────────────────────────────────────────────
 GITHUB_RAW_BASE = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/01-Maj-pokelids/images_webp"
 
-DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PokeLidsPipeline/11.0)"}
+# Dataset externe "plaques pop", mis à jour manuellement, pas géré par ce script.
+PLAQUES_POP_JSON_URL  = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/02-MAJ-plaques-pop/plaques_pop_placemarks.json"
+PLAQUES_POP_IMAGE_BASE = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/02-MAJ-plaques-pop/images/"
+
+DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PokeLidsPipeline/12.0)"}
 
 MANHOLE_DESC_RE = re.compile(r"/manhole/desc/(\d+)/?")
 BASE_PREFECTURE = "https://local.pokemon.jp/en/manhole/{slug}.html"
@@ -101,6 +141,10 @@ HEAD_TIMEOUT    = 10
 WEBP_QUALITY  = 80
 WEBP_LOSSLESS = False
 WEBP_METHOD   = 6
+
+# Phase 5 — sprite
+SPRITE_CELL_SIZE = 256
+SPRITE_COLUMNS   = 10
 
 KANJI_SAVE_INTERVAL = 5
 WIKI_DELAY   = 1.0
@@ -511,6 +555,11 @@ def classify_manholes(manholes: dict, resume: dict, deep_check: bool,
 
 def phase_scrape(manholes, resume, force, workers, retries, delay,
                   quality, lossless, method, limit=None, deep_check=False):
+    """
+    Retourne un dict {"new": [...ids...], "modified": [...ids...]} — utilisé
+    ensuite par la phase SPRITE pour savoir si une régénération est nécessaire
+    (une image a été (re)téléchargée localement).
+    """
     print("\n═══ PHASE 2 : SCRAPE (fiches + image unique WebP) ═══")
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -631,28 +680,28 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
             sys.exit(1)
 
         save_json(RESUME_CACHE, resume)
-    
+
     # ── Remplacement des URLs pour les plaques inchangées ──────────────────
     same_count_updated = 0
     for mid in all_ids:
         if status[mid] == "modified":
             modified_ids.append(mid)
-        
+
         if status[mid] in ("new", "modified"):
             # On garde l'URL de base (site officiel)
             continue
-        
+
         # status == "same"
         if mid in resume["done"]:
             resume["done"][mid]["image_url"] = f"{GITHUB_RAW_BASE}/icon-ci-{mid}.webp"
             same_count_updated += 1
-            
+
     save_json(RESUME_CACHE, resume)
-    
+
     print(f"✅ SCRAPE : {len(resume['done'])} plaques en cache.")
     if same_count_updated:
         print(f"   🔄 {same_count_updated} plaque(s) inchangée(s) : image_url pointée vers GitHub.")
-    
+
     # Affichage explicite des modifications
     if new_ids or modified_ids:
         print(f"\n⚠️  ATTENTION - MODIFICATIONS DÉTECTÉES :")
@@ -664,6 +713,8 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
             print(f"      {', '.join(sorted(modified_ids, key=int))}")
     else:
         print("   ✅ Aucune nouveauté ou modification détectée ce run.")
+
+    return {"new": new_ids, "modified": modified_ids}
 
 # ══════════════════════════════════════════════════════════════════════════
 # PHASE 3 — KANJI
@@ -732,7 +783,7 @@ def wiki_lookup(city):
             "https://en.wikipedia.org/w/api.php",
             params={"action": "query", "titles": city, "prop": "langlinks",
                     "lllang": "ja", "format": "json", "redirects": 1},
-            headers={"User-Agent": "KML-Kanji-Enricher/11.0"},
+            headers={"User-Agent": "KML-Kanji-Enricher/12.0"},
             timeout=WIKI_TIMEOUT,
         )
         r.raise_for_status()
@@ -959,6 +1010,189 @@ def phase_generate(done):
           f"({len(js['regions'])} régions, {kanji_count} avec kanji)")
 
 # ══════════════════════════════════════════════════════════════════════════
+# PHASE 5 — SPRITE (ex-05-generation_sprites_en_ligne.py)
+# ══════════════════════════════════════════════════════════════════════════
+#
+# Ne tourne que si quelque chose a changé depuis le dernier run : voir
+# check_sprite_update_needed(). Les images pokelid sont lues directement
+# depuis images_webp/ (déjà sur le disque, pas de re-téléchargement) ; seules
+# les images "plaques_pop" (dataset externe, maj manuelle) sont téléchargées.
+
+def to_raw_github_url(url):
+    if "github.com" in url and "/blob/" in url:
+        return url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+    return url
+
+
+def fetch_plaques_pop():
+    """Télécharge plaques_pop_placemarks.json (maj manuelle) → (bytes bruts, data)."""
+    resp = get_session().get(PLAQUES_POP_JSON_URL, timeout=20)
+    resp.raise_for_status()
+    return resp.content, resp.json()
+
+
+def plaques_pop_image_ref(pm):
+    raw_url = pm.get("image_url", "")
+    filename = os.path.basename(raw_url.split("?")[0]) if raw_url else None
+    if not filename:
+        return None, None
+    url = raw_url or (PLAQUES_POP_IMAGE_BASE + filename)
+    return filename, to_raw_github_url(url)
+
+
+def check_sprite_update_needed(scrape_changes, force_sprite=False):
+    """
+    Décide si la phase SPRITE doit tourner. Retourne
+    (need: bool, pp_data: dict|None, pp_hash: str|None, reasons: list[str]).
+
+    Déclencheurs :
+      - --force-sprite
+      - scrape_changes contient des ids "new" ou "modified" (image (re)téléchargée)
+      - sprite absente du disque (premier run)
+      - plaques_pop_placemarks.json a changé depuis le dernier run connu
+        (comparaison de hash du JSON brut, car ce fichier est maintenu à la
+        main dans un autre dossier du repo et n'est pas généré par ce script)
+    """
+    reasons = []
+    if force_sprite:
+        reasons.append("forcé (--force-sprite)")
+    if scrape_changes.get("new") or scrape_changes.get("modified"):
+        reasons.append("pokelids modifiés (new/modified scrapés, images (re)téléchargées)")
+    if not SPRITE_PNG.exists() or not SPRITE_JSON.exists():
+        reasons.append("sprite absente du disque (premier run)")
+
+    state = load_json(SPRITE_STATE_CACHE, {"plaques_pop_hash": None})
+    pp_data, pp_hash = None, state.get("plaques_pop_hash")
+    try:
+        pp_raw, pp_data = fetch_plaques_pop()
+        pp_hash = hashlib.sha256(pp_raw).hexdigest()
+        if pp_hash != state.get("plaques_pop_hash"):
+            reasons.append("plaques_pop_placemarks.json modifié (maj manuelle détectée)")
+    except (requests.RequestException, ValueError) as e:
+        print(f"⚠️  Impossible de vérifier plaques_pop_placemarks.json : {e}",
+              file=sys.stderr)
+
+    return bool(reasons), pp_data, pp_hash, reasons
+
+
+def collect_sprite_images(done, pp_data):
+    """
+    {filename: ("local", Path) | ("url", str)} pour toutes les images à
+    intégrer dans la sprite : pokelids en local (déjà sur le disque),
+    plaques_pop à distance (dataset externe).
+    """
+    images = {}
+    for data in done.values():
+        fn = data.get("image_file")
+        if not fn or fn in images:
+            continue
+        local_path = IMAGES_DIR / fn
+        if local_path.exists():
+            images[fn] = ("local", local_path)
+
+    if pp_data:
+        for pm in pp_data.get("placemarks", []):
+            fn, url = plaques_pop_image_ref(pm)
+            if not fn or not url or fn in images:
+                continue
+            images[fn] = ("url", url)
+
+    return images
+
+
+def load_sprite_image(source):
+    kind, ref = source
+    try:
+        if kind == "local":
+            return Image.open(ref).convert("RGBA")
+        resp = get_session().get(ref, timeout=15)
+        resp.raise_for_status()
+        return Image.open(io.BytesIO(resp.content)).convert("RGBA")
+    except Exception as e:
+        print(f"\n❌ {ref}: {e}")
+        return None
+
+
+def phase_sprite(done, pp_data, pp_hash, workers=DEFAULT_WORKERS):
+    print("\n═══ PHASE 5 : SPRITE (manholes_sprite.png / .json / version.txt) ═══")
+    SPRITE_DIR.mkdir(parents=True, exist_ok=True)
+
+    all_images = collect_sprite_images(done, pp_data)
+    items = list(all_images.items())
+    total = len(items)
+    print(f"📸 {total} image(s) unique(s) (pokelids locaux + plaques_pop distant).")
+    if total == 0:
+        print("⚠️  Aucune image à traiter — sprite non générée.")
+        return False
+
+    rows = math.ceil(total / SPRITE_COLUMNS)
+    sprite_w = SPRITE_COLUMNS * SPRITE_CELL_SIZE
+    sprite_h = rows * SPRITE_CELL_SIZE
+    print(f"🖼️  Sprite : {sprite_w}x{sprite_h}px ({SPRITE_COLUMNS} colonnes, {rows} lignes)")
+
+    loaded = [None] * total
+    remote_indices = []
+    for i, (_fn, src) in enumerate(items):
+        if src[0] == "local":
+            loaded[i] = load_sprite_image(src)
+        else:
+            remote_indices.append(i)
+
+    if remote_indices:
+        print(f"⏳ Téléchargement de {len(remote_indices)} image(s) distante(s) "
+              f"(plaques_pop)...")
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futs = {pool.submit(load_sprite_image, items[i][1]): i for i in remote_indices}
+            n = 0
+            for f in as_completed(futs):
+                i = futs[f]
+                loaded[i] = f.result()
+                n += 1
+                print(f"   [{n}/{len(remote_indices)}]...", end="\r")
+        print()
+
+    sprite = Image.new("RGBA", (sprite_w, sprite_h), (0, 0, 0, 0))
+    sprite_json = {}
+    success = 0
+    for i, (fn, _src) in enumerate(items):
+        img = loaded[i]
+        if img is None:
+            continue
+        if img.size != (SPRITE_CELL_SIZE, SPRITE_CELL_SIZE):
+            img = img.resize((SPRITE_CELL_SIZE, SPRITE_CELL_SIZE), Image.Resampling.LANCZOS)
+        x = (i % SPRITE_COLUMNS) * SPRITE_CELL_SIZE
+        y = (i // SPRITE_COLUMNS) * SPRITE_CELL_SIZE
+        sprite.paste(img, (x, y))
+        sprite_json[fn] = {"x": x, "y": y, "width": SPRITE_CELL_SIZE,
+                            "height": SPRITE_CELL_SIZE, "pixelRatio": 1}
+        success += 1
+
+    print(f"✅ {success}/{total} image(s) intégrée(s) dans la sprite.")
+    if success == 0:
+        print("⚠️  Aucune image valide récupérée — sprite non écrite.")
+        return False
+
+    sprite.save(SPRITE_PNG)
+    SPRITE_JSON.write_text(json.dumps(sprite_json, ensure_ascii=False, indent=2),
+                            encoding="utf-8")
+
+    # version.txt : horodatage YYYYMMDD-HHMMSS, réécrit UNIQUEMENT quand la
+    # sprite est réellement régénérée (cette fonction n'est appelée que dans
+    # ce cas) — sert de clé de versioning/cache-busting pour le front-end.
+    version_stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    SPRITE_VERSION.write_text(version_stamp + "\n", encoding="utf-8")
+
+    if pp_hash is not None:
+        save_json(SPRITE_STATE_CACHE, {"plaques_pop_hash": pp_hash})
+
+    print(f"✅ Sprite  : {SPRITE_PNG}")
+    print(f"✅ Index   : {SPRITE_JSON}")
+    print(f"✅ Version : {SPRITE_VERSION} ({version_stamp})")
+    print(f"\n👉 Dans manhole_style.json :")
+    print(f'   "sprite": "https://cdn.jsdelivr.net/gh/Evasionsrebelles/Lid_Tracker_Japon@main/Generation_sprites/{SPRITE_NAME}"')
+    return True
+
+# ══════════════════════════════════════════════════════════════════════════
 # Mode --inspect
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -983,10 +1217,11 @@ def mode_inspect(mid):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Pipeline fusionné 01+02+03+04 avec vérification à deux "
-                    "niveaux. Un nouveau lancement CHERCHE les nouveautés et "
-                    "les modifications (revisite les 47 pages + L2 sur les "
-                    "images + L3 optionnel sur les fiches).")
+        description="Pipeline fusionné RESOLVE/SCRAPE/KANJI/GENERATE/SPRITE. "
+                    "Un nouveau lancement CHERCHE les nouveautés et les "
+                    "modifications (revisite les 47 pages + L2 sur les "
+                    "images + L3 optionnel sur les fiches), puis ne régénère "
+                    "la sprite que si quelque chose a réellement changé.")
     p.add_argument("--force", action="store_true",
                     help="Tout refaire (ignore tous les caches).")
     p.add_argument("--resume-only", action="store_true",
@@ -1012,6 +1247,16 @@ def main():
                     help="WebP sans perte")
     p.add_argument("--method", type=int, default=WEBP_METHOD,
                     help=f"Effort d'encodage WebP 0-6 (défaut: {WEBP_METHOD})")
+    # Phase 5 — sprite
+    p.add_argument("--no-sprite", action="store_true",
+                    help="Saute complètement la phase 5 (sprite), quoi qu'il arrive.")
+    p.add_argument("--force-sprite", action="store_true",
+                    help="Force la régénération de la sprite même sans changement détecté.")
+    p.add_argument("--sprite-only", action="store_true",
+                    help="N'exécute QUE la phase 5 (à partir du cache resume_data.json "
+                         "déjà présent), sans relancer RESOLVE/SCRAPE/KANJI/GENERATE. "
+                         "Utile pour capter une mise à jour manuelle de "
+                         "plaques_pop_placemarks.json sans relancer tout le crawl.")
     args = p.parse_args()
 
     if args.fast:
@@ -1023,8 +1268,9 @@ def main():
 
     t0 = time.time()
     print("╔══════════════════════════════════════════════════════════════════╗")
-    print("║  Poké Lids — pipeline 01+02+03+04 (vérif. 2 niveaux)             ║")
-    print("║  Livrables : pokelid.kml, pokelid.json, images_webp/             ║")
+    print("║  Poké Lids — pipeline RESOLVE/SCRAPE/KANJI/GENERATE/SPRITE       ║")
+    print("║  Livrables : pokelid.kml, pokelid.json, images_webp/,            ║")
+    print("║              Generation_sprites/ (.png/.json/version.txt)        ║")
     print("╚══════════════════════════════════════════════════════════════════╝")
     if args.dry_run:
         print("MODE --dry-run : aucune écriture.")
@@ -1032,14 +1278,32 @@ def main():
     if not args.dry_run:
         CACHE_DIR.mkdir(exist_ok=True)
 
+    resume = load_json(RESUME_CACHE, {"done": {}, "failed": {}})
+    if "done" not in resume or "failed" not in resume:
+        resume = {"done": {}, "failed": {}}
+
+    # ── Mode --sprite-only : court-circuite tout le reste ──────────────────
+    if args.sprite_only:
+        if not resume["done"]:
+            print("\n❌ Aucune plaque en cache (resume_data.json vide) — "
+                  "lancez d'abord un run complet.", file=sys.stderr)
+            sys.exit(1)
+        if args.dry_run:
+            print("\n[DRY] PHASE 5 SPRITE (--sprite-only) serait exécutée.")
+            return
+        need, pp_data, pp_hash, reasons = check_sprite_update_needed(
+            {"new": [], "modified": []}, force_sprite=args.force_sprite)
+        if need:
+            print(f"\nℹ️  Régénération sprite : {', '.join(reasons)}")
+            phase_sprite(resume["done"], pp_data, pp_hash, workers=args.workers)
+        else:
+            print("\n⏭  PHASE 5 SPRITE : aucune modification détectée → rien à faire.")
+        return
+
     regions_cache = load_json(REGIONS_CACHE, {
         "done_prefectures": [], "manholes": {}, "failed_prefectures": {}})
     if not {"done_prefectures", "manholes", "failed_prefectures"}.issubset(regions_cache):
         regions_cache = {"done_prefectures": [], "manholes": {}, "failed_prefectures": {}}
-
-    resume = load_json(RESUME_CACHE, {"done": {}, "failed": {}})
-    if "done" not in resume or "failed" not in resume:
-        resume = {"done": {}, "failed": {}}
 
     # PHASE 1
     if args.no_resolve:
@@ -1055,8 +1319,10 @@ def main():
     if not manholes:
         print("\n❌ Aucune plaque — abandon.", file=sys.stderr)
         sys.exit(1)
+
+    scrape_changes = {"new": [], "modified": []}
     if not args.dry_run:
-        phase_scrape(manholes, resume, force=args.force,
+        scrape_changes = phase_scrape(manholes, resume, force=args.force,
                       workers=args.workers, retries=3, delay=0.3,
                       quality=args.quality, lossless=args.lossless,
                       method=args.method, limit=args.limit,
@@ -1082,15 +1348,34 @@ def main():
     else:
         print(f"\n[DRY] PHASE 4 GÉNÉRATION : pokelid.kml + pokelid.json.")
 
+    # PHASE 5 : SPRITE — seulement si quelque chose a changé.
+    sprite_generated = False
+    if args.dry_run:
+        print("\n[DRY] PHASE 5 SPRITE serait vérifiée/exécutée.")
+    elif args.no_sprite:
+        print("\n⏭  PHASE 5 SPRITE sautée (--no-sprite).")
+    else:
+        need, pp_data, pp_hash, reasons = check_sprite_update_needed(
+            scrape_changes, force_sprite=args.force_sprite)
+        if need:
+            print(f"\nℹ️  Régénération sprite demandée : {', '.join(reasons)}")
+            sprite_generated = phase_sprite(resume["done"], pp_data, pp_hash,
+                                             workers=args.workers)
+        else:
+            print("\n⏭  PHASE 5 SPRITE : aucune modification détectée "
+                  "(pokelids inchangés + plaques_pop_placemarks.json inchangé) "
+                  "→ sprite non régénérée.")
+
     # Résumé
     elapsed = time.time() - t0
     print("\n" + "═" * 60)
     print(f"✅ Terminé en {int(elapsed // 60)}m{int(elapsed % 60):02d}s")
-    print(f"   pokelid.kml  : {KML_FILE.name}")
-    print(f"   pokelid.json : {JSON_FILE.name}")
-    print(f"   images_webp/ : {len(list(IMAGES_DIR.glob('icon-ci-*.webp')))} fichiers WebP")
+    print(f"   pokelid.kml   : {KML_FILE.name}")
+    print(f"   pokelid.json  : {JSON_FILE.name}")
+    print(f"   images_webp/  : {len(list(IMAGES_DIR.glob('icon-ci-*.webp')))} fichiers WebP")
+    print(f"   sprite        : {'régénérée' if sprite_generated else 'inchangée (sautée)'}")
     kanji_count = sum(1 for d in resume["done"].values() if d.get("city_kanji"))
-    print(f"   kanji        : {kanji_count}/{len(resume['done'])} plaques enrichies")
+    print(f"   kanji         : {kanji_count}/{len(resume['done'])} plaques enrichies")
     if resume["failed"]:
         print(f"   ⚠️  {len(resume['failed'])} échec(s)")
     if regions_cache["failed_prefectures"]:
