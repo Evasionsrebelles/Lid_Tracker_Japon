@@ -1,8 +1,33 @@
 #!/usr/bin/env python3
 """
-01-pipeline_complet.py (v13) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
+01-pipeline_complet.py (v14) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
 GENERATE) et de 05-generation_sprites_en_ligne.py (SPRITE), + journal cumulatif
 des ajouts/modifications d'images (pokelid + plaques_pop).
+
+── CHANGEMENT v14 (fix détection faux-positifs "modified") ─────────────────
+Bug corrigé : le cache resume_data.json stockait l'ETag/Last-Modified captés
+sur le site OFFICIEL (local.pokemon.jp) au moment du téléchargement, mais la
+vérification au run suivant (classify_one) était faite en interrogeant
+l'URL GITHUB (image_url, réécrite systématiquement vers GITHUB_RAW_BASE après
+chaque scrape, y compris pour les plaques "same"). Comparer un ETag GitHub à
+un ETag local.pokemon.jp n'a aucun sens (deux serveurs différents, formats
+d'ETag différents) : résultat, la comparaison échouait presque toujours et
+TOUTES les plaques déjà connues étaient classées "modified", même sans
+changement réel — y compris dès le tout premier run si un resume_data.json
+préexistant avait déjà cette structure.
+
+Correctif : on conserve désormais un champ dédié `source_image_url` (l'URL
+réelle sur local.pokemon.jp, extraite par fetch_placemark_data), distinct de
+`image_url` (toujours l'URL GitHub publique utilisée dans le KML/JSON). La
+vérification L1/L2 (classify_one) se fait désormais sur `source_image_url`,
+jamais sur `image_url`. Pour les entrées de cache antérieures à ce fix (qui
+n'ont pas encore `source_image_url`), une migration douce est effectuée :
+un simple GET léger de la fiche récupère l'URL officielle actuelle et
+l'enregistre dans le cache, SANS marquer la plaque "modified" par défaut
+(faute de baseline fiable, on ne peut pas prétendre détecter un changement
+réel ce run-là) ; le run suivant utilisera cette baseline fraîchement migrée
+pour une comparaison L1/L2 normale.
+──────────────────────────────────────────────────────────────────────────
 
 Un seul script, un seul dossier d'images. Produit :
   • pokelid.kml            carte Google Earth / My Maps (kanji intégré)
@@ -155,7 +180,7 @@ GITHUB_RAW_BASE = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracke
 PLAQUES_POP_JSON_URL  = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/02-MAJ-plaques-pop/plaques_pop_placemarks.json"
 PLAQUES_POP_IMAGE_BASE = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/02-MAJ-plaques-pop/images/"
 
-DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PokeLidsPipeline/13.0)"}
+DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PokeLidsPipeline/14.0)"}
 
 MANHOLE_DESC_RE = re.compile(r"/manhole/desc/(\d+)/?")
 BASE_PREFECTURE = "https://local.pokemon.jp/en/manhole/{slug}.html"
@@ -527,14 +552,56 @@ def head_image(image_url: str) -> tuple:
     return None, None
 
 
+def _recover_source_image_url(mid, manholes):
+    """
+    Migration douce pour les entrées de cache antérieures au fix v14, qui
+    n'ont pas encore de `source_image_url` (seulement l'ancien `image_url`
+    déjà réécrit vers GitHub). Fait un GET léger de la fiche officielle pour
+    récupérer l'URL d'image réelle sur local.pokemon.jp, sans télécharger
+    l'image elle-même ni marquer la plaque comme modifiée.
+    Retourne l'URL trouvée, ou None en cas d'échec.
+    """
+    url = manholes.get(mid, {}).get("url")
+    if not url:
+        return None
+    try:
+        r = get_session().get(f"{url}?is_modal=1", timeout=15)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        img = soup.select_one("div.heading img.mfp-swipe") or soup.select_one("div.heading img")
+        src_url = urljoin(url, img["src"]) if img and img.get("src") else None
+        if not src_url:
+            og = soup.select_one('meta[property="og:image"]')
+            if og and og.get("content"):
+                src_url = og["content"]
+        return src_url
+    except requests.RequestException:
+        return None
+
+
 def classify_one(mid: str, manholes: dict, resume: dict, deep_check: bool) -> str:
     if mid not in resume["done"]:
         return "new"
     cached = resume["done"][mid]
 
-    cached_url = cached.get("image_url", "")
-    if cached_url:
-        current_etag, current_lm = head_image(cached_url)
+    # La détection L1/L2 doit TOUJOURS se faire sur l'URL source officielle
+    # (local.pokemon.jp), jamais sur `image_url` qui est l'URL GitHub
+    # publique (réécrite après chaque scrape, y compris pour les plaques
+    # "same") — comparer un ETag GitHub à un ETag officiel n'a pas de sens
+    # et faisait classer ~tout le monde "modified" à tort.
+    cached_src_url = cached.get("source_image_url")
+
+    had_baseline = bool(cached_src_url)
+    if not cached_src_url:
+        # Migration : entrée de cache antérieure au fix. On récupère l'URL
+        # officielle actuelle et on la stocke pour les prochains runs, sans
+        # prétendre détecter un vrai changement faute de baseline fiable.
+        cached_src_url = _recover_source_image_url(mid, manholes)
+        if cached_src_url:
+            cached["source_image_url"] = cached_src_url
+
+    if cached_src_url and had_baseline:
+        current_etag, current_lm = head_image(cached_src_url)
         if current_etag == "404":
             return "modified"
         if cached.get("image_etag") and current_etag and cached["image_etag"] != current_etag:
@@ -602,6 +669,11 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
     else:
         status = classify_manholes(
             {mid: manholes[mid] for mid in all_ids}, resume, deep_check, workers)
+        # La migration opérée dans classify_one() peut avoir ajouté
+        # `source_image_url` à des entrées de resume["done"] sans qu'elles
+        # soient par ailleurs modifiées : on persiste ça tout de suite pour
+        # ne pas perdre le travail de migration si le run est interrompu.
+        save_json(RESUME_CACHE, resume)
         todo = [mid for mid in all_ids if status[mid] in ("new", "modified")]
         new_count = sum(1 for mid in all_ids if status[mid] == "new")
         mod_count = sum(1 for mid in all_ids if status[mid] == "modified")
@@ -627,7 +699,13 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
                 "city": pdata.get("city"),
                 "lat": pdata["lat"], "lon": pdata["lon"],
                 "image_file": img_result["filename"],
-                "image_url": f"{GITHUB_RAW_BASE}/icon-ci-{mid}.webp", # URL GitHub (image déjà téléchargée et commitée dans ce même run)
+                # URL officielle (local.pokemon.jp) — SEULE référence utilisée
+                # pour la détection de changement (L1/L2) au run suivant.
+                "source_image_url": pdata["image_url"],
+                # URL publique GitHub (image déjà téléchargée et commitée
+                # dans ce même run) — utilisée pour l'affichage (KML/JSON),
+                # jamais pour la détection de changement.
+                "image_url": f"{GITHUB_RAW_BASE}/icon-ci-{mid}.webp",
                 "image_etag": img_result.get("etag"),
                 "image_last_modified": img_result.get("last_modified"),
                 "page_hash": pdata.get("page_hash"),
@@ -811,7 +889,7 @@ def wiki_lookup(city):
             "https://en.wikipedia.org/w/api.php",
             params={"action": "query", "titles": city, "prop": "langlinks",
                     "lllang": "ja", "format": "json", "redirects": 1},
-            headers={"User-Agent": "KML-Kanji-Enricher/13.0"},
+            headers={"User-Agent": "KML-Kanji-Enricher/14.0"},
             timeout=WIKI_TIMEOUT,
         )
         r.raise_for_status()
