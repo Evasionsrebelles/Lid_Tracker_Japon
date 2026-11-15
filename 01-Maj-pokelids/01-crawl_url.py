@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-01-pipeline_complet.py (v12) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
-GENERATE) et de 05-generation_sprites_en_ligne.py (SPRITE).
+01-pipeline_complet.py (v13) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
+GENERATE) et de 05-generation_sprites_en_ligne.py (SPRITE), + journal cumulatif
+des ajouts/modifications d'images (pokelid + plaques_pop).
 
 Un seul script, un seul dossier d'images. Produit :
   • pokelid.kml            carte Google Earth / My Maps (kanji intégré)
@@ -9,6 +10,13 @@ Un seul script, un seul dossier d'images. Produit :
   • images_webp/           icônes locales pokelids (fallback + source de la sprite)
   • Generation_sprites/    manholes_sprite.png + manholes_sprite.json + version.txt
                           (dossier frère de 01-Maj-pokelids/, à la racine du dépôt)
+  • Generation_sprites/images_changelog.json
+                          journal CUMULATIF de tous les ajouts/modifications
+                          d'images détectés (pokelid + plaques_pop), depuis le
+                          15/11/2026 inclus. Alimenté automatiquement à chaque
+                          run, jamais réécrit (append-only). Permet à un client
+                          (app mobile, etc.) de savoir précisément quelles
+                          images ont changé sans comparer tout le dataset.
   • .cache/                fichiers internes (invisibles, supprimables)
 
 --- Comportement d'un nouveau lancement ---
@@ -31,6 +39,12 @@ Un nouveau lancement CHERCHE les nouveautés et les modifications :
                   - la sprite n'existe pas encore sur le disque, OU
                   - --force-sprite est passé.
                 Sinon la phase 5 est sautée (rien à régénérer).
+  6. CHANGELOG : indépendamment de la sprite, compare l'état actuel des
+                plaques pokelid (new/modified détectés en phase 2) et des
+                plaques_pop (nouvel id, ou id existant dont le nom de
+                fichier image a changé) à l'état connu lors du run
+                précédent, et ajoute les différences au journal cumulatif
+                Generation_sprites/images_changelog.json.
 
 --- URLs GitHub ---
 Toutes les plaques pokelid (new/modified/same) pointent vers :
@@ -40,6 +54,9 @@ commitée dans le même run par l'étape "git add -A" du workflow — le lien es
 dès que le job se termine. La phase SPRITE réutilise directement ces fichiers LOCAUX,
 sans retélécharger, pour les plaques pokelid.)
 
+Les images plaques_pop sont hébergées dans :
+https://github.com/Evasionsrebelles/Lid_Tracker_Japon/tree/main/02-MAJ-plaques-pop/images
+
 Usage :
     pip install requests beautifulsoup4 pillow tqdm
     python 01-pipeline_complet.py
@@ -47,12 +64,14 @@ Usage :
     python 01-pipeline_complet.py --force
     python 01-pipeline_complet.py --resume-only
     python 01-pipeline_complet.py --limit 20
-    python 01-pipeline_complet.py --no-sprite        # saute la phase 5
+    python 01-pipeline_complet.py --no-sprite        # saute la phase 5 (sprite), mais
+                                                       # le changelog reste à jour
     python 01-pipeline_complet.py --force-sprite     # force la régénération de la sprite
     python 01-pipeline_complet.py --sprite-only      # ne fait QUE la phase 5 (ex: pour
                                                        # capter une maj manuelle de
                                                        # plaques_pop_placemarks.json sans
-                                                       # relancer tout le crawl)
+                                                       # relancer tout le crawl) ; le
+                                                       # changelog est aussi mis à jour
 """
 
 import argparse
@@ -108,12 +127,20 @@ SPRITE_JSON    = SPRITE_DIR / "manholes_sprite.json"
 SPRITE_VERSION = SPRITE_DIR / "version.txt"
 SPRITE_NAME    = "manholes_sprite"
 
+# Journal cumulatif des ajouts/modifications d'images (pokelid + plaques_pop).
+# Committé dans Generation_sprites/ comme la sprite, donc accessible
+# publiquement en lecture seule (ex: par l'app) via raw.githubusercontent.com,
+# au même titre que manholes_sprite.png/.json.
+CHANGELOG_FILE  = SPRITE_DIR / "images_changelog.json"
+CHANGELOG_SINCE = "2026-11-15"  # point de départ du suivi (informatif)
+
 # Caches
 REGIONS_CACHE     = CACHE_DIR / "regions_cache.json"
 RESUME_CACHE      = CACHE_DIR / "resume_data.json"
 KANJI_CACHE       = CACHE_DIR / "kanji_cache.json"
 KANJI_MISSING     = CACHE_DIR / "villes_non_trouvees.csv"
 SPRITE_STATE_CACHE = CACHE_DIR / "sprite_state.json"   # hash de plaques_pop_placemarks.json
+PLAQUES_POP_SNAPSHOT_CACHE = CACHE_DIR / "plaques_pop_snapshot.json"  # {id: image_file} du dernier run connu
 
 # Optionnels
 REGIONS_TMP    = BASE_DIR / "regions.json"
@@ -128,7 +155,7 @@ GITHUB_RAW_BASE = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracke
 PLAQUES_POP_JSON_URL  = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/02-MAJ-plaques-pop/plaques_pop_placemarks.json"
 PLAQUES_POP_IMAGE_BASE = "https://raw.githubusercontent.com/Evasionsrebelles/Lid_Tracker_Japon/main/02-MAJ-plaques-pop/images/"
 
-DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PokeLidsPipeline/12.0)"}
+DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PokeLidsPipeline/13.0)"}
 
 MANHOLE_DESC_RE = re.compile(r"/manhole/desc/(\d+)/?")
 BASE_PREFECTURE = "https://local.pokemon.jp/en/manhole/{slug}.html"
@@ -558,7 +585,8 @@ def phase_scrape(manholes, resume, force, workers, retries, delay,
     """
     Retourne un dict {"new": [...ids...], "modified": [...ids...]} — utilisé
     ensuite par la phase SPRITE pour savoir si une régénération est nécessaire
-    (une image a été (re)téléchargée localement).
+    (une image a été (re)téléchargée localement), et par le journal cumulatif
+    d'images (CHANGELOG_FILE) pour savoir quelles plaques pokelid y inscrire.
     """
     print("\n═══ PHASE 2 : SCRAPE (fiches + image unique WebP) ═══")
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
@@ -783,7 +811,7 @@ def wiki_lookup(city):
             "https://en.wikipedia.org/w/api.php",
             params={"action": "query", "titles": city, "prop": "langlinks",
                     "lllang": "ja", "format": "json", "redirects": 1},
-            headers={"User-Agent": "KML-Kanji-Enricher/12.0"},
+            headers={"User-Agent": "KML-Kanji-Enricher/13.0"},
             timeout=WIKI_TIMEOUT,
         )
         r.raise_for_status()
@@ -1040,18 +1068,57 @@ def plaques_pop_image_ref(pm):
     return filename, to_raw_github_url(url)
 
 
+def diff_plaques_pop(pp_data):
+    """
+    Compare les ids/fichiers image de plaques_pop_placemarks.json au
+    dernier instantané connu (PLAQUES_POP_SNAPSHOT_CACHE) pour déterminer
+    quelles plaques sont nouvelles, ou ont vu leur image changer (détecté
+    via un changement du nom de fichier associé à l'id).
+
+    Premier run (aucun instantané connu) : on initialise simplement la
+    référence sans générer de fausses entrées "new" pour tout le dataset
+    existant — seuls les changements RÉELS entre deux runs sont tracés.
+
+    Retourne (new_ids, modified_ids, current_snapshot).
+    """
+    is_first_run = not PLAQUES_POP_SNAPSHOT_CACHE.exists()
+    previous = load_json(PLAQUES_POP_SNAPSHOT_CACHE, {})
+    current = {}
+    if pp_data:
+        for pm in pp_data.get("placemarks", []):
+            pid = str(pm.get("id", "")).strip()
+            if not pid:
+                continue
+            fn, _url = plaques_pop_image_ref(pm)
+            if fn:
+                current[pid] = fn
+
+    if is_first_run:
+        return [], [], current
+
+    new_ids = [pid for pid in current if pid not in previous]
+    modified_ids = [
+        pid for pid in current
+        if pid in previous and previous[pid] != current[pid]
+    ]
+    return new_ids, modified_ids, current
+
+
 def check_sprite_update_needed(scrape_changes, force_sprite=False):
     """
-    Décide si la phase SPRITE doit tourner. Retourne
-    (need: bool, pp_data: dict|None, pp_hash: str|None, reasons: list[str]).
+    Décide si la phase SPRITE doit tourner, ET calcule au passage le diff
+    plaques_pop (new/modified) pour le journal cumulatif d'images. Le
+    nouvel instantané plaques_pop est persisté à chaque appel (que la
+    sprite soit régénérée ou non), afin que le diff du prochain run reste
+    exact.
 
-    Déclencheurs :
-      - --force-sprite
-      - scrape_changes contient des ids "new" ou "modified" (image (re)téléchargée)
-      - sprite absente du disque (premier run)
-      - plaques_pop_placemarks.json a changé depuis le dernier run connu
-        (comparaison de hash du JSON brut, car ce fichier est maintenu à la
-        main dans un autre dossier du repo et n'est pas généré par ce script)
+    Retourne un dict :
+      {
+        "need": bool, "pp_data": dict|None, "pp_hash": str|None,
+        "reasons": list[str],
+        "pp_new_ids": list[str], "pp_modified_ids": list[str],
+        "pp_snapshot": {id: image_file},
+      }
     """
     reasons = []
     if force_sprite:
@@ -1063,16 +1130,28 @@ def check_sprite_update_needed(scrape_changes, force_sprite=False):
 
     state = load_json(SPRITE_STATE_CACHE, {"plaques_pop_hash": None})
     pp_data, pp_hash = None, state.get("plaques_pop_hash")
+    pp_new_ids, pp_modified_ids, pp_snapshot = [], [], {}
     try:
         pp_raw, pp_data = fetch_plaques_pop()
         pp_hash = hashlib.sha256(pp_raw).hexdigest()
         if pp_hash != state.get("plaques_pop_hash"):
             reasons.append("plaques_pop_placemarks.json modifié (maj manuelle détectée)")
+
+        pp_new_ids, pp_modified_ids, pp_snapshot = diff_plaques_pop(pp_data)
+        save_json(PLAQUES_POP_SNAPSHOT_CACHE, pp_snapshot)
     except (requests.RequestException, ValueError) as e:
         print(f"⚠️  Impossible de vérifier plaques_pop_placemarks.json : {e}",
               file=sys.stderr)
 
-    return bool(reasons), pp_data, pp_hash, reasons
+    return {
+        "need": bool(reasons),
+        "pp_data": pp_data,
+        "pp_hash": pp_hash,
+        "reasons": reasons,
+        "pp_new_ids": pp_new_ids,
+        "pp_modified_ids": pp_modified_ids,
+        "pp_snapshot": pp_snapshot,
+    }
 
 
 def collect_sprite_images(done, pp_data):
@@ -1193,6 +1272,78 @@ def phase_sprite(done, pp_data, pp_hash, workers=DEFAULT_WORKERS):
     return True
 
 # ══════════════════════════════════════════════════════════════════════════
+# PHASE 6 — CHANGELOG CUMULATIF D'IMAGES (pokelid + plaques_pop)
+# ══════════════════════════════════════════════════════════════════════════
+#
+# Indépendant de la sprite : chaque run ajoute au journal (append-only, jamais
+# réécrit) les ids pokelid détectés "new"/"modified" par phase_scrape, et les
+# ids plaques_pop détectés "new"/"modified" par diff_plaques_pop (calculé dans
+# check_sprite_update_needed). Permet à un client externe (app mobile) de
+# savoir précisément quelles images récupérer sans tout re-comparer.
+
+def load_changelog():
+    default = {"since": CHANGELOG_SINCE, "entries": []}
+    data = load_json(CHANGELOG_FILE, default)
+    data.setdefault("since", CHANGELOG_SINCE)
+    data.setdefault("entries", [])
+    return data
+
+
+def append_changelog_entries(entries):
+    """Ajoute des entrées au journal cumulatif images_changelog.json.
+    Append-only : les entrées déjà écrites ne sont jamais modifiées."""
+    if not entries:
+        print("📝 Changelog : aucun changement d'image à consigner ce run.")
+        return
+    changelog = load_changelog()
+    changelog["entries"].extend(entries)
+    save_json(CHANGELOG_FILE, changelog)
+    print(f"📝 Changelog : {len(entries)} entrée(s) ajoutée(s) "
+          f"({len(changelog['entries'])} au total depuis {changelog['since']}).")
+
+
+def build_changelog_entry(category, change_type, image_id, image_file):
+    """category: 'pokelid' | 'plaques_pop' — change_type: 'new' | 'modified'."""
+    return {
+        "id": str(image_id),
+        "category": category,
+        "type": change_type,
+        "image_file": image_file or "",
+        "detected_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    }
+
+
+def update_changelog(done, scrape_changes, sprite_check):
+    """
+    Construit et ajoute au journal cumulatif les entrées correspondant aux
+    changements détectés lors de ce run :
+      - pokelid : scrape_changes["new"] / ["modified"] (ids déjà classifiés
+        par phase_scrape, image_file lu depuis `done`)
+      - plaques_pop : sprite_check["pp_new_ids"] / ["pp_modified_ids"]
+        (calculés par diff_plaques_pop dans check_sprite_update_needed)
+    """
+    entries = []
+
+    for mid in scrape_changes.get("new", []):
+        data = done.get(mid, {})
+        entries.append(build_changelog_entry(
+            "pokelid", "new", mid, data.get("image_file", "")))
+    for mid in scrape_changes.get("modified", []):
+        data = done.get(mid, {})
+        entries.append(build_changelog_entry(
+            "pokelid", "modified", mid, data.get("image_file", "")))
+
+    pp_snapshot = sprite_check.get("pp_snapshot") or {}
+    for pid in sprite_check.get("pp_new_ids", []):
+        entries.append(build_changelog_entry(
+            "plaques_pop", "new", pid, pp_snapshot.get(pid, "")))
+    for pid in sprite_check.get("pp_modified_ids", []):
+        entries.append(build_changelog_entry(
+            "plaques_pop", "modified", pid, pp_snapshot.get(pid, "")))
+
+    append_changelog_entries(entries)
+
+# ══════════════════════════════════════════════════════════════════════════
 # Mode --inspect
 # ══════════════════════════════════════════════════════════════════════════
 
@@ -1217,11 +1368,13 @@ def mode_inspect(mid):
 
 def main():
     p = argparse.ArgumentParser(
-        description="Pipeline fusionné RESOLVE/SCRAPE/KANJI/GENERATE/SPRITE. "
+        description="Pipeline fusionné RESOLVE/SCRAPE/KANJI/GENERATE/SPRITE/CHANGELOG. "
                     "Un nouveau lancement CHERCHE les nouveautés et les "
                     "modifications (revisite les 47 pages + L2 sur les "
                     "images + L3 optionnel sur les fiches), puis ne régénère "
-                    "la sprite que si quelque chose a réellement changé.")
+                    "la sprite que si quelque chose a réellement changé, et "
+                    "met à jour dans tous les cas le journal cumulatif "
+                    "d'images (images_changelog.json).")
     p.add_argument("--force", action="store_true",
                     help="Tout refaire (ignore tous les caches).")
     p.add_argument("--resume-only", action="store_true",
@@ -1249,14 +1402,17 @@ def main():
                     help=f"Effort d'encodage WebP 0-6 (défaut: {WEBP_METHOD})")
     # Phase 5 — sprite
     p.add_argument("--no-sprite", action="store_true",
-                    help="Saute complètement la phase 5 (sprite), quoi qu'il arrive.")
+                    help="Saute la régénération de la sprite elle-même, quoi "
+                         "qu'il arrive. Le journal cumulatif d'images reste "
+                         "mis à jour.")
     p.add_argument("--force-sprite", action="store_true",
                     help="Force la régénération de la sprite même sans changement détecté.")
     p.add_argument("--sprite-only", action="store_true",
                     help="N'exécute QUE la phase 5 (à partir du cache resume_data.json "
                          "déjà présent), sans relancer RESOLVE/SCRAPE/KANJI/GENERATE. "
                          "Utile pour capter une mise à jour manuelle de "
-                         "plaques_pop_placemarks.json sans relancer tout le crawl.")
+                         "plaques_pop_placemarks.json sans relancer tout le crawl. "
+                         "Le journal cumulatif d'images est aussi mis à jour.")
     args = p.parse_args()
 
     if args.fast:
@@ -1268,9 +1424,10 @@ def main():
 
     t0 = time.time()
     print("╔══════════════════════════════════════════════════════════════════╗")
-    print("║  Poké Lids — pipeline RESOLVE/SCRAPE/KANJI/GENERATE/SPRITE       ║")
+    print("║  Poké Lids — pipeline RESOLVE/SCRAPE/KANJI/GENERATE/SPRITE/LOG   ║")
     print("║  Livrables : pokelid.kml, pokelid.json, images_webp/,            ║")
-    print("║              Generation_sprites/ (.png/.json/version.txt)        ║")
+    print("║              Generation_sprites/ (.png/.json/version.txt/        ║")
+    print("║              images_changelog.json)                               ║")
     print("╚══════════════════════════════════════════════════════════════════╝")
     if args.dry_run:
         print("MODE --dry-run : aucune écriture.")
@@ -1282,6 +1439,11 @@ def main():
     if "done" not in resume or "failed" not in resume:
         resume = {"done": {}, "failed": {}}
 
+    empty_sprite_check = {
+        "need": False, "pp_data": None, "pp_hash": None, "reasons": [],
+        "pp_new_ids": [], "pp_modified_ids": [], "pp_snapshot": {},
+    }
+
     # ── Mode --sprite-only : court-circuite tout le reste ──────────────────
     if args.sprite_only:
         if not resume["done"]:
@@ -1291,13 +1453,17 @@ def main():
         if args.dry_run:
             print("\n[DRY] PHASE 5 SPRITE (--sprite-only) serait exécutée.")
             return
-        need, pp_data, pp_hash, reasons = check_sprite_update_needed(
+
+        sprite_check = check_sprite_update_needed(
             {"new": [], "modified": []}, force_sprite=args.force_sprite)
-        if need:
-            print(f"\nℹ️  Régénération sprite : {', '.join(reasons)}")
-            phase_sprite(resume["done"], pp_data, pp_hash, workers=args.workers)
+        if sprite_check["need"]:
+            print(f"\nℹ️  Régénération sprite : {', '.join(sprite_check['reasons'])}")
+            phase_sprite(resume["done"], sprite_check["pp_data"],
+                         sprite_check["pp_hash"], workers=args.workers)
         else:
             print("\n⏭  PHASE 5 SPRITE : aucune modification détectée → rien à faire.")
+
+        update_changelog(resume["done"], {"new": [], "modified": []}, sprite_check)
         return
 
     regions_cache = load_json(REGIONS_CACHE, {
@@ -1348,23 +1514,32 @@ def main():
     else:
         print(f"\n[DRY] PHASE 4 GÉNÉRATION : pokelid.kml + pokelid.json.")
 
-    # PHASE 5 : SPRITE — seulement si quelque chose a changé.
+    # PHASE 5 : SPRITE (si besoin) — PHASE 6 : CHANGELOG (toujours, sauf dry-run)
     sprite_generated = False
+    sprite_check = empty_sprite_check
     if args.dry_run:
-        print("\n[DRY] PHASE 5 SPRITE serait vérifiée/exécutée.")
-    elif args.no_sprite:
-        print("\n⏭  PHASE 5 SPRITE sautée (--no-sprite).")
+        print("\n[DRY] PHASE 5 SPRITE / PHASE 6 CHANGELOG seraient vérifiées/exécutées.")
     else:
-        need, pp_data, pp_hash, reasons = check_sprite_update_needed(
+        # Toujours calculé (indépendamment de --no-sprite) : c'est de là que
+        # vient le diff plaques_pop nécessaire au changelog, et c'est aussi
+        # ici que l'instantané plaques_pop est rafraîchi pour le prochain run.
+        sprite_check = check_sprite_update_needed(
             scrape_changes, force_sprite=args.force_sprite)
-        if need:
-            print(f"\nℹ️  Régénération sprite demandée : {', '.join(reasons)}")
-            sprite_generated = phase_sprite(resume["done"], pp_data, pp_hash,
-                                             workers=args.workers)
+
+        if args.no_sprite:
+            print("\n⏭  PHASE 5 SPRITE sautée (--no-sprite) — le changelog "
+                  "reste à jour ci-dessous.")
+        elif sprite_check["need"]:
+            print(f"\nℹ️  Régénération sprite demandée : {', '.join(sprite_check['reasons'])}")
+            sprite_generated = phase_sprite(resume["done"], sprite_check["pp_data"],
+                                             sprite_check["pp_hash"], workers=args.workers)
         else:
             print("\n⏭  PHASE 5 SPRITE : aucune modification détectée "
                   "(pokelids inchangés + plaques_pop_placemarks.json inchangé) "
                   "→ sprite non régénérée.")
+
+        print("\n═══ PHASE 6 : CHANGELOG (journal cumulatif d'images) ═══")
+        update_changelog(resume["done"], scrape_changes, sprite_check)
 
     # Résumé
     elapsed = time.time() - t0
@@ -1374,6 +1549,7 @@ def main():
     print(f"   pokelid.json  : {JSON_FILE.name}")
     print(f"   images_webp/  : {len(list(IMAGES_DIR.glob('icon-ci-*.webp')))} fichiers WebP")
     print(f"   sprite        : {'régénérée' if sprite_generated else 'inchangée (sautée)'}")
+    print(f"   changelog     : {CHANGELOG_FILE.name}")
     kanji_count = sum(1 for d in resume["done"].values() if d.get("city_kanji"))
     print(f"   kanji         : {kanji_count}/{len(resume['done'])} plaques enrichies")
     if resume["failed"]:
