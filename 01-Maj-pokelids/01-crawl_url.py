@@ -1,8 +1,32 @@
 #!/usr/bin/env python3
 """
-01-pipeline_complet.py (v14) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
+01-pipeline_complet.py (v15) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
 GENERATE) et de 05-generation_sprites_en_ligne.py (SPRITE), + journal cumulatif
 des ajouts/modifications d'images (pokelid + plaques_pop).
+
+── CHANGEMENT v15 (sprite ~70 Mo → quelques Mo) ────────────────────────────
+Jusqu'ici phase_sprite() assemblait les icônes à pleine résolution (256×256
+px chacune) ET sauvegardait le résultat en PNG sans aucune compression
+(`sprite.save(SPRITE_PNG)`), sans rapport avec les réglages WEBP_QUALITY/
+WEBP_LOSSLESS/WEBP_METHOD qui ne s'appliquent qu'aux icônes individuelles
+téléchargées dans phase_scrape(). Sur du contenu photographique (plaques
+d'égout), le PNG sans perte compresse mal : avec ~550 icônes à 256×256, la
+sprite finissait autour de 70 Mo — alors que l'affichage carte n'a besoin
+que d'icônes minuscules.
+
+Repris de 05-generation_sprites_local.py (script utilisé pour les assets
+embarqués dans l'app, qui produit une sprite de ~1,8 Mo pour le même jeu
+d'images) :
+  • SPRITE_CELL_SIZE réduit de 256 à 64 px — suffisant pour un marqueur de
+    carte, ajuster l'icon-size du style MapLibre en conséquence si besoin.
+  • Appel à `pngquant` (quantification de palette) juste après l'export
+    Pillow → -60 à -80% supplémentaires sur ce type d'artwork à aplats.
+    Si pngquant est introuvable dans l'environnement (CI), le script NE
+    bloque PAS (contrairement à 05 qui fait sys.exit) : il avertit et garde
+    la sprite réduite mais non quantifiée — déjà ~16× plus légère rien
+    qu'avec la baisse de résolution. Pour profiter aussi de pngquant en CI
+    GitHub Actions, ajouter `apt-get install -y pngquant` dans le workflow.
+──────────────────────────────────────────────────────────────────────────
 
 ── CHANGEMENT v14 (fix détection faux-positifs "modified") ─────────────────
 Bug corrigé : le cache resume_data.json stockait l'ETag/Last-Modified captés
@@ -108,6 +132,8 @@ import json
 import math
 import os
 import re
+import shutil
+import subprocess
 import sys
 import threading
 import time
@@ -195,8 +221,17 @@ WEBP_LOSSLESS = False
 WEBP_METHOD   = 6
 
 # Phase 5 — sprite
-SPRITE_CELL_SIZE = 256
+# 64px suffit largement pour un marqueur de carte (contre 256px avant, qui
+# ne servait à rien à l'affichage mais pesait lourd). Ajuster l'icon-size
+# du style MapLibre côté app si les marqueurs paraissent trop petits/gros.
+SPRITE_CELL_SIZE = 64
 SPRITE_COLUMNS   = 10
+
+# pngquant (quantification de palette), appliqué après l'export Pillow.
+# Mêmes réglages que 05-generation_sprites_local.py. Non bloquant si absent
+# (contrairement à 05) : la sprite reste utilisable, juste moins compressée.
+PNGQUANT_QUALITY = "65-80"
+PNGQUANT_SPEED    = "1"  # 1 = compression max (le plus lent)
 
 KANJI_SAVE_INTERVAL = 5
 WIKI_DELAY   = 1.0
@@ -1270,6 +1305,70 @@ def load_sprite_image(source):
         return None
 
 
+def fmt_size(size_bytes: int) -> str:
+    if size_bytes >= 1_000_000:
+        return f"{size_bytes / 1_000_000:.1f} Mo"
+    return f"{size_bytes / 1_000:.0f} Ko"
+
+
+_PNGQUANT_BIN_CACHE = None
+_PNGQUANT_WARNED = False
+
+
+def find_pngquant():
+    """Cherche pngquant sur le PATH, ou à côté du script (pngquant.exe sous
+    Windows, comme dans 05-generation_sprites_local.py). Retourne le chemin,
+    ou None si introuvable — NE bloque jamais le pipeline (contrairement à
+    05 qui fait sys.exit), car l'environnement CI peut raisonnablement ne
+    pas l'avoir installé ; la réduction de résolution (SPRITE_CELL_SIZE)
+    apporte déjà l'essentiel du gain à elle seule."""
+    global _PNGQUANT_BIN_CACHE, _PNGQUANT_WARNED
+    if _PNGQUANT_BIN_CACHE is not None:
+        return _PNGQUANT_BIN_CACHE
+    path = shutil.which("pngquant")
+    if not path:
+        local = BASE_DIR / "pngquant.exe"
+        if local.exists():
+            path = str(local)
+    if not path and not _PNGQUANT_WARNED:
+        _PNGQUANT_WARNED = True
+        print("⚠️  pngquant introuvable : la sprite sera écrite sans quantification "
+              "de palette (déjà bien plus légère grâce à SPRITE_CELL_SIZE réduit, "
+              "mais -60 à -80% supplémentaires possibles en installant pngquant — "
+              "ex. `apt-get install -y pngquant` dans le workflow CI).")
+    _PNGQUANT_BIN_CACHE = path or ""
+    return _PNGQUANT_BIN_CACHE or None
+
+
+def compress_sprite_png(path: Path):
+    """Quantifie la palette de `path` (PNG déjà écrit) via pngquant, en
+    place, si l'outil est disponible. Ne lève jamais : en cas d'échec, le
+    PNG non quantifié (déjà réduit en résolution) reste tel quel."""
+    size_before = path.stat().st_size
+    pngquant_bin = find_pngquant()
+    if not pngquant_bin:
+        print(f"   (pngquant non appliqué) {fmt_size(size_before)}")
+        return
+
+    try:
+        result = subprocess.run(
+            [pngquant_bin, "--quality", PNGQUANT_QUALITY, "--speed", PNGQUANT_SPEED,
+             "--force", "--ext", ".png", str(path)],
+            capture_output=True, timeout=120,
+        )
+        if result.returncode not in (0, 99):
+            # 99 = qualité cible non atteignable (fichier gardé tel quel)
+            print(f"   ⚠️  pngquant code {result.returncode} : "
+                  f"{result.stderr.decode(errors='replace')}")
+            return
+        size_after = path.stat().st_size
+        reduction = (1 - size_after / size_before) * 100 if size_before else 0.0
+        print(f"   pngquant : {fmt_size(size_before)} → {fmt_size(size_after)} "
+              f"(-{reduction:.0f}%)")
+    except Exception as e:
+        print(f"   ⚠️  pngquant a échoué ({e}) — sprite non quantifiée conservée.")
+
+
 def phase_sprite(done, pp_data, pp_hash, workers=DEFAULT_WORKERS):
     print("\n═══ PHASE 5 : SPRITE (manholes_sprite.png / .json / version.txt) ═══")
     SPRITE_DIR.mkdir(parents=True, exist_ok=True)
@@ -1330,6 +1429,7 @@ def phase_sprite(done, pp_data, pp_hash, workers=DEFAULT_WORKERS):
         return False
 
     sprite.save(SPRITE_PNG)
+    compress_sprite_png(SPRITE_PNG)
     SPRITE_JSON.write_text(json.dumps(sprite_json, ensure_ascii=False, indent=2),
                             encoding="utf-8")
 
