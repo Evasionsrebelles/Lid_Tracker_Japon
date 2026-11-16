@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-01-pipeline_complet.py (v15) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
+06-pipeline_complet_github.py (v15) — Fusion de 01-crawl_url.py (RESOLVE/SCRAPE/KANJI/
 GENERATE) et de 05-generation_sprites_en_ligne.py (SPRITE), + journal cumulatif
 des ajouts/modifications d'images (pokelid + plaques_pop).
 
