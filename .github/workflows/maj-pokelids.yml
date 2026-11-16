@@ -24,6 +24,9 @@ jobs:
       - name: Installer les dépendances
         run: python -m pip install --upgrade pip requests beautifulsoup4 pillow tqdm
 
+      - name: Installer pngquant
+        run: sudo apt-get update && sudo apt-get install -y pngquant
+
       - name: Archiver les anciennes versions
         run: |
           DIR=/home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids
@@ -48,9 +51,9 @@ jobs:
             fi
           done
 
-      - name: Lancer 01-crawl_url.py
+      - name: Lancer 06-pipeline_complet_github.py
         run: |
-          python -u /home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids/01-crawl_url.py --workers 8 2>&1 | tee run.log
+          python -u /home/runner/work/Lid_Tracker_Japon/Lid_Tracker_Japon/01-Maj-pokelids/06-pipeline_complet_github.py --workers 8 2>&1 | tee run.log
 
       - name: Résumé des artefacts
         if: always()
